@@ -21,7 +21,7 @@ function App() {
       <Route exact path="/offer" element={<Offer/>} />
       <Route exact path="/copper" element={<CopperProduct/>} />
       <Route exact path="/aluminium" element={<AluminiumProduct/>} />
-      <Route exact path="/nickel" element={<NickelProduct/>} /> {/* Возмножно тут тоже можно через metals/copper */}
+      <Route exact path="/nickel" element={<NickelProduct/>} /> {/* Возмножно тут тоже можно через metals/copper  - можно потом сделать при желании*/}
       <Route exact path="/insights" element={<Insights/>} /> {/* Надо прописать динамический роут с id новостей */}
       <Route exact path="/about-us" element={<AboutUs/>} />
       <Route exact path="/contact-us" element={<ContactUs/>} />
