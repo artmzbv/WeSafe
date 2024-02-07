@@ -1,8 +1,10 @@
+import './AboutMetals.css';
+
 export default function AboutMetals() {
     return(
         <>
         <section>
-            <div>AboutProblem</div>
+            <div>AboutMetals</div>
         </section>
         </>
     )

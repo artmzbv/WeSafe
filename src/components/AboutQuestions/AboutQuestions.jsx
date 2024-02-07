@@ -1,3 +1,5 @@
+import './AboutQuestions.css';
+
 export default function AboutQuestions() {
     return(
         <>

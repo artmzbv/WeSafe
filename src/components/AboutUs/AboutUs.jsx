@@ -1,8 +1,10 @@
+import './AboutUs.css';
+
 export default function AboutUs() {
     return(
         <>
         <section>
-            <div>AboutProblem</div>
+            <div>AboutUs</div>
         </section>
         </>
     )

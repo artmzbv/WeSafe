@@ -1,3 +1,5 @@
+import './AboutSolution.css';
+
 export default function AboutSolution() {
     return(
         <>

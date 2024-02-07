@@ -1,3 +1,4 @@
+import './Main.css';
 import Intro from "../Intro/Intro"
 import AboutProblem from "../AboutProblem/AboutProblem"
 import AboutSolution from "../AboutSolution/AboutSolution"

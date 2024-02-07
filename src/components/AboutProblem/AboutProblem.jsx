@@ -1,3 +1,5 @@
+import './AboutProblem.css';
+
 export default function AboutProblem() {
     return(
         <>

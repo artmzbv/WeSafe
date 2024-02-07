@@ -1,3 +1,5 @@
+import './AboutProduct.css';
+
 export default function AboutProduct() {
     return(
         <>
