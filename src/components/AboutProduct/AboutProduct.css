@@ -1,0 +1,27 @@
+.product{
+    height: 70vh;
+    margin: 0 4vw;
+    padding: 4vh 8vw;
+}
+
+.product__title{
+    color: #001F3D;
+    text-align: start;
+    width: 50%;
+    border-bottom: #001F3D 4px solid;
+}
+
+.product__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #001F3D;
+}
+
+.product__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vw;
+    color: #001F3D;
+}
