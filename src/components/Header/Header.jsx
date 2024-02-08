@@ -1,7 +1,6 @@
 import {React, useState}  from "react";
 import { Route, Link, Switch } from "react-router-dom";
 import headerLogo from "../../images/logo.jpg"
-import { ReactComponent as Triangular } from "../../images/triangular.svg"
 import './Header.css';
 
 // https://www.google.com/search?q=position+for+dropdown+list
@@ -20,7 +19,9 @@ export default function Header() {
     return(
         <>
         <header className='header'>
-        <img className="header__logo" src={headerLogo} alt="logo" />
+            <Link to="/">
+            <img className="header__logo" src={headerLogo} alt="logo" />
+            </Link>
             <div className="header__links">
             {/* <Route exact path="/center"> */}
             <Link className="header__link" to="/offer">

@@ -1,0 +1,29 @@
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #001F3D;
+}
+
+.intro__text{
+    width: 50vw;
+    color: white;
+    justify-self: center;
+    text-align: center; 
+}
+
+.intro__title{
+    font-size: 48px;
+}
+
+.intro__description{
+    font-size: 24px;
+}
+
+
+.intro__picture{
+    width:50vw;
+    height: 90vh;
+}
