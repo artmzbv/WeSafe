@@ -3,7 +3,7 @@ import './AboutProblem.css';
 export default function AboutProblem() {
     return(
         <>
-        <section>
+        <section className='problem'>
             <div>AboutProblem</div>
         </section>
         </>

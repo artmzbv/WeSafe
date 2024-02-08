@@ -1,10 +1,12 @@
 .header{
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    margin: 0 40px;
+    padding: 0 5vw;
+    width: 90vw;
     height: 10vh;
 }
 
@@ -34,6 +36,7 @@
 
 .header__link_button{
     position: relative;
+    text-justify: start;
     border: none;
     text-decoration: none;
     background-color: #fff;
@@ -73,6 +76,7 @@
     font-size: 12px;
     color: white;
     border: none;
+    font-family: Montserrat;
 }
 
 .header__triangular {
