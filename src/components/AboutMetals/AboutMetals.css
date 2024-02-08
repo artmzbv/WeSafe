@@ -1,0 +1,36 @@
+.metals{
+    height: 50vh;
+    background-color: #001F3D;
+    padding: 0 8vw;
+    padding-top: 10vh;
+}
+
+.metals__title{
+    text-align: start;
+    color: white;
+    width: 50%;
+    border-bottom: 4px white solid;
+    margin-bottom: 6vh;
+}
+
+.metals__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2vw;
+}
+
+.metals__description{
+    color: white;
+    width: 45%;
+    text-align: start;
+}
+
+.metals__graphics{
+    border: 2px solid white;
+    width: 45%
+}
+
+.metals__paragraph{
+    margin-bottom: 40px;
+}
