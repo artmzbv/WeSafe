@@ -1,4 +1,43 @@
 .footer{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: flex-start;
     background-color: #001F3D;
-    height: 300px;
+    height: 20vh;
+    padding-top: 5vh;
+}
+
+.footer__link{
+    color: white;
+    text-decoration: none;
+}
+
+.footer__link_title{
+    font-weight: bold;
+}
+
+.footer__link_subtitle{
+    margin-top: 5px;
+}
+
+
+.footer__list{
+    margin:0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: start;
+}
+
+.footer__list-item{
+    margin: 7px auto;
+}
+
+.footer__subtitle{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: normal;
 }
