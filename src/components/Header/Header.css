@@ -16,12 +16,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
 }
 
 .header__link{
     color: #001F3D;
     font-size: 16px;
+    line-height: 18px;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -37,6 +38,9 @@
     text-decoration: none;
     background-color: #fff;
     padding: 0;
+    margin:0;
+    font-family: Montserrat;
+    line-height: 18px;
 }
 
 .header__dropdown{
