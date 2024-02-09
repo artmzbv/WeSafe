@@ -1,7 +1,6 @@
 .president{
     height: 60vh;
-    margin: 0 12vw;
-    padding: 4vh 0;
+    margin: 6vh 12vw;
 }
 
 .president__title{
@@ -20,8 +19,9 @@
 }
 
 .president__photo{
-    /* width: 40vw; */
-    height: 40vh;
+    object-fit: cover;
+    max-width: 20vw;
+    max-height: 100%;
 }
 
 .president__description{

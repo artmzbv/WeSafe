@@ -1,7 +1,7 @@
 .history{
     background-color: #001F3D;  
     height: 80vh;
-    margin: 0 12vw;
+    margin: 10vh 12vw 0;
     /* padding: 4vh 4vw; */
 }
 
@@ -29,6 +29,7 @@
 }
 
 .history__description{
+    margin-top: 5vh;
     width: 90%;
     text-align: start;
     color: white;
