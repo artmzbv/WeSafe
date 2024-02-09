@@ -1,0 +1,43 @@
+.history{
+    background-color: #001F3D;  
+    height: 80vh;
+    margin: 0 12vw;
+    /* padding: 4vh 4vw; */
+}
+
+.history__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #001F3D;
+    height: 40vh;
+}
+
+.history__text{
+    margin-top: 4vh;
+    margin-left: 4vw;
+    margin-right: 0;
+    width: 70%;
+}
+
+.history__title{
+    width: 90%;
+    color: white;
+    text-align: start;
+    border-bottom: white 4px solid;
+}
+
+.history__description{
+    width: 90%;
+    text-align: start;
+    color: white;
+}
+
+.history__photo{
+    background-image: url(../../images/offer_copper.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 80vh;   
+}
+

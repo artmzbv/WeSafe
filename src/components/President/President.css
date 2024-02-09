@@ -1,0 +1,31 @@
+.president{
+    height: 60vh;
+    margin: 0 12vw;
+    padding: 4vh 0;
+}
+
+.president__title{
+    color: #001F3D;
+    text-align: start;
+    width: 50%;
+    border-bottom: #001F3D 4px solid;
+}
+
+.president__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #001F3D;
+    margin:0 auto;
+}
+
+.president__photo{
+    /* width: 40vw; */
+    height: 40vh;
+}
+
+.president__description{
+    height: 40vh;
+    margin-left: 10vw;
+    text-align: start;
+}
