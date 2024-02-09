@@ -1,0 +1,38 @@
+.offer__topic{
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    background-color: #001F3D;
+    height: 30vh;
+    text-align: start;
+}
+
+
+.offer__title{
+    color: white;
+    width: 60%;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+.offer__card{
+    height: 40vh;
+    margin: 10vh 20vw;
+    border-bottom: 4px solid #001F3D;
+}
+.offer__card-image{
+    height: 20vh;
+    width: 100%;
+    background-image: url(../../images/offer_copper.jpg);
+    background-size:cover;
+}
+.offer__card-title{
+    text-align: start;
+    color:#001F3D;
+}
+
+.offer__card-description{
+    text-align: start;
+    color:#001F3D;
+}

@@ -1,0 +1,23 @@
+.nickel__topic{
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    background-color: #001F3D;
+    height: 30vh;
+    text-align: start;
+}
+
+.nickel__title{
+    color: white;
+    width: 60%;
+    margin: 0 0 0 5vw;
+    padding:0;
+}
+
+.nickel__subtitle{
+    color: white;
+    width: 60%;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
