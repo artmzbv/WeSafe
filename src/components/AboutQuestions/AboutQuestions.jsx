@@ -6,7 +6,8 @@ export default function AboutQuestions() {
         <>
         <section className='questions'>
             <h1 className='questions__title'>Vous avez des questions?</h1>
-            <h2 className='questions__subtitle'>Contactez-nous sur wesafew@gamail.com et restez votre info </h2>
+            <h2 className='questions__subtitle'>Contactez-nous sur wesafew@gamail.com</h2>
+            <h2 className='questions__subtitle'>et restez votre info </h2>
             <Link className="questions__link" to="/contact-us">
             ici
             </Link>

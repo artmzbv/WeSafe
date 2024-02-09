@@ -10,6 +10,7 @@
     border-bottom: 4px solid white;
     width: 50%;
     text-align: start;
+    margin-bottom:30vh;
 }
 
 .questions__container{
@@ -22,7 +23,7 @@
 .questions__subtitle{
     color: white;
     width: 30vw;
-    margin: 30vh auto 0;
+    margin: 0 auto;
 }
 
 .questions__link{
