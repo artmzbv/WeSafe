@@ -12,15 +12,12 @@ export default function AboutInsights() {
             <div className='insights__container'>
                 <Link to="/copper" className='insights__card insights__card_copper'>
                 <h1 className='insights__name'>Copper</h1>
-                {/* <img className='insights__image' src={copper} alt="copper"/> */}
                 </Link>
                 <Link to="/aluminium" className='insights__card insights__card_aluminium'>
                 <h1 className='insights__name'>Aluminium</h1>
-                {/* <img className='insights__image' src={aluminium} alt="aluminium"/> */}
                 </Link>
                 <Link to="/nickel" className='insights__card insights__card_nickel'>
                 <h1 className='insights__name'>Nickel</h1>
-                {/* <img className='insights__image' src={nickel} alt="nickel"/> */}
                 </Link>
                 </div>
         </section>

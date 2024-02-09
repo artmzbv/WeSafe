@@ -44,7 +44,7 @@
 }
 
 .insights__card_copper:hover::before {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .insights__card_aluminium::before{
@@ -62,7 +62,7 @@
 }
 
 .insights__card_aluminium:hover::before {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .insights__card_nickel::before{
@@ -80,7 +80,7 @@
 }
 
 .insights__card_nickel:hover::before {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .insights__name{
