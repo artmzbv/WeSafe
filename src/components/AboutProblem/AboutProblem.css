@@ -1,4 +1,27 @@
 .problem{
     /* padding-top:10vh; */
-    height: 90vh;
+    height: 70vh;
+    margin: 10vh 4vw;
+}
+
+.problem__title{
+    color: #001F3D;
+    text-align: start;
+    width: 50%;
+    border-bottom: #001F3D 4px solid;
+}
+
+.problem__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15vh;
+}
+
+.problem__card{
+    width: 18vw;
+}
+
+.problem__description{
+    color: #001F3D;
 }

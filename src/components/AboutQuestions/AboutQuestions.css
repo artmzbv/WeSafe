@@ -27,4 +27,11 @@
 
 .questions__link{
     color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 10vw;
+}
+
+.questions__link:hover{
+    color: #646060;
 }
