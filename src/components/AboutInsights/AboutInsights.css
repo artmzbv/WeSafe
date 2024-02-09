@@ -89,14 +89,3 @@
     z-index: 2;
     opacity:1 ;
 }
-
-.insights__image{
-    width: 20vw;
-    height: 45vh;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.insights__image:hover{
-    opacity: 0.8;
-}
