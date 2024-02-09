@@ -1,10 +1,10 @@
-.insights{
+.market{
     height: 70vh;
     background-color: #001F3D;
     padding: 4vh 8vw;
 }
 
-.insights__title{
+.market__title{
     text-align: start;
     color: white;
     width: 50%;
@@ -12,14 +12,14 @@
     margin-bottom: 8vh;
 }
 
-.insights__container{
+.market__container{
     margin: 0 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.insights__card{
+.market__card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@
     height: 45vh;
 }
 
-.insights__card_copper::before{
+.market__card_copper::before{
     content: "";
     top: 0;
     background-image: url(../../images/copper.jpg);
@@ -43,11 +43,11 @@
     /* background-size: 100% 100%; */
 }
 
-.insights__card_copper:hover::before {
+.market__card_copper:hover::before {
     opacity: 0.8;
 }
 
-.insights__card_aluminium::before{
+.market__card_aluminium::before{
     content: "";
     top: 0;
     background-image: url(../../images/aluminium.jpg);
@@ -61,11 +61,11 @@
     /* background-size: 100% 100%; */
 }
 
-.insights__card_aluminium:hover::before {
+.market__card_aluminium:hover::before {
     opacity: 0.8;
 }
 
-.insights__card_nickel::before{
+.market__card_nickel::before{
     content: "";
     top: 0;
     background-image: url(../../images/nickel.jpg);
@@ -79,11 +79,11 @@
     /* background-size: 100% 100%; */
 }
 
-.insights__card_nickel:hover::before {
+.market__card_nickel:hover::before {
     opacity: 0.8;
 }
 
-.insights__name{
+.market__name{
     position: absolute;
     color: white;
     z-index: 2;

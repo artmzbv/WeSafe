@@ -1,0 +1,17 @@
+.us__topic{
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    background-color: #001F3D;
+    height: 30vh;
+    text-align: start;
+}
+
+
+.us__title{
+    color: white;
+    width: 60%;
+    margin-left: 5vw;
+    margin-bottom: 8vh;
+}
