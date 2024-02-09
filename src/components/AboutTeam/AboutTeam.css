@@ -1,2 +1,42 @@
 .team{
+    height: 90vh;
+    margin: 0 4vw;
+    padding: 8vh 4vw;
+}
+
+.team__title{
+    width: 50%;
+    text-align: start;
+    border-bottom: 4px solid #001F3D;
+    margin-bottom: 8vh;
+    color: #001F3D;
+}
+
+.team__container{
+    margin: 0 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.team__card{
+    max-width: 16vw;
+    padding-bottom: 4vh;
+    border-bottom: 4px solid #001F3D;
+}
+
+.team__photo{
+    height: 44vh;
+    width: 16vw;
+}
+
+.team__name{
+    color: #001F3D;
+    width: 100%;
+    font-size: 18px;
+}
+
+.team__description{
+    word-wrap:break-word;
+    color: #001F3D;
 }

@@ -1,0 +1,25 @@
+.regulation{
+    height: 70vh;
+    margin: 0 4vw;
+    padding: 4vh 8vw;
+    border: 4px solid darkgray;
+}
+
+.regulation__title{
+    color: #001F3D;
+    text-align: start;
+    width: 50%;
+    border-bottom: #001F3D 4px solid;
+}
+
+.regulation__subtitle{
+    font-size: 18px;
+    color: #001F3D;
+    text-align: start;
+}
+
+.regulation__list{
+    color: #001F3D;
+    list-style-type: none;
+    text-align: start;
+}

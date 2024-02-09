@@ -1,0 +1,30 @@
+.questions{
+    height: 90vh;
+    margin-top: 8vh;
+    padding: 4vh 8vw;
+    background-color: #001F3D;
+}
+
+.questions__title{
+    color: white;
+    border-bottom: 4px solid white;
+    width: 50%;
+    text-align: start;
+}
+
+.questions__container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.questions__subtitle{
+    color: white;
+    width: 30vw;
+    margin: 30vh auto 0;
+}
+
+.questions__link{
+    color: white;
+}
