@@ -2,6 +2,7 @@ import "./AboutUs.css"
 import AboutTeam from '../AboutTeam/AboutTeam' 
 import President from '../President/President'
 import History from '../OurHistory/OurHistory'
+import Partners from '../Partners/Partners'
 
 export default function Copper() {
     return(
@@ -13,6 +14,7 @@ export default function Copper() {
             <President/>
             <History/>
             <AboutTeam/>
+            <Partners/>
         </section>
         </>
     )

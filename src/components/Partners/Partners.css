@@ -1,0 +1,29 @@
+.partners{
+    height: 50vh;
+    padding: 4vh 16vw;
+    background-color: #001F3D;
+}
+
+.partners__title{
+    color: white;
+    text-align: start;
+    width: 50%;
+    border-bottom: 4px white solid;
+}
+
+.partners__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10vh 0 0;
+}
+
+.partners__logo{
+    background-color: white;
+    width: 5vw;
+    height: 10vh;
+}
+
+.partners__name{
+    color: white;
+}
