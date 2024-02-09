@@ -9,7 +9,7 @@ export default function Footer() {
             Notre Offre
         </Link>
             <ul className='footer__list'>
-            <li className='footer__link footer__link_title'>Metaux</li>
+            <li className='footer__outline'>Metaux</li>
             <li className="footer__list-item">
             <Link className='footer__link footer__link_subtitle' to="./copper">
                 Cuivre

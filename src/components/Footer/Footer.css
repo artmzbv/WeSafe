@@ -13,6 +13,14 @@
     text-decoration: none;
 }
 
+.footer__link:hover {
+    color: #646060;
+}
+
+.footer__outline{
+    color: white;
+    font-weight: bold;
+}
 .footer__link_title{
     font-weight: bold;
 }

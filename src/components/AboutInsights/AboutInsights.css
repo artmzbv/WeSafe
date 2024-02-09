@@ -13,6 +13,7 @@
 }
 
 .insights__container{
+    margin: 0 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,12 +25,69 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 20vw;
+    height: 45vh;
+}
+
+.insights__card_copper::before{
+    content: "";
+    top: 0;
+    background-image: url(../../images/copper.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    /* background-size: 100% 100%; */
+}
+
+.insights__card_copper:hover::before {
+    opacity: 1;
+}
+
+.insights__card_aluminium::before{
+    content: "";
+    top: 0;
+    background-image: url(../../images/aluminium.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    /* background-size: 100% 100%; */
+}
+
+.insights__card_aluminium:hover::before {
+    opacity: 1;
+}
+
+.insights__card_nickel::before{
+    content: "";
+    top: 0;
+    background-image: url(../../images/nickel.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    /* background-size: 100% 100%; */
+}
+
+.insights__card_nickel:hover::before {
+    opacity: 1;
 }
 
 .insights__name{
     position: absolute;
     color: white;
-    z-index: 1;
+    z-index: 2;
+    opacity:1 ;
 }
 
 .insights__image{
