@@ -1,11 +1,20 @@
-import React from "react";
+import {React, useState} from 'react'
 import "./CopperProduct.css"
 import Storage from '../Storage/Storage'
-import MetalCards from '../MetalCards/MetalCards'
+import MetalCard from '../MetalCard/MetalCard'
 import copperA from '../../images/offer_copper.jpg'
 import copperB from '../../images/offer_copper.jpg'
 
 export default function CopperProduct() {
+    const [openPopup, setOpenPopup] = useState(false);
+    // function handleClick() {
+    //     setCount(true);
+    //   }
+    //   const handleOpenYears =(e) => {
+    //     setOpenYears(!openPopup);
+    //     e.preventDefault(); 
+    // }
+     
     // const [cards, setCards] = React.useState([]);
     // const cards=['']
 
@@ -24,7 +33,7 @@ export default function CopperProduct() {
         </div>
         <div className="copper__options">
         {cards.map((card) => (
-            <MetalCards card={card}/>
+            <MetalCard card={card}/>
         ))}
         </div>
             <Storage/>

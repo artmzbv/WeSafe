@@ -1,6 +1,6 @@
 import "./NickelProduct.css"
 import Storage from '../Storage/Storage'
-import MetalCards from '../MetalCards/MetalCards'
+import MetalCard from '../MetalCard/MetalCard'
 import copperA from '../../images/offer_copper.jpg'
 import copperB from '../../images/offer_copper.jpg'
 
@@ -21,7 +21,7 @@ export default function NickelProduct() {
         </div>
         <div className="nickel__options">
             {cards.map((card) => (
-            <MetalCards card={card}/>
+            <MetalCard card={card}/>
         ))}
         </div>
             <Storage/>

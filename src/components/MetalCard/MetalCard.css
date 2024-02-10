@@ -8,6 +8,7 @@
     width: 20vw;
     height: 45vh;
     margin: 5vh 0;
+    /* filter: brightness(60%); */
 }
 
 .types__images{
@@ -20,12 +21,13 @@
     /* opacity: 0.8; */
     cursor: pointer;
 }
+
 .types__images:hover{
-    filter: brightness(80%);
+    filter: brightness(100%);
 }
 
 .types__name{
-    /* position: absolute; */
+    position: absolute;
     color: white;
     top: 40%;
     margin: 0 2vw;
