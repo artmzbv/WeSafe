@@ -23,6 +23,21 @@
     font-size: 24px;
 }
 
+.intro__button{
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    border:none;
+    margin-top: 20vh;
+    width: 12vw;
+    height: 6vh;
+    color: #001F3D;
+    cursor: pointer;
+}
+
+.intro__button:hover {
+    background-color: #646060;
+}
 
 .intro__picture{
     width: 50vw;
