@@ -14,7 +14,7 @@ import Insights from "../Insights/Insights"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App App__opacity">
       <Header/>
       <Routes>
       <Route exact path="/" element={<Main/>} />
