@@ -1,0 +1,33 @@
+.types{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20vw;
+    height: 45vh;
+    margin: 5vh 0;
+}
+
+.types__images{
+    position: absolute;
+    filter: brightness(60%);
+    top:0%;
+    left: 0%;
+    width: 20vw;
+    height: 45vh;
+    /* opacity: 0.8; */
+    cursor: pointer;
+}
+.types__images:hover{
+    filter: brightness(80%);
+}
+
+.types__name{
+    /* position: absolute; */
+    color: white;
+    top: 40%;
+    margin: 0 2vw;
+    z-index:1;
+}

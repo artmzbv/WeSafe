@@ -1,10 +1,14 @@
 import "./MetalCards.css"
 
-export default function MetalCards() {
+export default function MetalCards({card}) {
     return(
         <>
-        <section>
-            <div>MetalCards</div>
+        <section className="types">
+            <h1 className="types__name">{card.title}</h1>
+            <img 
+            className="types__images"
+            src={card.link}
+            alt={card.name}/>
         </section>
         </>
     )
