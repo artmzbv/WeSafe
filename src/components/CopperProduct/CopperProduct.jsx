@@ -2,21 +2,22 @@ import {React, useState} from 'react'
 import "./CopperProduct.css"
 import Storage from '../Storage/Storage'
 import MetalCard from '../MetalCard/MetalCard'
+import MetalPopup from '../MetalPopup/MetalPopup'
 import copperA from '../../images/offer_copper.jpg'
 import copperB from '../../images/offer_copper.jpg'
 
 export default function CopperProduct() {
-    const [openPopup, setOpenPopup] = useState(false);
-    // function handleClick() {
-    //     setCount(true);
-    //   }
-    //   const handleOpenYears =(e) => {
-    //     setOpenYears(!openPopup);
-    //     e.preventDefault(); 
-    // }
-     
-    // const [cards, setCards] = React.useState([]);
+    const [popup, setPopup] = useState(false);
     // const cards=['']
+    function handleOpenPopup() {
+        setPopup(true);
+    }
+    function handleClosePopup() {
+        setPopup(false);
+    }
+
+    console.log(popup)
+
 
     const cards = [
         {title:'Cathodes de cuivre grade A', link: copperA, name: 'copper'},
@@ -33,11 +34,12 @@ export default function CopperProduct() {
         </div>
         <div className="copper__options">
         {cards.map((card) => (
-            <MetalCard card={card}/>
+            <MetalCard card={card} handlePopup={handleOpenPopup}/>
         ))}
         </div>
             <Storage/>
         </section>
+        {popup ? (<MetalPopup handleClosePopup={handleClosePopup} />) : null}
         </>
     )
 }
