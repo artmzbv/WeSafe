@@ -7,21 +7,9 @@ import copperA from '../../images/offer_copper.jpg'
 import copperB from '../../images/offer_copper.jpg'
 
 export default function CopperProduct() {
-    const [popup, setPopup] = useState(false);
-    // const cards=['']
-    function handleOpenPopup() {
-        setPopup(true);
-    }
-    function handleClosePopup() {
-        setPopup(false);
-    }
-
-    console.log(popup)
-
-
     const cards = [
         {title:'Cathodes de cuivre grade A', link: copperA, name: 'copper'},
-        {title:'Cuivre Milberry', link: copperB, name: 'copper'},
+        {title:'Cuivre Milberry', link: copperB, name: 'copper', description: 'The highest quality copper scrap. It consists of No. 1 bare, uncoated, unalloyed copper wire, commonly known as Bare Bright copper wire. Wire gauge subject to agreement between buyer and seller.'},
         {title:'Bobine de cuivre', link: copperB, name: 'copper'},
     ]
 
@@ -34,12 +22,15 @@ export default function CopperProduct() {
         </div>
         <div className="copper__options">
         {cards.map((card) => (
-            <MetalCard card={card} handlePopup={handleOpenPopup}/>
+            <>
+            <MetalCard card={card}/>
+            </>
         ))}
+        {/* {popup ? (<MetalPopup handleClosePopup={handleClosePopup} />) : null} */}
         </div>
             <Storage/>
         </section>
-        {popup ? (<MetalPopup handleClosePopup={handleClosePopup} />) : null}
+        {/* {popup ? (<MetalPopup card={card} handleClosePopup={handleClosePopup} />) : null} */}
         </>
     )
 }
