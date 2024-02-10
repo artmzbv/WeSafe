@@ -32,4 +32,5 @@
     top: 40%;
     margin: 0 2vw;
     z-index:1;
+    cursor: pointer;
 }
