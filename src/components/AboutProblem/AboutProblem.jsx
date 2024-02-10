@@ -7,24 +7,26 @@ export default function AboutProblem() {
     return(
         <>
         <section className='problem'>
-            <h1 className='problem__title'>Ca vous concerne?</h1>
+            <h1 className='problem__title'>Ne pas mettre tous vos oeufs dans le meme panier Soyez bon pere de famille</h1>
+            {/* je */}
             <div className='problem__container'>
                 <div className='problem__card'>
-                    <img className='problem__icon' src={circle1} alt='inflation'/>
+                    {/* <img className='problem__icon' src={circle1} alt='inflation'/> */}
                     <p className='problem__description'>
-                    Incertitude envers le contexte economique et geopolitique conduit a l’inflation et baisse de l’epargne
+                    Je suis Saint-Thomas, j'achete ce que je vois
                     </p>
                 </div>
                 <div className='problem__card'>
-                <img className='problem__icon' src={circle2} alt='access'/>
+                {/* <img className='problem__icon' src={circle2} alt='access'/> */}
                     <p className='problem__description'>
-                    Seule une minorité a accès à des alternatives aux produits financiers
+                    Je suis autonome, ma decision est la mienne
                     </p>
                 </div>
                 <div className='problem__card'>
-                <img className='problem__icon' src={circle3} alt='opportunities'/>
+                {/* <img className='problem__icon' src={circle3} alt='opportunities'/> */}
                     <p className='problem__description'>
-                    La transition écologique crée de nouvelles opportunités d'investissement
+                    Changer le systeme est impossible, notre metier - de lui apporter des vertues 
+                    {/* mais on peut lui apporter des vertus */}
                     </p>
                 </div>
             </div>

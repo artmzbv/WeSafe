@@ -15,7 +15,7 @@ export default function AboutSolution() {
                         Epargne vertueuse
                     </li>
                     <li className='solution__item'>
-                        Profits potentiels
+                        Profits exponentials
                     </li>
                     <li className='solution__item'>
                         Transparence
