@@ -18,7 +18,7 @@ export default function ContactUs() {
                 <input className="contact__input" placeholder="Adresse mail"></input>
                 <input className="contact__input" placeholder="Numero de telephone"></input>
                 </div>
-                <input className="contact__input-message" placeholder="Message"></input>
+                <textarea className="contact__input-message" placeholder="Message"></textarea>
             </form>
             </div>
         </section>

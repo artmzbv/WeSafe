@@ -46,12 +46,26 @@
     width: 25vw;
     height: 6vh;
 }
+.contact__input::placeholder {
+    color: #001F3D;
+    opacity: 0.6;
+    font-family: Montserrat;
+  }
 
 .contact__input-message{
     border-radius: 15px;
     border: 2px solid #001F3D;
     width: 55vw;
     height: 30vh;
+}
+
+.contact__input-message::placeholder {
+    /* position: absolute; */
+    color: #001F3D;
+    opacity: 0.6;
+    font-family: Montserrat;
+    top:10px;
+    left:10px;
 }
 
 .contact__text{
