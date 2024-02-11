@@ -1,20 +1,42 @@
 .insights-card{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width: 20vw;
   height: 45vh;
+  padding-left: 3vw;
+  border-left: 2px solid #646060;
 }
 
 .insights-card__image{
   height: 40%;
+  width: 90%;
 }
 
 .insights-card__title{
-
+  text-align: start;
+  color: #001F3D;
 }
 
 .insights-card__description{
   text-align: start;
+  color: #001F3D;
+}
+
+.insights-card__link{
+  position: absolute;
+  bottom: 0;
+  text-decoration: underline;
+  color: #001F3D;
+}
+
+.insights-card__square{
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  background-color: #646060;
+  height: 20px;
+  width: 20px;
 }

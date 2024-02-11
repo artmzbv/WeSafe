@@ -30,6 +30,7 @@ export default function Insights() {
         ))}
             </div>
             </div>
+            <button className='insights__button insights__button_articles'>Plus d'articles</button>
         </section>
         </>
     )
