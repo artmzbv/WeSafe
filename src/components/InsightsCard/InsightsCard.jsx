@@ -1,14 +1,18 @@
 import './InsightsCard.css';
 
-export default function InsightsCard() {
+export default function InsightsCard({insight}) {
     return(
         <>
-        <section className="insights">
-            <div className="insights__topic">
-            <h1 className="insights__title">Nouvelles&Insights</h1>
-                <h2 className="insights__subtitle">Suivez  les dernières mises à jour sur le marché avec nous !</h2>
+        <section className='insights-card'>
+            <img className='insights-card__image'
+             src={insight.link}
+             alt={insight.title}
+             />
+            <div className='insights-card__container'>
+            <h1 className='insights-card__title'>{insight.title}</h1>
+            <p className='insights-card__description'>{insight.brief}</p>
+            <div className='insights-card__link'>Lire la suite</div>
             </div>
-            <div className='insights__container'></div>
         </section>
         </>
     )

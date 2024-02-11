@@ -1,0 +1,20 @@
+.insights-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20vw;
+  height: 45vh;
+}
+
+.insights-card__image{
+  height: 40%;
+}
+
+.insights-card__title{
+
+}
+
+.insights-card__description{
+  text-align: start;
+}
