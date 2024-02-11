@@ -1,5 +1,5 @@
 import "./AluminiumProduct.css"
-import Storage from '../Storage/Storage'
+import Warehouse from '../Warehouse/Warehouse'
 import MetalCard from '../MetalCard/MetalCard'
 import copperA from '../../images/offer_copper.jpg'
 import copperB from '../../images/offer_copper.jpg'
@@ -19,12 +19,17 @@ export default function AluminiumProduct() {
                 <h1 className="aluminium__title">Nos produits</h1>
                 <h2 className="aluminium__subtitle">ALUMINIUM</h2>
         </div>
+        <h3 className='aluminium__intro'>Nous vous proposons de garder un des nos produits dans nos entrepots</h3>
+        <p className='aluminium__description'>Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
+        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
+        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
+        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala</p>
         <div className="aluminium__options">
             {cards.map((card) => (
             <MetalCard card={card}/>
         ))}
         </div>
-            <Storage/>
+            <Warehouse/>
         </section>
         </>
     )

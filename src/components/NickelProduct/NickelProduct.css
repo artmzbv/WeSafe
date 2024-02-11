@@ -6,6 +6,7 @@
     background-color: #001F3D;
     height: 30vh;
     text-align: start;
+    margin-bottom: 5vh;
 }
 
 .nickel__title{
@@ -21,6 +22,22 @@
     margin-left: 5vw;
     margin-bottom: 5vh;
 }
+
+.nickel__intro{
+    margin-top: 20px;
+    text-align: start;
+    color: #001F3D;
+    width: 90%;
+    margin: 0 auto;
+ }
+ 
+ .nickel__description{
+    text-align: start;
+    color: #001F3D;
+    width: 90%;
+    margin: 0 auto;
+    margin-top:10px;
+ }
 
 .nickel__options{
     display: flex;

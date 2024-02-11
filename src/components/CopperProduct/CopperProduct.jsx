@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import "./CopperProduct.css"
-import Storage from '../Storage/Storage'
+import Warehouse from '../Warehouse/Warehouse'
 import MetalCard from '../MetalCard/MetalCard'
 import MetalPopup from '../MetalPopup/MetalPopup'
 import copperA from '../../images/offer_copper.jpg'
@@ -20,6 +20,11 @@ export default function CopperProduct() {
                 <h1 className="copper__title">Nos produits</h1>
                 <h2 className="copper__subtitle">CUIVRE</h2>
         </div>
+        <h3 className='copper__intro'>Nous vous proposons de garder un des nos produits dans nos entrepots</h3>
+        <p className='copper__description'>Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
+        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
+        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
+        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala</p>
         <div className="copper__options">
         {cards.map((card) => (
             <>
@@ -28,7 +33,7 @@ export default function CopperProduct() {
         ))}
         {/* {popup ? (<MetalPopup handleClosePopup={handleClosePopup} />) : null} */}
         </div>
-            <Storage/>
+            <Warehouse/>
         </section>
         {/* {popup ? (<MetalPopup card={card} handleClosePopup={handleClosePopup} />) : null} */}
         </>

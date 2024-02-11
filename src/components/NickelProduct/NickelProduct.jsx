@@ -1,5 +1,5 @@
 import "./NickelProduct.css"
-import Storage from '../Storage/Storage'
+import Warehouse from '../Warehouse/Warehouse'
 import MetalCard from '../MetalCard/MetalCard'
 import copperA from '../../images/offer_copper.jpg'
 import copperB from '../../images/offer_copper.jpg'
@@ -19,12 +19,17 @@ export default function NickelProduct() {
                 <h1 className="nickel__title">Nos produits</h1>
                 <h2 className="nickel__subtitle">NICKEL</h2>
         </div>
+        <h3 className='nickel__intro'>Nous vous proposons de garder un des nos produits dans nos entrepots</h3>
+        <p className='nickel__description'>Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
+        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
+        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
+        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala</p>
         <div className="nickel__options">
             {cards.map((card) => (
             <MetalCard card={card}/>
         ))}
         </div>
-            <Storage/>
+            <Warehouse/>
         </section>
         </>
     )
