@@ -41,6 +41,8 @@
 }
 
 .contact__input{
+    font-family: Montserrat;
+    color: #001F3D;
     border-radius: 15px;
     border: 2px solid #001F3D;
     width: 25vw;
@@ -51,6 +53,12 @@
     opacity: 0.6;
     font-family: Montserrat;
   }
+
+.contact__input:focus{
+    outline:none;
+    border:2px solid #646060;
+    box-shadow:0 0 4px #646060;
+}
 
 .contact__input-message{
     border-radius: 15px;
