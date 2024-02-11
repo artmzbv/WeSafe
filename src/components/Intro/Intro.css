@@ -24,10 +24,11 @@
 }
 
 .intro__button{
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: bold;
     border-radius: 30px;
-    border:none;
+    border: none;
     margin-top: 20vh;
     width: 12vw;
     height: 6vh;
