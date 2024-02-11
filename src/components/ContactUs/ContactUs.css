@@ -1,5 +1,6 @@
 .contact{
-    height: 100vh
+    height: 100vh;
+    /* margin-bottom: 10vh; */
 }
 
 .contact__topic{
@@ -42,6 +43,7 @@
 
 .contact__input{
     font-family: Montserrat;
+    padding-left:20px;
     color: #001F3D;
     border-radius: 15px;
     border: 2px solid #001F3D;
@@ -61,10 +63,13 @@
 }
 
 .contact__input-message{
+    font-family: Montserrat;
+    color: #001F3D;
+    padding:20px;
     border-radius: 15px;
     border: 2px solid #001F3D;
-    width: 55vw;
-    height: 30vh;
+    width: 52.5vw;
+    height: 20vh;
 }
 
 .contact__input-message::placeholder {
@@ -76,6 +81,41 @@
     left:10px;
 }
 
+.contact__input-message:focus{
+    outline:none;
+    border:2px solid #646060;
+    box-shadow:0 0 4px #646060;
+}
+
+
 .contact__text{
     color: #001F3D;
+}
+
+.contact__note{
+    font-size: 12px;
+    text-align: start;
+    color: #001F3D;
+    padding:0;
+    margin:0;
+}
+
+.contact__submit{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-family: inherit;
+    color: #001F3D;
+    font-weight: bold;
+    border:#001F3D 2px solid;
+    border-radius: 30px;
+    font-size: 14px;
+    width: 9vw;
+    height: 4vh;
+}
+
+.contact__submit:hover{
+    border: none ;
+    background-color: #646060;
+    color: white;
 }

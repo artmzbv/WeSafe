@@ -15,10 +15,12 @@ export default function ContactUs() {
                 <input className="contact__input" placeholder="Nom"></input>
                 </div>
                 <div className="contact__form-line">
-                <input className="contact__input" placeholder="Adresse mail"></input>
+                <input className="contact__input" placeholder="Adresse mail*" required></input>
                 <input className="contact__input" placeholder="Numero de telephone"></input>
                 </div>
                 <textarea className="contact__input-message" placeholder="Message"></textarea>
+                <p className="contact__note">*Note: necessaire a remplir</p>
+                <button className="contact__submit" type="submit">Envoyer</button>
             </form>
             </div>
         </section>

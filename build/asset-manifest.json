@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.cd5ce38d.css",
+    "main.css": "/WeSafe/static/css/main.fb8d6c1e.css",
     "main.js": "/WeSafe/static/js/main.4d71d344.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/photo_jerome.png": "/WeSafe/static/media/photo_jerome.e4e9abe41cc7b84ea4f3.png",
@@ -22,12 +22,12 @@
     "static/media/circle3.svg": "/WeSafe/static/media/circle3.c825f1ddc8e4a0d5d11a35d57969f09e.svg",
     "static/media/circle1.svg": "/WeSafe/static/media/circle1.58cb22231a9389cbda79b6a7bb128682.svg",
     "index.html": "/WeSafe/index.html",
-    "main.cd5ce38d.css.map": "/WeSafe/static/css/main.cd5ce38d.css.map",
+    "main.fb8d6c1e.css.map": "/WeSafe/static/css/main.fb8d6c1e.css.map",
     "main.4d71d344.js.map": "/WeSafe/static/js/main.4d71d344.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd5ce38d.css",
+    "static/css/main.fb8d6c1e.css",
     "static/js/main.4d71d344.js"
   ]
 }
