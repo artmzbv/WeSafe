@@ -45,6 +45,10 @@
   /* margin-top: 50px; */
 }
 
+.insights-card__link:hover{
+  color: #646060;
+}
+
 .insights-card__square{
   position: absolute;
   bottom: 0;

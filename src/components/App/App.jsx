@@ -11,6 +11,7 @@ import AluminiumProduct from "../AluminumProduct/AluminiumProduct"
 import NickelProduct from "../NickelProduct/NickelProduct"
 import ContactUs from "../ContactUs/ContactUs"
 import Insights from "../Insights/Insights"
+import Article from "../Article/Article"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route exact path="/aluminium" element={<AluminiumProduct/>} />
       <Route exact path="/nickel" element={<NickelProduct/>} /> {/* Возмножно тут тоже можно через metals/copper  - можно потом сделать при желании*/}
       <Route exact path="/insights" element={<Insights/>} /> {/* Надо прописать динамический роут с id новостей */}
+      <Route exact path="/insights/:date/:title" element={<Article/>}/> 
       <Route exact path="/about-us" element={<AboutUs/>} />
       <Route exact path="/contact-us" element={<ContactUs/>} />
       </Routes>

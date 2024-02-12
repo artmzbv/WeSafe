@@ -6,6 +6,7 @@
     background-color: #001F3D;
     height: 30vh;
     text-align: start;
+    margin-bottom: 5vh;
 }
 
 .insights__title{
@@ -39,7 +40,7 @@
     width: 30%;
     background-color: #fff;
     /* width: 60%; */
-    margin: 5vh 0 5vh 5vw;
+    margin: 0 0 5vh 5vw;
 }
 
 .insights__button{
