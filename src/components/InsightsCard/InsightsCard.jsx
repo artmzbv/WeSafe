@@ -1,4 +1,5 @@
 import './InsightsCard.css';
+import { Route, Link } from "react-router-dom";
 
 export default function InsightsCard({insight}) {
     return(
@@ -12,7 +13,9 @@ export default function InsightsCard({insight}) {
             <h1 className='insights-card__title'>{insight.title}</h1>
             <p className='insights-card__date'>{insight.date} #{insight.type}</p>
             <p className='insights-card__description'>{insight.brief}</p>
+            <Link to={`./${insight.date.replace(/\./g, '-').toLowerCase()}/${insight.title.replace(/\s+/g, '-').toLowerCase()}`}>
             <div className='insights-card__link'>Lire la suite</div>
+            </Link>
             <div className='insights-card__square'></div>
             </div>
         </section>
