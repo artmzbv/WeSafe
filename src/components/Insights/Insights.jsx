@@ -25,14 +25,14 @@ export default function Insights() {
         {title:'Nouvelle 12', date: '01.01.2024', type: 'insight', link: copperB, brief: 'Ca marche'},
     ]
 
-    const isFilter = (data) => {
+    function filterInsights (insight) {
         if (isNews === 'tout'){
-        return data
-        } else if (isNews === 'nouvelles'){
-        return data.type = 'nouvelle'
+            return insight
+        }else if (isNews === 'nouvelles'){
+            return insight.type === 'nouvelle';
         }else if (isNews === 'insights'){
-        return data.type = 'insight'
-        }
+            return insight.type === 'insight'
+    }
     }
 
     const addMoreButton = () => {
@@ -51,12 +51,12 @@ export default function Insights() {
             </div>
             <div className='insights__container'>
             <div className='insights__buttons'>    
-                <button className={`insights__button ${isNews==='tout' ? 'insights__button_pressed' : 'insights_button_free'}`} id={'1'} onClick={()=>setNews('tout')}>Tout ensemble</button>
-                <button className={`insights__button  ${isNews==='insights' ? 'insights__button_pressed' : 'insights_button_free'}`} id={'2'} onClick={()=>setNews('insights')}>Insights</button>
-                <button className={`insights__button  ${isNews==='nouvelles' ? 'insights__button_pressed' : 'insights_button_free'}`} id={'3'} onClick={()=>setNews('nouvelles')}>Nouvelles</button>
+                <button className={`insights__button ${isNews==='tout' ? 'insights__button_active' : 'insights_button_inactive'}`} id={'1'} onClick={()=>setNews('tout')}>Tout ensemble</button>
+                <button className={`insights__button  ${isNews==='insights' ? 'insights__button_active' : 'insights_button_inactive'}`} id={'2'} onClick={()=>setNews('insights')}>Insights</button>
+                <button className={`insights__button  ${isNews==='nouvelles' ? 'insights__button_active' : 'insights_button_inactive'}`} id={'3'} onClick={()=>setNews('nouvelles')}>Nouvelles</button>
             </div>
             <div className='insights__map'>
-            {insights.filter(isFilter).map((insight, index) => {
+            {insights.filter(filterInsights).map((insight, index) => {
                 if (index < isMore) {
                 return <InsightsCard insight={insight}/>
                 }
