@@ -28,7 +28,8 @@
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    height: 65vh;
+    min-height: 100%;
+    /* margin-bottom: 100px; */
 }
 
 .insights__buttons{
@@ -64,7 +65,11 @@
 .insights__map{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .insights__button_articles{

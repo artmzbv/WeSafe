@@ -9,6 +9,8 @@ export default function Insights() {
         {title:'Nouvelle 1', link: copperA, brief: 'Le prix de cuivre a baisse'},
         {title:'Nouvelle 2', link: copperB, brief: 'Le prix de cuivre a augmente'},
         {title:'Nouvelle 3', link: copperB, brief: 'Ca marche'},
+        {title:'Nouvelle 4', link: copperB, brief: 'bien'},
+        {title:'Nouvelle 5', link: copperB, brief: 'Voila'},
     ]
 
     return(
