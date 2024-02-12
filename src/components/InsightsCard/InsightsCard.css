@@ -20,6 +20,14 @@
   text-align: start;
   color: #001F3D;
   margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.insights-card__date{
+  text-align: start;
+  color: #646060;
+  margin: 0;
+  font-size: 12px;
 }
 
 .insights-card__description{
