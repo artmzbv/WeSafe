@@ -6,6 +6,7 @@ import copperB from '../../images/offer_copper.jpg'
 
 export default function Insights() {
     const [isMore, setMore] = useState(3);
+    const [isNews, setNews] = useState('tout');
 
     const insights = [
         {title:'Nouvelle 1', date: '01.01.2024', type: 'nouvelle', link: copperA, brief: 'Le prix de cuivre a baisse'},
@@ -24,8 +25,15 @@ export default function Insights() {
         {title:'Nouvelle 12', date: '01.01.2024', type: 'insight', link: copperB, brief: 'Ca marche'},
     ]
 
-    console.log(insights.length)
-    console.log(isMore)
+    const isFilter = (data) => {
+        if (isNews === 'tout'){
+        return data
+        } else if (isNews === 'nouvelles'){
+        return data.type = 'nouvelle'
+        }else if (isNews === 'insights'){
+        return data.type = 'insight'
+        }
+    }
 
     // if insights.length < isMore-3, then button is disabled
     const addButton = () => {
@@ -45,12 +53,12 @@ export default function Insights() {
             </div>
             <div className='insights__container'>
             <div className='insights__buttons'>    
-                <button className='insights__button'>Tout ensemble</button>
-                <button className='insights__button'>Insights</button>
-                <button className='insights__button'>Nouvelles</button>
+                <button className='insights__button' onClick={()=>setNews('tout')}>Tout ensemble</button>
+                <button className='insights__button' onClick={()=>setNews('insights')}>Insights</button>
+                <button className='insights__button' onClick={()=>setNews('nouvelles')}>Nouvelles</button>
             </div>
             <div className='insights__map'>
-            {insights.map((insight, index) => {
+            {insights.filter(isFilter).map((insight, index) => {
                 if (index < isMore) {
                 return <InsightsCard insight={insight}/>
                 }
