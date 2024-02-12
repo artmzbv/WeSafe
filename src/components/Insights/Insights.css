@@ -47,17 +47,20 @@
     cursor: pointer;
     background-color: white;
     font-family: inherit;
-    color: #001F3D;
-    font-weight: bold;
-    border:#001F3D 2px solid;
     border-radius: 30px;
     font-size: 14px;
     width: 9vw;
     height: 4vh;
+    margin-bottom: 10vh;
 }
 
-.insights__button:hover{
-    border: none ;
+.insights_button_free{
+    font-weight: bold;
+    color: #001F3D;
+    border:#001F3D 2px solid;
+}
+
+.insights__button_pressed{
     background-color: #646060;
     color: white;
 }
@@ -72,6 +75,23 @@
     margin: 0 auto;
 }
 
-.insights__button_articles{
+.insights__more-button{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-family: inherit;
+    border-radius: 30px;
+    font-size: 14px;
+    width: 9vw;
+    height: 4vh;
     margin-bottom: 10vh;
+    font-weight: bold;
+    color: #001F3D;
+    border:#001F3D 2px solid;
+}
+
+.insights__more-button:hover{
+    border: none;
+    background-color: #646060;
+    color: white;
 }

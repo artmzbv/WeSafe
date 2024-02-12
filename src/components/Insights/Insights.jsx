@@ -35,14 +35,12 @@ export default function Insights() {
         }
     }
 
-    // if insights.length < isMore-3, then button is disabled
-    const addButton = () => {
+    const addMoreButton = () => {
         if(insights.length > isMore)
-        return <button className='insights__button insights__button_articles' onClick={() => setMore(isMore+6)}>Plus d'articles</button> 
+        return <button className='insights__more-button' onClick={() => setMore(isMore+6)}>Plus d'articles</button> 
         else 
         return null
     } 
-
 
     return(
         <>
@@ -53,9 +51,9 @@ export default function Insights() {
             </div>
             <div className='insights__container'>
             <div className='insights__buttons'>    
-                <button className='insights__button' onClick={()=>setNews('tout')}>Tout ensemble</button>
-                <button className='insights__button' onClick={()=>setNews('insights')}>Insights</button>
-                <button className='insights__button' onClick={()=>setNews('nouvelles')}>Nouvelles</button>
+                <button className={`insights__button ${isNews==='tout' ? 'insights__button_pressed' : 'insights_button_free'}`} id={'1'} onClick={()=>setNews('tout')}>Tout ensemble</button>
+                <button className={`insights__button  ${isNews==='insights' ? 'insights__button_pressed' : 'insights_button_free'}`} id={'2'} onClick={()=>setNews('insights')}>Insights</button>
+                <button className={`insights__button  ${isNews==='nouvelles' ? 'insights__button_pressed' : 'insights_button_free'}`} id={'3'} onClick={()=>setNews('nouvelles')}>Nouvelles</button>
             </div>
             <div className='insights__map'>
             {insights.filter(isFilter).map((insight, index) => {
@@ -65,7 +63,7 @@ export default function Insights() {
             })}
             </div>
             </div>
-            {addButton()}
+            {addMoreButton()}
         </section>
         </>
     )
