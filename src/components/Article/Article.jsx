@@ -17,7 +17,7 @@ export default function Article() {
                 <h1 className='article__title'>{insight.title}</h1> 
                 <p className='article__date'>{insight.date}</p>
                 <p className='article__brief'>{insight.brief}</p>
-                <img className="article__picture" src={insight.src}></img>
+                <img className="article__picture" src={insight.linkgraph}></img>
                 <p className='article__description'>{insight.description}</p>
             </div>
         </section>

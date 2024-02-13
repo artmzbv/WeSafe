@@ -1,5 +1,5 @@
 import './InsightsCard.css';
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Article from "../Article/Article"
 
 export default function InsightsCard({insight}) {
@@ -7,7 +7,7 @@ export default function InsightsCard({insight}) {
         <>
         <section className='insights-card'>
             <img className='insights-card__image'
-             src={insight.link}
+             src={insight.linkimage}
              alt={insight.title}
              />
             <div className='insights-card__container'>
