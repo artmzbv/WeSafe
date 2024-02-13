@@ -22,9 +22,10 @@
     cursor: pointer;
 }
 
-.types__images:hover{
+.types__images_hover{
     filter: brightness(100%);
 }
+
 
 .types__name{
     position: absolute;
