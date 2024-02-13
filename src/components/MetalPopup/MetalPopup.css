@@ -82,8 +82,8 @@
     z-index: 2;
   }
   
-  .popup__close-button:hover {
-    opacity: 0.6;
+  .popup__close-button_hover{
+    opacity: 0.8;
   }
   
   @media (max-width: 680px) {
