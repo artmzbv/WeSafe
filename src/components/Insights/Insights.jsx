@@ -18,7 +18,7 @@ export default function Insights() {
     }
 
     const addMoreButton = () => {
-        if(insights.length > isMore)
+        if(insights.filter(filterInsights).length > isMore)
         return <button className='insights__more-button' onClick={() => setMore(isMore+6)}>Plus d'articles</button> 
         else 
         return null
@@ -33,13 +33,14 @@ export default function Insights() {
             </div>
             <div className='insights__container'>
             <div className='insights__buttons'>    
-                <button className={`insights__button ${isNews==='tout' ? 'insights__button_active' : 'insights_button_inactive'}`} id={'1'} onClick={()=>setNews('tout')}>Tout ensemble</button>
-                <button className={`insights__button  ${isNews==='insights' ? 'insights__button_active' : 'insights_button_inactive'}`} id={'2'} onClick={()=>setNews('insights')}>Insights</button>
-                <button className={`insights__button  ${isNews==='nouvelles' ? 'insights__button_active' : 'insights_button_inactive'}`} id={'3'} onClick={()=>setNews('nouvelles')}>Nouvelles</button>
+                <button className={`insights__button ${isNews==='tout' ? 'insights__button_active' : 'insights_button_inactive'}`}  onClick={()=>setNews('tout')}>Tout ensemble</button>
+                <button className={`insights__button  ${isNews==='insights' ? 'insights__button_active' : 'insights_button_inactive'}`} onClick={()=>setNews('insights')}>Insights</button>
+                <button className={`insights__button  ${isNews==='nouvelles' ? 'insights__button_active' : 'insights_button_inactive'}`} onClick={()=>setNews('nouvelles')}>Nouvelles</button>
             </div>
             <div className='insights__map'>
+            {/* В индексе мапа все равно сохраняется изначальный массив */}
             {insights.filter(filterInsights).map((insight, index) => {
-                if (index < isMore) {
+                if (isMore > index) {
                 return <InsightsCard insight={insight}/>
                 }
             })}
