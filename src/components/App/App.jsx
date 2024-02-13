@@ -12,6 +12,7 @@ import NickelProduct from "../NickelProduct/NickelProduct"
 import ContactUs from "../ContactUs/ContactUs"
 import Insights from "../Insights/Insights"
 import Article from "../Article/Article"
+import PageNotFound from "../PageNotFound/PageNotFound";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route exact path="/insights/:date/:title" element={<Article/>}/> 
       <Route exact path="/about-us" element={<AboutUs/>} />
       <Route exact path="/contact-us" element={<ContactUs/>} />
+      <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer/>
     </div>
