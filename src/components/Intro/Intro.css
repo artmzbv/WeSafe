@@ -16,11 +16,15 @@
 }
 
 .intro__title{
+    margin-top: 12%;
     font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 40px;
 }
 
 .intro__description{
     font-size: 24px;
+    line-height: 30px;
 }
 
 .intro__button{
