@@ -3,8 +3,8 @@ import "./MetalPopup.css";
 
 function MetalPopup({ card, handleClosePopup }) {
   
+  //Escape function
   //https://www.caktusgroup.com/blog/2020/07/01/usekeypress-hook-react/
-
       useEffect(() => {
         function onKeyup(e) {
           //define event listener
@@ -19,6 +19,7 @@ function MetalPopup({ card, handleClosePopup }) {
 
   return (
     <section className="popup">
+      <div className="popup__background" onClick={handleClosePopup}></div>
       <button
         className="popup__close-button popup__close-button_image"
         type="button"
