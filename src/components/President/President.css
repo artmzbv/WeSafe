@@ -1,6 +1,7 @@
 .president{
     height: 60vh;
-    margin: 6vh 12vw;
+    width: 72%;
+    padding: 3% 14%;
 }
 
 .president__title{
@@ -16,6 +17,14 @@
     justify-content: flex-start;
     color: #001F3D;
     margin:0 auto;
+}
+.president__name{
+    font-weight: bold;
+    margin:0;
+}
+.president__profession{
+    margin:0;
+    margin-top: 1%;
 }
 
 .president__photo{

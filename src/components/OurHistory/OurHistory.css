@@ -1,8 +1,8 @@
 .history{
     background-color: #001F3D;  
     height: 80vh;
-    margin: 10vh 12vw 0;
-    /* padding: 4vh 4vw; */
+    width:90%;
+    margin: 0 5%;
 }
 
 .history__container{
@@ -22,10 +22,13 @@
 }
 
 .history__title{
-    width: 90%;
+    width: 100%;
+    line-height: 54px;
+    font-size: 44px;
     color: white;
     text-align: start;
-    border-bottom: white 4px solid;
+    margin-top: 0;
+    /* border-bottom: white 4px solid; */
 }
 
 .history__description{

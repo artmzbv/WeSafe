@@ -1,21 +1,25 @@
 .partners{
     height: 50vh;
-    padding: 4vh 16vw;
+    width: 90%;
+    padding: 0 5%;
     background-color: #001F3D;
 }
 
 .partners__title{
+    padding: 0 5%;
     color: white;
     text-align: start;
     width: 50%;
-    border-bottom: 4px white solid;
+    line-height: 54px;
+    font-size: 44px;
+    /* border-bottom: 4px white solid; */
 }
 
 .partners__container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10vh 0 0;
+    padding: 5% 5% 0;
 }
 
 .partners__logo{
