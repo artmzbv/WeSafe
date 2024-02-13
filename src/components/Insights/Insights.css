@@ -48,6 +48,7 @@
     cursor: pointer;
     background-color: white;
     font-family: inherit;
+    font-weight: bold;
     border-radius: 30px;
     font-size: 14px;
     width: 9vw;
@@ -93,6 +94,7 @@
 
 .insights__more-button:hover{
     border: none;
+    font-weight: bold;
     background-color: #646060;
     color: white;
 }
