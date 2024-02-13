@@ -3,7 +3,7 @@ import "./MetalPopup.css";
 
 function MetalPopup({ card, handleClosePopup }) {
 
-  const [isButtonHover, setButtonHover] = useState(false)
+  const [isButtonHovered, setButtonHover] = useState(false)
   
   //Escape function
   //https://www.caktusgroup.com/blog/2020/07/01/usekeypress-hook-react/
@@ -23,7 +23,7 @@ function MetalPopup({ card, handleClosePopup }) {
     <section className="popup">
       <div className="popup__background" onMouseOver={()=>setButtonHover(true)} onMouseOut={()=>setButtonHover(false)} onClick={handleClosePopup}></div>
       <button
-        className={`popup__close-button popup__close-button_image ${isButtonHover ? 'popup__close-button_hover' : null}`}
+        className={`popup__close-button popup__close-button_image ${isButtonHovered ? 'popup__close-button_hover' : null}`}
         type="button"
         onClick={handleClosePopup}
       ></button>
