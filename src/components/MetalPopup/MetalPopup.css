@@ -83,7 +83,7 @@
   }
   
   .popup__close-button_hover{
-    opacity: 0.8;
+    opacity: 0.9;
   }
   
   @media (max-width: 680px) {
