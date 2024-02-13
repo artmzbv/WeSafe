@@ -13,14 +13,19 @@
     color: white;
     width: 60%;
     margin: 0 0 0 5vw;
-    padding:0;
+    padding: 5vh 0 0;
+    line-height: 30px;
+    font-size: 24px;
 }
 
 .nickel__subtitle{
     color: white;
     width: 60%;
     margin-left: 5vw;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
+    line-height: 40px;
+    margin-top: 20px;
+    font-size: 38px;
 }
 
 .nickel__intro{

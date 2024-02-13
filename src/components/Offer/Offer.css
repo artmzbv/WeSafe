@@ -1,4 +1,10 @@
+.offer__container{
+    position:absolute;
+    top: 30vh;  
+}
+
 .offer__topic{
+    position: fixed;
     display:flex;
     flex-direction: column;
     justify-content: end;
@@ -6,14 +12,17 @@
     background-color: #001F3D;
     height: 30vh;
     text-align: start;
+    z-index: 1;
 }
 
 
 .offer__title{
     color: white;
-    width: 60%;
+    width: 70%;
     margin-left: 5vw;
     margin-bottom: 5vh;
+    line-height: 38px;
+    font-size: 30px;
 }
 
 .offer__card{
