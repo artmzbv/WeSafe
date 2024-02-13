@@ -5,7 +5,7 @@ export default function AboutSolution() {
     return(
         <>
         <section className='solution'>
-            <h1 className='solution__title'>Diversifier votre épargne avec les métaux industriels de la transition énergétique</h1>
+            <h1 className='solution__title'>{'Diversifier votre épargne avec\nles métaux industriels de la transition énergétique'}</h1>
             <div className='solution__container'>
                 <ul className='solution__list'>
                     <li className='solution__item'>
@@ -21,7 +21,7 @@ export default function AboutSolution() {
                         Transparence
                     </li>
                 </ul>
-                <div className='solution__box'>
+                <div className='solution__graph'>
                     {/* <img className='solution__graphics' src={graphics}></img> */}
                 </div>
             </div>

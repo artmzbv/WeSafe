@@ -1,14 +1,18 @@
 .problem{
     /* padding-top:10vh; */
     height: 70vh;
-    margin: 10vh 12vw;
+    width: 90%;
+    margin: 5% 5%;
 }
 
 .problem__title{
     color: #001F3D;
     text-align: start;
-    width: 60%;
-    border-bottom: #001F3D 4px solid;
+    width: 80%;
+    /* border-bottom: #001F3D 4px solid; */
+    line-height: 54px;
+    font-size: 44px;
+    white-space: pre-wrap
 }
 
 .problem__container{

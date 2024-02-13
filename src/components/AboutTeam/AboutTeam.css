@@ -1,15 +1,17 @@
 .team{
     height: 90vh;
-    margin: 0 12vw;
-    padding: 8vh 0;
+    width: 72%;
+    margin: 5% auto; 
 }
 
 .team__title{
     width: 50%;
     text-align: start;
-    border-bottom: 4px solid #001F3D;
+    /* border-bottom: 4px solid #001F3D; */
     margin-bottom: 8vh;
     color: #001F3D;
+    line-height: 54px;
+    font-size: 44px;
 }
 
 .team__container{
