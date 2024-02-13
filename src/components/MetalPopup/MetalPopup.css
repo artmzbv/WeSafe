@@ -61,7 +61,7 @@
     position: fixed;
     content: " ";
     height: 35px;
-    border: 2px solid white;
+    border: 3px solid white;
     color: white;
     background-color: #fff;
     top: 16%;
@@ -74,7 +74,7 @@
     position: fixed;
     content: " ";
     height: 35px;
-    border: 2px solid white;
+    border: 3px solid white;
     color: white;
     background-color: #fff;
     top: 16%;
@@ -83,8 +83,12 @@
     z-index: 2;
   }
   
-  .popup__close-button_hover{
-    opacity: 0.8;
+  .popup__close-button_hover::after{
+    opacity: 0.6;
+  }
+
+  .popup__close-button_hover::before{
+    opacity: 0.6;
   }
   
   @media (max-width: 680px) {
