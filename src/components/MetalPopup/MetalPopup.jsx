@@ -1,7 +1,21 @@
-import React from "react";
+import {React, useEffect} from "react";
 import "./MetalPopup.css";
 
 function MetalPopup({ card, handleClosePopup }) {
+  
+  //https://www.caktusgroup.com/blog/2020/07/01/usekeypress-hook-react/
+
+      useEffect(() => {
+        function onKeyup(e) {
+          //define event listener
+          if (e.key === 'Escape')
+           handleClosePopup()
+        }
+          //register our listener
+        window.addEventListener('keyup', onKeyup);
+          //unregister our listener
+        return () => window.removeEventListener('keyup', onKeyup);
+      }, []);
 
   return (
     <section className="popup">
