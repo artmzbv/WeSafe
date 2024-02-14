@@ -1,4 +1,5 @@
 import './AboutMetals.css';
+import TransitionGraph from '../TransitionGraph/TransitionGraph'
 
 export default function AboutMetals() {
     return(
@@ -18,7 +19,7 @@ export default function AboutMetals() {
             </p>
             </div>
             </div>
-            <div className='metals__graphics'></div>
+            <TransitionGraph className='metals__graphics'/>
         </section>
         </>
     )
