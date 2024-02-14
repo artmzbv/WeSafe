@@ -27,7 +27,9 @@ export default function Header() {
             <Link className="header__link" to="/offer">
                 Notre Offre
             </Link>
-                <button className ="header__link header__link_button" onMouseEnter={handleOpenMetals} onMouseLeave={handleCloseMetals}>Nos Metaux&#11206;
+            {/* &#11206; */}
+                <button className ="header__link header__link_button" onMouseEnter={handleOpenMetals} onMouseLeave={handleCloseMetals}>Nos Metaux&nbsp;&nbsp;
+                <div className={`${openMetals ? 'header__active-pointer' : 'header__passive-pointer' }`}> </div>
                 {openMetals ? (
                     <nav className="header__dropdown">
                         <ul className="header__dropdown-list">

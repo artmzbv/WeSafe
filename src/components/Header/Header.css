@@ -36,7 +36,7 @@
 }
 
 .header__link_button{
-    position: relative;
+    position: absolute;
     text-justify: start;
     border: none;
     text-decoration: none;
@@ -46,6 +46,54 @@
     font-family: Montserrat;
     line-height: 18px;
 }
+
+.header__passive-pointer:before {
+    position: absolute;
+    content: " ";
+    height: 7px;
+    border: 1px solid #001F3D;
+    background-color: #001F3D;
+    bottom: 15%;
+    right: 0px;
+    transform: rotate(45deg);
+    z-index: 2;
+  }
+  
+  .header__passive-pointer:after {
+    position: absolute;
+    content: " ";
+    height: 7px;
+    border: 1px solid #001F3D;
+    background-color: #001F3D;
+    bottom: 15%;
+    right: 5px;
+    transform: rotate(-45deg);
+    z-index: 2;
+  }
+
+  .header__active-pointer:before {
+    position: absolute;
+    content: " ";
+    height: 7px;
+    border: 1px solid #646060;
+    background-color: #646060;
+    bottom: 15%;
+    right: 0px;
+    transform: rotate(45deg);
+    z-index: 2;
+  }
+  
+  .header__active-pointer:after {
+    position: absolute;
+    content: " ";
+    height: 7px;
+    border: 1px solid #646060;
+    background-color: #646060;
+    bottom: 15%;
+    right: 5px;
+    transform: rotate(-45deg);
+    z-index: 2;
+  }
 
 .header__dropdown{
     position: absolute;
