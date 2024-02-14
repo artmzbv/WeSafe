@@ -31,20 +31,29 @@
     cursor: pointer;
 }
 
+.header__link_active{
+    border: none;
+    border-bottom: 2px solid #001F3D;
+  }
+
+
 .header__link:hover {
     color: #646060;
 }
 
 .header__link_button{
-    position: absolute;
+    position: relative;
     text-justify: start;
-    border: none;
-    text-decoration: none;
+    /* text-decoration: none; */
     background-color: #fff;
     padding: 0;
     margin:0;
     font-family: Montserrat;
     line-height: 18px;
+    /* border-bottom: 1px solid #001F3D; */
+}
+.header__link_button-passive{
+    border: none;
 }
 
 .header__link_button:before {
@@ -74,6 +83,7 @@
     transform: rotate(45deg);
     z-index: 2;
   }
+
 
 .header__dropdown{
     position: absolute;
