@@ -1,6 +1,6 @@
 import {React, useState}  from "react";
 import { Route, Link } from "react-router-dom";
-import headerLogo from "../../images/logo.jpg"
+import headerLogo from "../../images/logo_new.jpg"
 import './Header.css';
 
 // https://www.google.com/search?q=position+for+dropdown+list
