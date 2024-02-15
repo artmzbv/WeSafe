@@ -21,10 +21,10 @@ function Navigation({active, handleActiveClick, isShowMenu, setIsShowMenu}) {
 
   return (
     <>
-    <Link id={"1"} className={`navigation__link ${active === "1" ? "navigation__link_active" : null}`}  to="/offer" onClick={(e) => { handleActiveClick(e); handleCloseBurgerMenu()}}>
+    <Link id={"1"} className={`navigation__link navigation__link_main ${active === "1" ? "navigation__link_active" : null}`}  to="/offer" onClick={(e) => { handleActiveClick(e); handleCloseBurgerMenu()}}>
         Notre Offre
     </Link>
-        <button className={`navigation__link navigation__link_button ${active === "2" ? "navigation__link_active" : "navigation__link_button-passive"}`} onMouseEnter={handleToggleMetals} onMouseLeave={handleToggleMetals} onClick={handleCloseMetalsBurgerMenu}>Nos Metaux&nbsp;&nbsp;&nbsp;
+        <button className={`navigation__link navigation__link_main navigation__link_button ${active === "2" ? "navigation__link_active" : "navigation__link_button-passive"}`} onMouseEnter={handleToggleMetals} onMouseLeave={handleToggleMetals} onClick={handleCloseMetalsBurgerMenu}>Nos Metaux&nbsp;&nbsp;&nbsp;
         {openMetals ? (
             <nav className="navigation__dropdown">
                 <ul className="navigation__dropdown-list">
@@ -53,13 +53,13 @@ function Navigation({active, handleActiveClick, isShowMenu, setIsShowMenu}) {
                     </nav>
         ) : null}
         </button>
-    <Link id={"3"} className={`navigation__link ${active === "3" ? "navigation__link_active" : null}`} onClick={(e) => {handleActiveClick(e); handleCloseBurgerMenu()}} to="/insights">
+    <Link id={"3"} className={`navigation__link navigation__link_main ${active === "3" ? "navigation__link_active" : null}`} onClick={(e) => {handleActiveClick(e); handleCloseBurgerMenu()}} to="/insights">
         Insights
     </Link>
-    <Link id={"4"} className={`navigation__link ${active === "4" ? "navigation__link_active" : null}`} onClick={(e) => {handleActiveClick(e); handleCloseBurgerMenu()}} to="/about-us">
+    <Link id={"4"} className={`navigation__link navigation__link_main ${active === "4" ? "navigation__link_active" : null}`} onClick={(e) => {handleActiveClick(e); handleCloseBurgerMenu()}} to="/about-us">
         Qui sommes-nous?
     </Link>
-    <Link id={"5"} className={`navigation__link ${active === "5" ? "navigation__link_active" : null}`} onClick={(e) => {handleActiveClick(e); handleCloseBurgerMenu()}} to="/contact-us">
+    <Link id={"5"} className={`navigation__link navigation__link_main ${active === "5" ? "navigation__link_active" : null}`} onClick={(e) => {handleActiveClick(e); handleCloseBurgerMenu()}} to="/contact-us">
         Contactez-nous
     </Link>
     </>

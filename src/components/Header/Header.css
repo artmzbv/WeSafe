@@ -45,11 +45,12 @@
     /* justify-content: flex-start; */
     /* align-items: center; */
     /* padding: 22px 22px 90px; */
-    background-color: #FAFAFA;
+    background-color: white;
     width:100vw;
     /* max-width: 520px;
     width: 100%; */
     min-height: 80vh;
+    padding-top: 30px;
     /* row-gap: 105px; */
 }
 

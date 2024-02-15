@@ -15,12 +15,15 @@ export default function Header() {
     const handleToggleBurgerMenu = () =>{
         setIsShowMenu(!isShowMenu);
     }
+    const handleCloseBurgerMenu = () =>{
+        setIsShowMenu(false);
+    }
 
     return(
         <>
         <header className='header'>
             <Link to="/">
-            <img id={"0"} className="header__logo" src={headerLogo} alt="logo" onClick={handleActiveClick} />
+            <img id={"0"} className="header__logo" src={headerLogo} alt="logo" onClick={(e)=>{handleActiveClick(e) ; handleCloseBurgerMenu()}} />
             </Link>
             {!isShowMenu ?
             <>
