@@ -8,18 +8,18 @@
     background-color: #001F3D;
 }
 
-.intro__text{
-    width: 50vw;
-    color: white;
-    justify-self: center;
-    text-align: center; 
-}
-
 .intro__title{
     margin-top: 12%;
     font-size: 48px;
     line-height: 60px;
     margin-bottom: 40px;
+}
+
+.intro__text{
+    width: 50vw;
+    color: white;
+    justify-self: center;
+    text-align: center; 
 }
 
 .intro__description{
@@ -30,6 +30,7 @@
 .intro__button{
     font-family: Montserrat;
     font-size: 18px;
+    line-height: 1.5;
     font-weight: bold;
     border-radius: 30px;
     border: none;
@@ -47,4 +48,34 @@
 .intro__picture{
     width: 50vw;
     height: 90vh;
+}
+
+@media screen and (max-width: 768px) {
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .intro__title{
+        width:100%;
+        margin-top: 8%;
+    }
+
+    .intro__text{
+        width:100%;
+    }
+
+    .intro__button{
+        width: 25vw;
+        margin-top: 8vh;
+        margin-bottom: 8vh;
+    }
+
+    .intro__picture{
+        width: 90vw;
+        margin-bottom: 8%;
+    }
 }
