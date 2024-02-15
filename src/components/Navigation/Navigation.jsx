@@ -24,7 +24,13 @@ function Navigation({active, handleActiveClick, isShowMenu, setIsShowMenu}) {
     <Link id={"1"} className={`navigation__link navigation__link_main ${active === "1" ? "navigation__link_active" : null}`}  to="/offer" onClick={(e) => { handleActiveClick(e); handleCloseBurgerMenu()}}>
         Notre Offre
     </Link>
-        <button className={`navigation__link navigation__link_main navigation__link_button ${!openMetals ? 'navigation__button-dropped' : 'navigation__button-undropped' } ${active === "2" ? "navigation__link_active" : "navigation__link_inactive"}`} onMouseEnter={handleToggleMetals} onMouseLeave={handleToggleMetals} onClick={handleCloseMetalsBurgerMenu}>Nos Metaux&nbsp;&nbsp;&nbsp;
+        <button className={`navigation__link navigation__link_main navigation__link_button 
+        ${!openMetals ? 'navigation__button-dropped' : 'navigation__button-undropped' } 
+        ${active === "2" ? "navigation__link_active" : "navigation__link_inactive"}`} 
+        onMouseEnter={handleToggleMetals} 
+        onMouseLeave={handleToggleMetals} 
+        onClick={handleCloseMetalsBurgerMenu}>
+            Nos Metaux&nbsp;&nbsp;&nbsp;
         {openMetals ? (
             <nav className="navigation__dropdown">
                 <ul className="navigation__dropdown-list">

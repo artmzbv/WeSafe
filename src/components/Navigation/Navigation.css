@@ -126,8 +126,26 @@
     .navigation__link_main{
         border-bottom: 1px solid #001F3D;
     }
+    .navigation__link:hover {
+        color: #001F3D;
+    }
 
     .navigation__link_active{
         color: #646060;
+      }
+    
+      .navigation__button-undropped:before {
+        position: absolute;
+        content: " ";
+        height: 7px;
+        width: 7px;
+        border: 3px solid #001F3D;
+            /* background-color: #001F3D; */
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        bottom: 30%;
+        right: 10px;
+        transform: rotate(45deg);
+        z-index: 2;
       }
 }
