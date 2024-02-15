@@ -29,11 +29,11 @@
     line-height: 18px;
     /* border-bottom: 1px solid #001F3D; */
 }
-.navigation__link_button-passive{
+.navigation__link_inactive{
     border: none;
 }
 
-.navigation__link_button:before {
+.navigation__button-dropped:before {
     position: absolute;
     content: " ";
     height: 7px;
@@ -46,22 +46,21 @@
     transform: rotate(45deg);
     z-index: 2;
   }
-  
-  .navigation__link_button:hover::before {
+
+  .navigation__button-undropped:before {
     position: absolute;
     content: " ";
     height: 7px;
     width: 7px;
     border: 3px solid #646060;
         /* background-color: #001F3D; */
-    border-left-width: 0px;
-    border-top-width: 0px;
-    bottom: 30%;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    bottom: 20%;
     right: 0px;
     transform: rotate(45deg);
     z-index: 2;
   }
-
 
 .navigation__dropdown{
     position: absolute;
