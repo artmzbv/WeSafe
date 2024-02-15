@@ -40,3 +40,13 @@
 .metals__paragraph{
     margin-bottom: 40px;
 }
+
+@media screen and (max-width: 768px) {
+    .metals{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .metals__container{
+        width: 100%;   
+    }
+}
