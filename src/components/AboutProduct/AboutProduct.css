@@ -29,3 +29,24 @@
     width: 15vw;
     color: #001F3D;
 }
+
+@media screen and (max-width: 768px) {
+    .product{
+        height: 150vh; 
+    }
+
+    .product__container {
+        flex-wrap: wrap;
+    }
+    .product__title{
+        line-height: 44px;
+        font-size: 38px;
+    }
+
+    .product__card{
+        width: 30vw;
+    }
+    .product__image{
+        height: 40vh;
+    }
+}

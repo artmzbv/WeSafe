@@ -75,8 +75,9 @@
     }
 
     .intro__picture{
-        width: 90vw;
-        margin-bottom: 8%;
+        width: 100vw;
+        height: 100vh;
+        /* margin-bottom: 8%; */
     }
 }
 
@@ -87,7 +88,7 @@
 
     .intro__picture{
         width: 100vw;
-        height: 60vh;
+        height: 10vh;
         margin-bottom: 8%;
     }
 }
