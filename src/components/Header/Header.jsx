@@ -1,14 +1,15 @@
 import {React, useState}  from "react";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import headerLogo from "../../images/logo_new.jpg"
 import './Header.css';
-import burgerMenu from "../../images/burger.svg"
+import BurgerMenu from "../BurgerMenu/BurgerMenu"
 
 // https://www.google.com/search?q=position+for+dropdown+list
 export default function Header() {
+    const [isShowMenu, setIsShowMenu] = useState(false);
     const [openMetals, setOpenMetals] = useState(false);
-    const[active, setActive] = useState("");
 
+    const[active, setActive] = useState("");
     const handleActiveClick = (e) => {
         // event.preventDefault()
         setActive(e.target.id);
@@ -23,6 +24,10 @@ export default function Header() {
         setOpenMetals(false);
         e.preventDefault();
     }
+    // const handleOpenBurgerMenu = () =>{
+    //     setIsShowMenu(true);
+    // }
+    console.log(!isShowMenu)
 
     return(
         <>
@@ -77,6 +82,8 @@ export default function Header() {
                 Contactez-nous
             </Link>
         </div>
+        <button className = {`${isShowMenu ? 'header__burger-close-button' : 'header__burger-menu' }`} onClick={()=>setIsShowMenu(!isShowMenu)}></button>
+        {isShowMenu ? <BurgerMenu/> : null}
         </header>
         </>
     )

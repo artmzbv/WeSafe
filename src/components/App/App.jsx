@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import {React} from "react";
 import { Routes, Route} from "react-router-dom";
 import './App.css';
 import Header from "../Header/Header"
@@ -13,13 +13,11 @@ import ContactUs from "../ContactUs/ContactUs"
 import Insights from "../Insights/Insights"
 import Article from "../Article/Article"
 import PageNotFound from "../PageNotFound/PageNotFound";
-import BurgerMenu from "../BurgerMenu/BurgerMenu"
 
 function App() {
   return (
     <div className="App App__opacity">
       <Header/>
-      <BurgerMenu/>
       <Routes>
       <Route exact path="/" element={<Main/>} />
       <Route exact path="/offer" element={<Offer/>} />

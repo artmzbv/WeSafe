@@ -1,18 +1,12 @@
-import { React, useState } from 'react';
+import { React } from 'react';
 import { NavLink } from 'react-router-dom';
 import './BurgerMenu.css';
 
 function Menu() {
-const [isShowMenu, setIsShowMenu] = useState(false)
+
   return (
-    <div className={isShowMenu ? 'menu menu_active' : 'menu '}>
-    {/* <div className='menu menu_active'> */}
+    <div className='menu menu_active'>
       <div className="menu__wrapper">
-        <button
-          className="menu__close-button"
-          onClick={() => setIsShowMenu(false)}
-          type="button"
-        ></button>
         <nav className="menu__nav">
           <ul className="menu__nav-list">
             <li>
