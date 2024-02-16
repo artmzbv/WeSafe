@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 768px) {
     .team{
-        height: 110vh;
+        height: 100vh;
         width: 90%;
         margin: 5% auto; 
     }
@@ -63,6 +63,8 @@
         -ms-verrflow-style: none;
         overflow: - moz-scrollbars-none;
         box-shadow: 0px 0px 80px #f3c9ff2e;
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
     }
     .team__container::-webkit-scrollbar{
         width:0;
@@ -79,7 +81,7 @@
     .team__photo{
         height: 50vh;
         width:100%;
-        object-fit: cover;
+        object-fit:contain;
         user-select: none;
         pointer-events: none;
     }    
@@ -89,6 +91,7 @@
     .team__title{
         width: 100%;
         font-size: 30px;
+        line-height: 36px;
     }
 
     .team__container {
@@ -96,6 +99,10 @@
     }
     
     .team__card{
-        max-width: 60vw;
+        max-width: 70vw;
     }
+
+    .team__photo{
+        height: 50vh;
+    }   
 }
