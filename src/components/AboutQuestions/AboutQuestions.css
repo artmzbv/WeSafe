@@ -41,3 +41,35 @@
 .questions__link:hover{
     color: #646060;
 }
+
+@media screen and (max-width: 768px) {
+    .questions__title {
+        width: 100%;
+        margin-bottom: 90px;
+        font-size: 48px;
+    }
+    
+    .questions__subtitle{
+        width: 80%;
+        font-size: 30px;
+    }
+    .questions__link{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .questions__title {
+        width: 100%;
+        margin-bottom: 90px;
+        font-size: 36px;
+    }
+    
+    .questions__subtitle{
+        width: 80%;
+        font-size: 24px;
+    }
+    .questions__link{
+        font-size: 24px;
+    }
+}
