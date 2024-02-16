@@ -50,3 +50,26 @@
         height: 40vh;
     }
 }
+
+@media screen and (max-width: 430px) {
+    .product{
+        height: 280vh; 
+    }
+
+    .product__container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .product__title{
+        line-height: 44px;
+        font-size: 38px;
+    }
+
+    .product__card{
+        width: 60vw;
+    }
+    .product__image{
+        height: 40vh;
+    }
+}

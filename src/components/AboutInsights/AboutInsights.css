@@ -121,3 +121,9 @@
 .market__link-insights{
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+    .market {
+        height: 90vh;
+    }
+}
