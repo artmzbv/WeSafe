@@ -33,7 +33,7 @@
     .regulation{
         width: 90%;
         margin: 5% auto; 
-        height: 80vh;
+        min-height: -webkit-fill-available;
     }
 
     .regulation__title{

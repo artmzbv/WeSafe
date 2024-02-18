@@ -44,10 +44,50 @@
    margin-top:10px;
 }
 
-.copper__options{
+.copper__container{
     display: flex;
     margin: 0 10vw;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .copper__title{
+        /* width: 80%; */
+        width: 90%;
+        margin: 0 auto 4vh;
+    }
+
+    .copper__container {
+        height: 100%;
+        width: 100%;
+        padding: 5% 0%;
+        margin: 0 5%;
+    }
+    
+    .copper__container::-webkit-scrollbar{
+        width:0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .copper__title{
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .copper__container{
+        width: 95%;
+        margin-left: 5%;
+        padding: 0;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        -ms-verrflow-style: none;
+        overflow: - moz-scrollbars-none;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+        -ms-overflow-style: none; 
+    }
 }

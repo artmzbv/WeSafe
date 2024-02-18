@@ -25,7 +25,7 @@ export default function CopperProduct() {
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala</p>
-        <div className="copper__options">
+        <div className="copper__container">
         {cards.map((card) => (
             <>
             <MetalCard card={card}/>

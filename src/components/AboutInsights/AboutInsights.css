@@ -64,6 +64,7 @@
 
     .market__container{
         margin-left: 5%;
+        margin-right: 0; 
         padding: 0;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;

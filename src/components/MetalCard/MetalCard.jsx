@@ -21,7 +21,7 @@ export default function MetalCard({card, handleOpenPopup}) {
         <section className="types" onClick={()=> handleOpenPopup()}>
         <h1 className="types__name" onMouseOver={()=>setHover(true)} onMouseOut={()=>setHover(false)}>{card.title}</h1>
             <img 
-            className={`types__images  ${hover ? 'types__images_hover' : null}`}
+            className={`types__image  ${hover ? 'types__image_hover' : null}`}
             onMouseOver={()=>setHover(true)}
             onMouseOut={()=>setHover(false)}
             src={card.link}

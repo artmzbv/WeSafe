@@ -11,7 +11,7 @@
     /* filter: brightness(60%); */
 }
 
-.types__images{
+.types__image{
     position: absolute;
     filter: brightness(60%);
     top:0%;
@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 
-.types__images_hover{
+.types__image_hover{
     filter: brightness(100%);
 }
 
@@ -34,4 +34,40 @@
     margin: 0 2vw;
     z-index:1;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+.types{
+    height: 80vh;
+    width: 100%;
+    padding: 5% 0%; 
+    width: 28vw;
+    scroll-snap-align: start;
+    cursor:'pointer'
+}
+
+.types__image{
+    position: none;
+    width: 100%;
+    height: 80vh;
+    object-fit:cover;
+    user-select: none;
+    height: 100%;
+}    
+}
+
+@media screen and (max-width: 430px) {
+    .types{
+    padding: 0;
+    height: 100%;
+    width: 70vw;
+    margin-right: 30px;
+    font-size: 24px;
+    }
+
+    .types__image{
+    position: relative;
+    width:70vw;
+    height: 60vh;
+    }   
 }
