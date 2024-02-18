@@ -7,25 +7,25 @@ export default function AboutProblem() {
     return(
         <>
         <section className='problem'>
-            <h1 className='problem__title'>{'Ne pas mettre tous vos oeufs \ndans le meme panier'}</h1>
+            <h1 className='problem__title'>Ne pas mettre tous vos oeufs dans le meme panier...</h1>
             {/* je */}
             <div className='problem__container'>
                 <div className='problem__card'>
                     {/* <img className='problem__icon' src={circle1} alt='inflation'/> */}
                     <p className='problem__description'>
-                    Je suis Saint-Thomas, j'achete ce que je vois
+                    {"Je suis Saint-Thomas,\nj'achete ce que je vois."}
                     </p>
                 </div>
                 <div className='problem__card'>
                 {/* <img className='problem__icon' src={circle2} alt='access'/> */}
                     <p className='problem__description'>
-                    Je suis autonome, ma decision est la mienne
+                    {'Je suis autonome,\nma decision est la mienne.'}
                     </p>
                 </div>
                 <div className='problem__card'>
                 {/* <img className='problem__icon' src={circle3} alt='opportunities'/> */}
                     <p className='problem__description'>
-                    Changer le systeme est impossible, notre metier - de lui apporter des vertues 
+                    {'Changer le systeme est impossible.\nNotre metier - de lui apporter des vertues.'} 
                     {/* mais on peut lui apporter des vertus */}
                     </p>
                 </div>

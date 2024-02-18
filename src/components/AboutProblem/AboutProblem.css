@@ -28,4 +28,54 @@
 
 .problem__description{
     color: #001F3D;
+    white-space: pre-wrap
+}
+
+@media screen and (max-width: 768px) {
+    .problem{
+        height: 90vh;
+    }
+
+    .problem__title{
+        width: 100%;
+    }
+    
+    .problem__container{
+        width: 90%;
+        justify-content: space-between;
+        margin: 10% auto 0;
+    }
+    
+    .problem__card{
+        width: 25%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* .problem{
+
+    } */
+    
+    .problem__title{
+        width: 100%;
+        font-size: 36px;
+        line-height: 40px;
+    }
+    
+    .problem__container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .problem__card{
+        width: 100%;
+        text-align: center;
+        margin: 5% auto;
+    }
+
+    .problem__description{
+        font-size: 16px;
+    }
 }
