@@ -24,7 +24,7 @@ export default function AluminiumProduct() {
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala</p>
-        <div className="aluminium__options">
+        <div className="aluminium__container">
             {cards.map((card) => (
             <MetalCard card={card}/>
         ))}
