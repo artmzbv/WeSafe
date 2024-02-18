@@ -62,15 +62,16 @@
     .questions__title {
         width: 100%;
         margin-bottom: 90px;
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
     }
     
     .questions__subtitle{
         width: 80%;
-        font-size: 24px;
+        font-size: 20px;
     }
     .questions__link{
-        font-size: 24px;
+        font-size: 20px;
     }
 }

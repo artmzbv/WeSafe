@@ -8,7 +8,7 @@ export default function AboutProduct() {
     return(
         <>
         <section className='product'>
-            <h1 className='product__title'>Comment ca marche? - 4 etapes</h1>
+            <h1 className='product__title'>{'Comment ca marche?\n - 4 etapes'}</h1>
             <div className='product__container'>
                 <div className='product__card'>
                     <h2 className='product__subtitle'>1.Selection</h2>

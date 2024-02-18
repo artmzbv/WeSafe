@@ -59,8 +59,9 @@
     
     .problem__title{
         width: 100%;
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
     }
     
     .problem__container{

@@ -13,6 +13,7 @@
     line-height: 54px;
     font-size: 44px;
     text-wrap: wrap;
+    white-space: pre-wrap;
 }
 
 .product__container{
@@ -51,19 +52,22 @@
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
     .product{
         height: 280vh; 
+        width: 90%
+    }
+
+    .product__title{
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
     }
 
     .product__container {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
-    }
-    .product__title{
-        line-height: 44px;
-        font-size: 38px;
     }
 
     .product__card{

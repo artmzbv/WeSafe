@@ -54,11 +54,12 @@
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
     .market__title{
         /* width: 100%; */
         font-size: 30px;
         line-height: 36px;
+        text-align: center;
     }
 
     .market__container{
