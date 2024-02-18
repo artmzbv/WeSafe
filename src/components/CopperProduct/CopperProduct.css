@@ -61,14 +61,10 @@
 
     .copper__container {
         height: 100%;
-        width: 100%;
         padding: 5% 0%;
         margin: 0 5%;
     }
     
-    .copper__container::-webkit-scrollbar{
-        width:0;
-    }
 }
 
 @media screen and (max-width: 450px) {
@@ -89,5 +85,8 @@
         flex-wrap: nowrap;
         scrollbar-width: none;
         -ms-overflow-style: none; 
+    }
+    .copper__container::-webkit-scrollbar{
+        width:0;
     }
 }

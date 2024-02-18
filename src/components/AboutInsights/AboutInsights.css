@@ -44,10 +44,6 @@
     .market__container {
         margin: 0 5%;
     }
-    
-    .market__container::-webkit-scrollbar{
-        width:0;
-    }
 
     .market__subtitle{
         padding: 0 5%;  
@@ -74,5 +70,9 @@
         background-color: #001F3D;
         scrollbar-width: none; 
         -ms-overflow-style: none; 
+    }
+
+    .market__container::-webkit-scrollbar{
+        width:0;
     }
 }
