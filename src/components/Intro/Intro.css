@@ -81,14 +81,22 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 440px) {
+    .intro__title{
+        margin-top: 12%;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
     .intro__button{
-        width: 30vw;
+        width: 80vw;
+        border-radius: 10px;
+        margin-top: 4vh;
     }
 
     .intro__picture{
         width: 100vw;
-        height: 10vh;
-        margin-bottom: 8%;
+        height: 50vh;
+        /* margin-bottom: 8%; */
     }
 }
