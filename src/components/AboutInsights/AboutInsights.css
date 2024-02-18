@@ -23,51 +23,13 @@
     justify-content: space-between;
 }
 
-/* .market__card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 20vw;
-    height: 45vh;
-} */
-
-/* .market__name{
-    position: absolute;
-    color: white;
-    z-index: 2;
-    opacity:1 ;
-}
-
-.market__subtitle{
-    text-decoration: none;
-    border: none;
-    background-color:  #001F3D;
-    text-align: start;
-    color: white;
-    width: 100%;
-    line-height: 32px;
-    font-size: 22px; */
-    /* border-bottom: 4px white solid; */
-    /* margin:0;
-    margin-top: 4%;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: bold;
-    border-radius: 30px; */
-    /* text-decoration: underline; */
-    /* height: 4vh;
-    margin-bottom: 10vh;
-} */
-
 .market__link-insights{
     text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
     .market{
-        height: 70vh;
+        height: 80vh;
         width: 100%;
         padding: 5% 0%; 
         /* padding: 0 0; */
@@ -76,13 +38,11 @@
     .market__title{
         /* width: 80%; */
         width: 90%;
-        margin: 0 auto 8vh;
+        margin: 0 auto 4vh;
     }
 
     .market__container {
-        margin: 0;
-        /* gap: 10px; */
-        margin-left: 5%;
+        margin: 0 5%;
     }
     
     .market__container::-webkit-scrollbar{
@@ -92,23 +52,6 @@
     .market__subtitle{
         padding: 0 5%;  
     }
-
-    /* .market__card{
-        max-width: 25vw;
-        padding-bottom: 4vh;
-        border-bottom: 4px solid #001F3D;
-        scroll-snap-align: start;
-        pointer-events: none;
-    }
-
-    .team__photo{
-        width: 25vw;
-        height: 40vh;
-        width:100%;
-        object-fit:cover;
-        user-select: none;
-        pointer-events: none;
-    }     */
 }
 
 @media screen and (max-width: 430px) {
@@ -119,7 +62,7 @@
     }
 
     .market__container{
-        /* margin: 0; */
+        margin-left: 5%;
         padding: 0;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
