@@ -56,3 +56,35 @@
 .market__link-insights{
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+    .market__card{
+        width: 25vw;
+        /* padding-bottom: 4vh; */
+        border-bottom: 4px solid #001F3D;
+        scroll-snap-align: start;
+        pointer-events: none;
+    }
+
+    .market__image{
+        width: 25vw;
+        height: 40vh;
+        /* width:100%; */
+        object-fit:cover;
+        user-select: none;
+        pointer-events: none;
+    }    
+}
+
+@media screen and (max-width: 430px) {
+    .market__card{
+        max-width: none;
+        width: 70vw;
+        margin-right: 30px;
+    }
+
+    .market__image{
+        width:70vw;
+        /* height: 60vh; */
+    }   
+}

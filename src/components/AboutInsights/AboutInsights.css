@@ -5,6 +5,7 @@
     padding: 0% 14% 5%;
 }
 
+
 .market__title{
     text-align: start;
     color: white;
@@ -22,93 +23,111 @@
     justify-content: space-between;
 }
 
-.market__card_aluminium::before{
-    content: "";
-    top: 0;
-    background-image: url(../../images/aluminium.jpg);
-    background-size: cover;
+/* .market__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 20vw;
+    height: 45vh;
+} */
+
+/* .market__name{
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.6;
-    /* background-size: 100% 100%; */
+    color: white;
+    z-index: 2;
+    opacity:1 ;
 }
 
-.market__card_aluminium:hover::before {
-    opacity: 0.8;
+.market__subtitle{
+    text-decoration: none;
+    border: none;
+    background-color:  #001F3D;
+    text-align: start;
+    color: white;
+    width: 100%;
+    line-height: 32px;
+    font-size: 22px; */
+    /* border-bottom: 4px white solid; */
+    /* margin:0;
+    margin-top: 4%;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 30px; */
+    /* text-decoration: underline; */
+    /* height: 4vh;
+    margin-bottom: 10vh;
+} */
+
+.market__link-insights{
+    text-decoration: none;
 }
-
-.market__card_nickel::before{
-    content: "";
-    top: 0;
-    background-image: url(../../images/nickel.jpg);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.6;
-    /* background-size: 100% 100%; */
-}
-
-.market__card_nickel:hover::before {
-    opacity: 0.8;
-}
-
-
 
 @media screen and (max-width: 768px) {
     .market{
-        width: 90%;
-        padding: 0% 5% 5%;
-    }
-
-    .market__title {
-        width: 90%;
-    }
-    .market__card{
-        width: 25vw;
-        height: 40vh;
+        height: 70vh;
+        width: 100%;
+        padding: 5% 0%; 
+        /* padding: 0 0; */
     }
     
-    .market__container {
-        gap: 30px;
-    }
-}
-
-@media screen and (max-width: 440px) {
     .market__title{
-        width: 100%;
-        font-size: 30px;
-        line-height: 36px;
+        /* width: 80%; */
+        width: 90%;
+        margin: 0 auto 8vh;
     }
 
     .market__container {
         margin: 0;
+        /* gap: 10px; */
+        margin-left: 5%;
+    }
+    
+    .market__container::-webkit-scrollbar{
+        width:0;
+    }
+
+    .market__subtitle{
+        padding: 0 5%;  
+    }
+
+    /* .market__card{
+        max-width: 25vw;
+        padding-bottom: 4vh;
+        border-bottom: 4px solid #001F3D;
+        scroll-snap-align: start;
+        pointer-events: none;
+    }
+
+    .team__photo{
+        width: 25vw;
+        height: 40vh;
+        width:100%;
+        object-fit:cover;
+        user-select: none;
+        pointer-events: none;
+    }     */
+}
+
+@media screen and (max-width: 430px) {
+    .market__title{
+        /* width: 100%; */
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .market__container{
+        /* margin: 0; */
+        padding: 0;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         -ms-verrflow-style: none;
         overflow: - moz-scrollbars-none;
-        box-shadow: 0px 0px 80px #f3c9ff2e;
+        /* box-shadow: 0px 0px 80px #f3c9ff2e; */
+        background-color: #001F3D;
         scrollbar-width: none; 
         -ms-overflow-style: none; 
-        width: 200vw;
     }
-    
-    .market__card{
-        width: 70vw;
-    }
-
-    .market__card_copper{
-        height: 50vh;
-    }   
-    .market__card_aluminium{
-        height: 50vh;
-    }   
-    .market__card_nickel{
-        height: 50vh;
-    }   
 }
