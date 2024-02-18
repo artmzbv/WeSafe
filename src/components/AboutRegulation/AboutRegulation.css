@@ -27,3 +27,43 @@
     list-style-type: none;
     text-align: start;
 }
+
+
+@media screen and (max-width: 768px) {
+    .regulation{
+        width: 90%;
+        margin: 5% auto; 
+        height: 80vh;
+    }
+
+    .regulation__title{
+        font-size: 36px;
+    }
+
+    .regulation__subtitle{
+    }
+
+    .regulation__list{
+
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .intro__title{
+        margin-top: 12%;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+    .intro__button{
+        width: 80vw;
+        border-radius: 10px;
+        margin-top: 4vh;
+    }
+
+    .intro__picture{
+        width: 100vw;
+        height: 50vh;
+        /* margin-bottom: 8%; */
+    }
+}

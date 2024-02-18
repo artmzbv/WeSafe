@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 768px) {
     .team{
-        height: 100vh;
+        height: 90vh;
         width: 90%;
         margin: 5% auto; 
     }
@@ -83,10 +83,13 @@
 }
 
 @media screen and (max-width: 430px) {
+    .team{
+        height: 100vh;
+    }
     .team__title{
         width: 100%;
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 36px;
+        line-height: 40px;
     }
 
     .team__container {
