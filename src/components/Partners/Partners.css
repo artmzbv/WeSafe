@@ -44,8 +44,10 @@
         width: 100%;
     }
     .partners__title{
-        width: 100%;
+        width: 90%;
+        text-align: center;
         margin: 0;
+        margin-bottom: 10vh;
     }
 }
 
