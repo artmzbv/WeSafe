@@ -57,6 +57,9 @@
 }
 
 @media screen and (max-width: 450px) {
+    .offer{
+        height: 320vh;
+    }
     .offer__card{
         min-height: 60vh;
         font-size: 20px;
@@ -71,6 +74,6 @@
     }
 
     .offer__container{
-        height: 250vh;
+        height: 290vh;
     }
 }
