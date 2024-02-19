@@ -6,11 +6,11 @@ import nickelOffer from '../images/nickel.jpg'
 
 
 export const insights = [
-    {title:'Nouvelle 1', date: '01.01.2024', type: 'nouvelle', linkimage: copperA, brief: 'Le prix de cuivre a baisse', linkgraph: '', 
+    {title:'Nouvelle 1', date: '01.01.2024', type: 'nouvelle', linkimage: copperA, brief: 'Le prix de cuivre a baisse Le prix de cuivre a baisse Le prix de cuivre a baisse Le prix de cuivre a baisse', linkgraph: '', 
     description: 'lalalalalalalalalalalalalalalaalalalalalalalalalaalalalalalala'},
-    {title:'Nouvelle 2', date: '01.01.2024', type: 'insight', linkimage: copperB, brief: 'Le prix de cuivre a augmente', linkgraph: '',
+    {title:'Nouvelle 2', date: '01.01.2024', type: 'insight', linkimage: copperB, brief: 'Le prix de cuivre a augmente Le prix de cuivre a augmente Le prix de cuivre a augmente', linkgraph: '',
     description: 'lalalalalalalalalalalalalalalaalalalalalalalalalaalalalalalala'},
-    {title:'Nouvelle 3', date: '01.01.2024', type: 'nouvelle', linkimage: copperB, brief: 'Ca marche', linkgraph: '', 
+    {title:'Nouvelle 3', date: '01.01.2024', type: 'nouvelle', linkimage: copperB, brief: 'Ca marche Ca marche Ca marche Ca marche Ca marche Ca marche Ca marche Ca marche', linkgraph: '', 
     description: ''},
     {title:'Nouvelle 4', date: '01.01.2024', type: 'insight', linkimage: copperB, brief: 'bien', linkgraph: '', 
     description: 'lalalalalalalalalalalalalalalaalalalalalalalalalaalalalalalala'},

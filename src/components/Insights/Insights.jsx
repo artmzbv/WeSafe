@@ -33,7 +33,7 @@ export default function Insights() {
             </div>
             <div className='insights__container'>
             <div className='insights__buttons'>    
-                <button className={`insights__button ${isNews==='tout' ? 'insights__button_active' : 'insights_button_inactive'}`}  onClick={()=>setNews('tout')}>Tout ensemble</button>
+                <button className={`insights__button ${isNews==='tout' ? 'insights__button_active' : 'insights_button_inactive'}`}  onClick={()=>setNews('tout')}>Tout</button>
                 <button className={`insights__button  ${isNews==='insights' ? 'insights__button_active' : 'insights_button_inactive'}`} onClick={()=>setNews('insights')}>Insights</button>
                 <button className={`insights__button  ${isNews==='nouvelles' ? 'insights__button_active' : 'insights_button_inactive'}`} onClick={()=>setNews('nouvelles')}>Nouvelles</button>
             </div>
