@@ -1,10 +1,5 @@
-.offer__container{
-    position:absolute;
-    top: 30vh;  
-}
-
 .offer__topic{
-    position: fixed;
+    /* position: fixed; */
     display:flex;
     flex-direction: column;
     justify-content: end;
@@ -25,10 +20,23 @@
     font-size: 30px;
 }
 
+.offer__container{
+    position: relative;
+    top: 0;
+    height: 180vh;
+    z-index: 0;
+    margin-bottom: 250px;
+}
+
 .offer__card{
     height: 40vh;
     margin: 10vh 20vw;
     border-bottom: 4px solid #001F3D;
+    position: sticky;
+    /* We should specify a point when a card should be sticky */
+    top: 20vh;
+    /* transform-origin: center top; */
+    background-color: #fff;
 }
 .offer__card-image{
     height: 20vh;
@@ -39,9 +47,30 @@
 .offer__card-title{
     text-align: start;
     color:#001F3D;
+    background-color: #fff;
 }
 
 .offer__card-description{
     text-align: start;
     color:#001F3D;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 450px) {
+    .offer__card{
+        min-height: 60vh;
+        font-size: 20px;
+        margin: 5vh 10vw 10vh
+    }
+    .offer__card-title{
+        font-size: 20px;
+    }
+
+    .offer__card-description{
+        font-size: 16px;
+    }
+
+    .offer__container{
+        height: 250vh;
+    }
 }
