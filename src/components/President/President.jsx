@@ -6,7 +6,7 @@ export default function President() {
         <>
         <section className='president'>
             <div className='president__container'>
-                <div className=''>
+                <div className='president__info'>
                 <img className='president__photo' src={jerome} alt='president'></img>
                 <p className='president__name'>Jerome Thomasse</p>
                 <p className='president__profession'>President de WeSafe</p>
