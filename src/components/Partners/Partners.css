@@ -31,3 +31,21 @@
 .partners__name{
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .partners__logo{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .partners{
+        padding: 0;
+        width: 100%;
+    }
+    .partners__title{
+        width: 100%;
+        margin: 0;
+    }
+}
+

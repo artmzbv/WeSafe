@@ -9,7 +9,7 @@ export default function President() {
             <div className='history__text'>
             <h1 className='history__title'>Notre Histoire</h1>
                 <p className='history__description'>
-                Pour nous c’etait surpris que  Pour nous c’etait surpris que 
+                Pour nous c’etait surpris que  Pour nous c’etait surpris que
                 Pour nous c’etait surpris que Pour nous c’etait surpris que 
                 Pour nous c’etait surpris que Pour nous c’etait surpris que 
                 Pour nous c’etait surpris que Pour nous c’etait surpris que 
