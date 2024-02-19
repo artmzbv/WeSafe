@@ -56,15 +56,31 @@
     background-color: #fff;
 }
 
+@media screen and (max-width: 780px) {
+    .offer{
+        height: 350vh;
+    }
+    .offer__card{
+        min-height: 60vh;
+        font-size: 20px;
+        margin: 5vh 10vw 10vh
+    }
+    .offer__container{
+        height: 320vh;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .offer{
         height: 350vh;
     }
+
     .offer__card{
         min-height: 70vh;
         font-size: 20px;
         margin: 5vh 10vw 10vh
     }
+    
     .offer__card-title{
         font-size: 20px;
     }
