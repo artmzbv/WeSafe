@@ -52,18 +52,28 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
-.nickel__title{
-    width: 90%;
-    margin: 0 auto 4vh;
+@media screen and (max-width: 1024px) {
+    .nickel{
+        height: 170vh;
+    }
+    
+    .nickel__title{
+        width: 90%;
+        margin: 0 auto 4vh;
     }
 
-.nickel__container{
-    height: 100%;
-    padding: 5% 0%;
-    margin: 0 5%;
-    }   
+    .nickel__container {
+        padding: 5% 0%;
+        margin: 0 5%;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .nickel{
+        height: 200vh;
+    }
+}
+
 
 @media screen and (max-width: 450px) {
     .nickel__title{

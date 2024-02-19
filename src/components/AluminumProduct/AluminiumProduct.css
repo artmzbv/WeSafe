@@ -1,3 +1,7 @@
+.aluminium{
+    height: 180vh;
+}
+
 .aluminium__topic{
     display:flex;
     flex-direction: column;
@@ -52,7 +56,11 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    .aluminium{
+        height: 200vh;
+    }
+    
     .aluminium__title{
         /* width: 80%; */
         width: 90%;
@@ -60,11 +68,16 @@
     }
 
     .aluminium__container {
-        height: 100%;
+        /* height: 100%; */
         padding: 5% 0%;
         margin: 0 5%;
     }
-    
+}
+
+@media screen and (max-width: 768px) {
+    .aluminium{
+        height: 200vh;
+    }
 }
 
 @media screen and (max-width: 450px) {
