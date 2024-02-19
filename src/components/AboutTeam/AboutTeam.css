@@ -60,10 +60,6 @@
         gap: 30px;
     }
     
-    .team__container::-webkit-scrollbar{
-        width:0;
-    }
-
     .team__card{
         max-width: 25vw;
         padding-bottom: 4vh;
@@ -103,6 +99,12 @@
         scrollbar-width: none; 
         -ms-overflow-style: none; 
     }
+    
+    .team__container::-webkit-scrollbar{
+        width:0;
+        display: none;
+    }
+
     
     .team__card{
         max-width: 70vw;
