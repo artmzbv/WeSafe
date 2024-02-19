@@ -88,6 +88,10 @@
       .insights-card{
         width: 22vw;
       }
+
+      .insights-card__description{
+        font-size: 14px;
+      }
   }
   
   @media screen and (max-width: 430px) {
