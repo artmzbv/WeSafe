@@ -76,6 +76,10 @@
 
 
 @media screen and (max-width: 450px) {
+    .nickel{
+        height: 220vh;
+    }
+
     .nickel__title{
         font-size: 30px;
         line-height: 36px;
@@ -83,6 +87,7 @@
     }
 
     .nickel__container{
+        margin-top: 5vh;
         width: 95%;
         margin-left: 5%;
         padding: 0;

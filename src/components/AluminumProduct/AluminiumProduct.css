@@ -81,6 +81,10 @@
 }
 
 @media screen and (max-width: 450px) {
+    .aluminium{
+        height: 220vh;
+    }
+
     .aluminium__title{
         font-size: 30px;
         line-height: 36px;
@@ -88,6 +92,7 @@
     }
 
     .aluminium__container{
+        margin-top: 5vh;
         width: 95%;
         margin-left: 5%;
         padding: 0;

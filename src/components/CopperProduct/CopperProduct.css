@@ -77,6 +77,10 @@
 }
 
 @media screen and (max-width: 450px) {
+    .copper{
+        height: 220vh;
+    }
+    
     .copper__title{
         font-size: 30px;
         line-height: 36px;
@@ -84,6 +88,7 @@
     }
 
     .copper__container{
+        margin-top: 5vh;
         width: 95%;
         margin-left: 5%;
         padding: 0;
