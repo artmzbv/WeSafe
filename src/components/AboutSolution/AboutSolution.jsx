@@ -5,7 +5,7 @@ export default function AboutSolution() {
     return(
         <>
         <section className='solution'>
-            <h1 className='solution__title'>{'Diversifier votre épargne avec les métaux industriels de la transition énergétique'}</h1>
+            <h1 className='solution__title'>{'Diversifier votre épargne avec les métaux industriels de la transition numerique et énergétique'}</h1>
             <div className='solution__container'>
                 <ul className='solution__list'>
                     <li className='solution__item'>
@@ -15,7 +15,7 @@ export default function AboutSolution() {
                         Epargne vertueuse
                     </li>
                     <li className='solution__item'>
-                        Profits exponentials
+                        Profits potentiels
                     </li>
                     <li className='solution__item'>
                         Transparence
