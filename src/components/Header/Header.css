@@ -67,7 +67,7 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 .header{
     height: 70px;
     /* height: calc(var(--vh, 1vh) * 10); */
