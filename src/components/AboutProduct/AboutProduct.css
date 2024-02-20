@@ -25,12 +25,29 @@
 .product__card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 16vw;
+    align-items: center;
+    width: 18vw;
     color: #001F3D;
 }
 
-@media screen and (max-width: 768px) {
+.product__subtitle{
+    margin:0;
+    line-height: 30px;
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+.product__image{
+    width: 16vw;
+    height: 18vw;
+    /* margin-bottom: 16px; */
+}
+.product__description{
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
     .product__container {
         flex-wrap: wrap;
     }
@@ -48,7 +65,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .product{
         width: 90%
     }
@@ -69,6 +86,6 @@
         width: 60vw;
     }
     .product__image{
-        height: 40vh;
+        height: 60vw;
     }
 }
