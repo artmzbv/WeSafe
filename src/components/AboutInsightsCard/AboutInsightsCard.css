@@ -5,7 +5,12 @@
     align-items: center;
     position: relative;
     width: 20vw;
-    height: 30vw;
+    height: 22vw;
+}
+
+.market__title{
+    width: 90%;
+    padding: 0 auto;
 }
 
 .market__image{
@@ -47,8 +52,9 @@
     border-radius: 30px;
     /* text-decoration: underline; */
     height: 4vh;
-    margin-bottom: 10vh;
+    margin-bottom: 30px;
 }
+
 .market__subtitle:hover{
     color: #646060;
 }
@@ -72,12 +78,16 @@
     }    
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
     .market__card{
         max-width: none;
         width: 70vw;
         height: 90vw;
         margin-right: 30px;
+    }
+
+    .market__subtitle{
+        font-size: 16px;
     }
 
     .market__image{
