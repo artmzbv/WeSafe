@@ -7,14 +7,14 @@
     background-color: #fff;
     width: 90vw;
     padding: 0 5vw;
-    height: 10vh;
+    height: 10svh;
     height: calc(var(--vh, 1vh) * 10);
     z-index: 2;
 }
 
 
 .header__logo{
-    height: 10vh;
+    height: 10svh;
 }
 
 .header__links-row{
@@ -28,9 +28,9 @@
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    top: 10vh;
+    top: 10svh;
     height: calc(var(--vh, 1vh) * 10);
-    height:90vh;
+    height:90svh;
     height: calc(var(--vh, 1vh) * 90);
     left:0;
     transform: translateY(0%);
@@ -53,7 +53,7 @@
     width:100vw;
     /* max-width: 520px;
     width: 100%; */
-    min-height: 80vh;
+    min-height: 80svh;
     min-height: calc(var(--vh, 1vh) * 80);
     padding-top: 30px;
     /* row-gap: 105px; */
