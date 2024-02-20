@@ -65,18 +65,28 @@
 
 @media screen and (max-width: 768px) {
 .header{
-    height: 80px;
+    height: 10svh
 }
 
+.header__logo{
+    height: 10svh;
+}
 .header__links-row {
     display: none;
+}
+.header__links-column{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 10svh;
+    height:90svh;
 }
 
 .header__burger-menu{
     display: block;
     border: none;
     width: 28px;
-    height: 6vh;    
+    height: 6svh;    
     background-image: url("../../images/burger.svg");
     background-repeat: no-repeat;
     background-position: center;
