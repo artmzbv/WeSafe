@@ -94,7 +94,7 @@
       }
   }
   
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 650px) {
       .insights-card{
       padding-left: 5vw;
       /* height: 100%; */

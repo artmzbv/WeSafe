@@ -13,7 +13,7 @@
 
 .offer__title{
     color: white;
-    width: 70%;
+    width: 100%;
     margin-left: 5vw;
     margin-bottom: 5vh;
     line-height: 38px;
@@ -56,7 +56,22 @@
     background-color: #fff;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
+    .offer__topic{
+        justify-content: center;
+        padding-left: 5%;
+        padding-top: 70px;
+        height: 20vh;
+
+    }
+    
+    .offer__title{
+        margin: 0;
+        width: 100%;
+        font-size: 30px;
+        font-weight: normal;
+    }
+
     .offer{
         height: 350vh;
     }
@@ -70,9 +85,25 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     .offer{
         height: 350vh;
+    }
+
+    .offer__topic{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 70px;
+        height: 25vh;
+    }
+    
+    .offer__title{
+        margin: 0;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.5em;
+        text-align: start;
     }
 
     .offer__card{
@@ -91,5 +122,12 @@
 
     .offer__container{
         height: 320vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .offer__title{
+        font-size: 1.2em;
+        /* font-weight: bold; */
     }
 }

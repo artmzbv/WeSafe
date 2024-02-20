@@ -82,7 +82,7 @@
     .aluminium__topic{
         justify-content: center;
         padding-left: 5%;
-        padding-top: 70px;
+        padding-top: 65px;
         height: 20vh;
     }
     
@@ -95,7 +95,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     .aluminium{
         height: 220vh;
     }

@@ -146,6 +146,21 @@
         width: 20vw;   
     }
 
+    .insights__topic{
+        justify-content: center;
+        padding-left: 5%;
+        padding-top: 65px;
+        height: 20vh;
+    }
+
+    .insights__title{
+        margin: 0;
+        width: 80%;
+    }
+    .insights__subtitle{
+        margin: 12px 0 auto;  
+    }
+
     .insights__buttons{
         width: 60%;
         margin-left: 0;
@@ -155,7 +170,28 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
+    .insights__topic{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        height: 100%;
+    }
+
+    .insights__title{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .insights__subtitle{
+        width: 90%;
+        margin: 12px auto 6%;  
+        font-size: 1.5em;
+        text-align: center;
+    }
+
     .insights__map{
         margin: 0 auto;
         flex-direction: column;

@@ -17,3 +17,36 @@
     line-height: 44px;
     font-size: 38px;
 }
+
+@media screen and (max-width: 900px) {
+    .us__topic{
+        justify-content: center;
+        padding-left: 5%;
+        padding-top: 70px;
+        height: 20vh;
+
+    }
+    
+    .us__title{
+        margin: 0;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .us__topic{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 70px;
+        height: 20vh;
+    }
+    
+    .us__title{
+        margin: 0;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2em;
+        text-align: center;
+    }
+}

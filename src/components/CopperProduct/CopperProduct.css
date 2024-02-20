@@ -78,7 +78,7 @@
     .copper__topic{
         justify-content: center;
         padding-left: 5%;
-        padding-top: 70px;
+        padding-top: 65px;
         height: 20vh;
     }
     
@@ -91,7 +91,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     .copper{
         height: 220vh;
     }
@@ -108,7 +108,7 @@
         font-size: 2em;
         text-align: center;
     }
-    
+
     .copper__subtitle{
         width: 90%;
         margin: 12px auto auto;  

@@ -35,7 +35,7 @@
     border-radius: 30px;
     border: none;
     margin-top: 20vh;
-    width: 12vw;
+    width: 180px;
     height: 6vh;
     color: #001F3D;
     cursor: pointer;
@@ -69,7 +69,7 @@
     }
 
     .intro__button{
-        width: 25vw;
+        /* width: 25vw; */
         margin-top: 8vh;
         margin-bottom: 8vh;
     }
