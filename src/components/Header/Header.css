@@ -9,7 +9,7 @@
     padding: 0 5vw;
     height: 10vh;
     height: calc(var(--vh, 1vh) * 10);
-    z-index: 2;
+    z-index: 3;
 }
 
 
