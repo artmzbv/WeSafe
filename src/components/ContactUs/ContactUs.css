@@ -1,6 +1,6 @@
 .contact{
-    height: 100vh;
-    /* margin-bottom: 10vh; */
+    height: 100svh;
+    /* margin-bottom: 10svh; */
 }
 
 .contact__topic{
@@ -9,7 +9,7 @@
     justify-content: end;
     align-items: start;
     background-color: #001F3D;
-    height: 30vh;
+    height: 30svh;
     text-align: start;
 }
 
@@ -18,7 +18,7 @@
     color: white;
     width: 60%;
     margin-left: 5vw;
-    margin-bottom: 8vh;
+    margin-bottom: 8svh;
     line-height: 44px;
     font-size: 38px;
 }
@@ -50,7 +50,7 @@
     border-radius: 15px;
     border: 2px solid #001F3D;
     width: 25vw;
-    height: 6vh;
+    height: 6svh;
 }
 .contact__input::placeholder {
     color: #001F3D;
@@ -71,7 +71,7 @@
     border-radius: 15px;
     border: 2px solid #001F3D;
     width: 52.5vw;
-    height: 20vh;
+    height: 20svh;
 }
 
 .contact__input-message::placeholder {
@@ -113,7 +113,7 @@
     border-radius: 30px;
     font-size: 14px;
     width: 9vw;
-    height: 4vh;
+    height: 4svh;
 }
 
 .contact__submit:hover{
@@ -145,7 +145,7 @@
     .contact__input-message{
         /* border: 2px solid #001F3D; */
         width: 100%;
-        height: 20vh;
+        height: 20svh;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
              box-sizing: border-box;
@@ -163,14 +163,14 @@
     
     .contact__submit{
         width: 20vw;
-        height: 6vh;
+        height: 6svh;
     }
 
 }
 
 @media screen and (max-width: 450px) {
     .contact{
-        height: 140vh;
+        height: 140svh;
     }
 
     .contact__input{
@@ -179,7 +179,7 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        height: 7vh;
+        height: 7svh;
         border-radius: 10px;
     }
 
@@ -221,6 +221,6 @@
     .contact__submit{
         width: 100%;
         border-radius: 10px;
-        margin-top: 7vh;
+        margin-top: 7svh;
     }
 }
