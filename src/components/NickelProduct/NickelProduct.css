@@ -72,6 +72,22 @@
     .nickel{
         height: 200vh;
     }
+
+    .nickel__topic{
+        justify-content: center;
+        padding-left: 5%;
+        padding-top: 70px;
+        height: 20vh;
+    }
+    
+    .nickel__title{
+        margin: 0;
+        width: 80%;
+    }
+
+    .nickel__subtitle{
+        margin: 12px 0 auto;  
+    }
 }
 
 
@@ -79,10 +95,23 @@
     .nickel{
         height: 220vh;
     }
+    .nickel__topic{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
 
     .nickel__title{
-        font-size: 30px;
-        line-height: 36px;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .nickel__subtitle{
+        width: 90%;
+        margin: 12px auto auto;  
+        font-size: 2em;
         text-align: center;
     }
 

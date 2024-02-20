@@ -74,16 +74,45 @@
     .copper{
         height: 200vh;
     }
+
+    .copper__topic{
+        justify-content: center;
+        padding-left: 5%;
+        padding-top: 70px;
+        height: 20vh;
+    }
+    
+    .copper__title{
+        margin: 0;
+        width: 80%;
+    }
+    .copper__subtitle{
+        margin: 12px 0 auto;  
+    }
 }
 
 @media screen and (max-width: 450px) {
     .copper{
         height: 220vh;
     }
-    
+
+    .copper__topic{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
     .copper__title{
-        font-size: 30px;
-        line-height: 36px;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .copper__subtitle{
+        width: 90%;
+        margin: 12px auto auto;  
+        font-size: 2em;
         text-align: center;
     }
 
