@@ -1,5 +1,5 @@
 .contact{
-    height: 100svh;
+    height: 100vh;
     /* margin-bottom: 10svh; */
 }
 
@@ -50,7 +50,7 @@
     border-radius: 15px;
     border: 2px solid #001F3D;
     width: 25vw;
-    height: 6svh;
+    height: 6vh;
 }
 .contact__input::placeholder {
     color: #001F3D;
@@ -71,7 +71,7 @@
     border-radius: 15px;
     border: 2px solid #001F3D;
     width: 52.5vw;
-    height: 20svh;
+    height: 20vh;
 }
 
 .contact__input-message::placeholder {
@@ -123,7 +123,19 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+    .contact__topic{
+        justify-content: center;
+        padding-left: 5%;
+        padding-top: 70px;
+        height: 20vh;
+
+    }
+    .contact__title{
+        margin: 0;
+        width: 80%;
+    }
+
     .contact__form{
         width: 100%;
     }
@@ -170,7 +182,21 @@
 
 @media screen and (max-width: 450px) {
     .contact{
-        height: 140svh;
+        height: 140vh;
+    }
+
+    .contact__topic{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 70px;
+        height: 20vh;
+    }
+    .contact__title{
+        margin: 0;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2em;
     }
 
     .contact__input{
