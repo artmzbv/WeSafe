@@ -105,4 +105,8 @@
     background-size: cover;
     background-color: white;
 }
+
+.header__links-column-container{
+    min-height: 80svh;
+}
 }
