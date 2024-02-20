@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     width:90%;
-    padding: 5% 5%;
+    padding: 25px 5%;
     background-color: #001F3D;
 }
 
@@ -30,12 +30,12 @@
     width: 90%;
 }
 
-.metals__graphics{
+/* .metals__graphics{
     border: 2px solid white;
-    width: 45%;
-    height: 45vh;
+    width: 22.5vw;
+    height: 45vw;
     margin: auto 0;
-}
+} */
 
 .metals__paragraph{
     margin-bottom: 40px;

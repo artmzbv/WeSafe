@@ -1,5 +1,5 @@
 .market{
-    height: 70vh;
+    /* height: 70vh; */
     background-color: #001F3D;
     width: 72%;
     padding: 0% 14% 5%;
@@ -14,7 +14,7 @@
     font-size: 44px;
     /* border-bottom: 4px white solid; */
     margin:0;
-    margin-bottom: 8vh;
+    margin-bottom: 20px;
 }
 
 .market__container{
@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 768px) {
     .market{
-        height: 80vh;
+        /* height: 80vh; */
         width: 100%;
         padding: 5% 0%; 
         /* padding: 0 0; */
@@ -38,7 +38,7 @@
     .market__title{
         /* width: 80%; */
         width: 90%;
-        margin: 0 auto 4vh;
+        margin: 0 auto 20px;
     }
 
     .market__container {
