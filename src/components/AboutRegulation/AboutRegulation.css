@@ -1,8 +1,8 @@
 .regulation{
-    height: 70vh;
+    /* height: 70vh; */
     /* border: 4px solid #646060; */
     width: 72%;
-    margin: 5% auto; 
+    margin: 50px auto; 
     background-color: #FFFF;
 }
 
@@ -20,20 +20,22 @@
     font-size: 18px;
     color: #001F3D;
     text-align: start;
+    margin-bottom: 20px;
 }
 
 .regulation__list{
     color: #001F3D;
     list-style-type: none;
     text-align: start;
+    height: 35vw;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .regulation{
         width: 90%;
         margin: 5% auto; 
-        min-height: -webkit-fill-available;
+        /* min-height: -webkit-fill-available; */
     }
 
     .regulation__title{
@@ -58,5 +60,9 @@
     }
     .regulation__subtitle{
         text-align: center;
+    }
+
+    .regulation__list{
+        height: 60vw;
     }
 }

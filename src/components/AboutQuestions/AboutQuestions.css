@@ -1,16 +1,16 @@
 .questions{
-    height: 90vh;
-    width:90%;
-    padding: 2% 5%;
+    /* height: 90vh; */
+    width:72%;
+    padding: 10px 14% 200px;
     background-color: #001F3D;
 }
 
 .questions__title{
     color: white;
     /* border-bottom: 4px solid white; */
-    width: 50%;
+    width: 100%;
     text-align: start;
-    margin-bottom:30vh;
+    margin-bottom:100px;
     line-height: 54px;
     font-size: 44px;
 }
@@ -24,8 +24,9 @@
 
 .questions__subtitle{
     color: white;
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
+    /* margin: 0 auto; */
+    text-align: start;
     font-size: 36px;
     line-height: 44px;
 }
@@ -47,11 +48,13 @@
         width: 100%;
         margin-bottom: 90px;
         font-size: 48px;
+        text-align: center;
     }
     
     .questions__subtitle{
-        width: 80%;
+        width: 100%;
         font-size: 30px;
+        text-align: center;
     }
     .questions__link{
         font-size: 30px;

@@ -4,7 +4,7 @@
 }
 
 .team__title{
-    width: 50%;
+    width: 100%;
     text-align: start;
     /* border-bottom: 4px solid #001F3D; */
     margin-bottom: 50px;
@@ -43,7 +43,7 @@
     color: #001F3D;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .team{
         width: 90%;
         margin: 5% auto; 
@@ -76,7 +76,7 @@
     }    
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 600px) {
     .team__title{
         width: 100%;
         font-size: 30px;
