@@ -1,5 +1,4 @@
 .product{
-    height: 80vh;
     width: 80%;
     margin: 5% auto; 
 }
@@ -32,10 +31,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .product{
-        height: 150vh; 
-    }
-
     .product__container {
         flex-wrap: wrap;
     }
@@ -48,13 +43,13 @@
         width: 30vw;
     }
     .product__image{
-        height: 40vh;
+        min-height: 200px;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 450px) {
     .product{
-        height: 280vh; 
         width: 90%
     }
 

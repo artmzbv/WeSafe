@@ -1,6 +1,6 @@
 .problem{
     /* padding-top:10vh; */
-    height: 90vh;
+    /* height: 90vh; */
     width: 90%;
     margin: 5% 5%;
 }
@@ -11,8 +11,6 @@
     text-align: start;
     width: 100%;
     /* border-bottom: #001F3D 4px solid; */
-    line-height: 54px;
-    font-size: 44px;
     white-space: pre-wrap
 }
 
@@ -20,11 +18,13 @@
     padding-bottom: 0;
     margin-bottom: 0;
     text-align: start;
+    line-height: 54px;
+    font-size: 44px;
 }
 
 .problem__title_end{
-    /* padding-top: 0;
-    margin-top: 0; */
+    line-height: 54px;
+    font-size: 44px;
     text-align: end;
 }
 
@@ -50,31 +50,46 @@
 
 @media screen and (max-width: 900px) {
     .problem{
-        height: 90vh;
-        margin-top: 70px;
+        margin: 70px auto;
     }
 
     .problem__title{
         width: 100%;
+        margin-top: 20px;
     }
+
+    .problem__title_start{
+        text-align: start;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    
+    .problem__title_end{
+        text-align: start;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    
     
     .problem__container{
         width: 90%;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin: 10% auto 0;
+        /* gap: 20px; */
     }
     
     .problem__card{
-        width: 25%;
+        width: 45%;
         text-align: center;
+    }
+
+    .problem__description{
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    /* .problem{
-
-    } */
-    
     .problem__title{
         width: 100%;
         font-size: 30px;
