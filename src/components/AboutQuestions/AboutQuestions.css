@@ -44,9 +44,19 @@
 }
 
 @media screen and (max-width: 768px) {
+    .questions {
+        padding: 0 5%;
+        width: 90%;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
     .questions__title {
         width: 100%;
-        margin-bottom: 90px;
+        margin-bottom: 40px;
         font-size: 48px;
         text-align: center;
     }
@@ -56,6 +66,7 @@
         font-size: 30px;
         text-align: center;
     }
+    
     .questions__link{
         font-size: 30px;
     }
@@ -73,7 +84,9 @@
     .questions__subtitle{
         width: 80%;
         font-size: 20px;
+        text-align: center;
     }
+
     .questions__link{
         font-size: 20px;
     }
