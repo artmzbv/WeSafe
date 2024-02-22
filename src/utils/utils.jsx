@@ -37,7 +37,7 @@ export const insights = [
 ]
 
 export const products = [
-    {title:'Copper', src: copperOffer, link: './copper'},
+    {title:'Cuivre', src: copperOffer, link: './copper'},
     {title:'Aluminium', src: aluminiumOffer, link: './aluminium'},
     {title:'Nickel', src: nickelOffer, link: './nickel'},
 ]

@@ -6,17 +6,17 @@ export default function AboutMetals() {
         <>
         <section className='metals'>
         <div className='metals__container'>
-            <h1 className='metals__title'>Pourquoi les metaux ?</h1>
+            <h1 className='metals__title'>Pourquoi les métaux critiques ?</h1>
             <div className='metals__description'>
             <p className='metals__paragraph'>
-            Metaux critiques constitue la base de la transition energetique: batteries, mode de transport, industries, ENR, bâtiment, Internet
+            Ces métaux constituent la base des transitions numérique et énergétique.
             </p>
             <p className='metals__paragraph'>
-            La sécurisation de ces métaux représente un enjeu de souveraineté majeur ainsi qu’une opportunité d’investissement exceptionnelle.
+            La sécurisation de ces métaux représente un enjeu de souveraineté majeur ainsi qu’une opportunité d’épargne exceptionnelle pour les 30 ans à venir.
             </p>
-            <p className='metals__paragraph'>
+            {/* <p className='metals__paragraph'>
             Les prix des metaux vont augmenter au cours des 20 prochaines années
-            </p>
+            </p> */}
             </div>
             </div>
             <TransitionGraph className='metals__graphics'/>

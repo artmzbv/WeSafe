@@ -4,7 +4,7 @@ export default function AboutRegulation() {
     return(
         <>
         <section className='regulation'>
-            <h1 className='regulation__title'>Nous protegeons vos transactions</h1>
+            <h1 className='regulation__title'>Nous protegeons votre epargne</h1>
             <div className='regulation__container'>
                 <h2 className='regulation__subtitle'>Nous travaillons selon ces documents</h2> 
                 <ul className='regulation__list'>

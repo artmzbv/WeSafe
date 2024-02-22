@@ -39,8 +39,8 @@
 
 .product__image-content{
     position: relative;
-    width: 16vw;
-    height: 18vw;
+    width: 18vw;
+    height: 20vw;
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -94,6 +94,7 @@
     background-color: rgba(13, 14, 32, 0.77);
     color: #FAFAFA;
     white-space: pre-wrap;
+    font-size: 14px;
 }
 
 
