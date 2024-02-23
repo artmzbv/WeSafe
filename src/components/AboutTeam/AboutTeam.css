@@ -69,6 +69,9 @@
     }
     
     .team__card{
+                /* display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
         max-width: 25vw;
         /* padding-bottom: 4vh; */
         border-bottom: 4px solid #001F3D;
@@ -86,7 +89,14 @@
     }    
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 690px) {
+    .team__name{
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .team__title{
         width: 100%;
         font-size: 30px;

@@ -36,6 +36,9 @@
     height: 45vw;
     margin: auto 0;
 } */
+.metals__graphics{
+    background-color: #fff;
+}
 
 .metals__paragraph{
     margin-bottom: 40px;
