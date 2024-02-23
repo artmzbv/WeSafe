@@ -17,7 +17,7 @@ export default function TransitionGraph() {
     const svgRef = useRef();
     const w = 400;
     const h = 300;
-    var padding = 40;
+    var padding = 60;
 
     useEffect(() =>{
         d3.select("svg").remove()
@@ -50,7 +50,7 @@ export default function TransitionGraph() {
 
         const yScale = d3.scaleLinear()
         .domain([0, d3.max(dataset, function(d) { return d.quantity; })])
-        .range([h-padding, 15]);
+        .range([h-padding, 10]);
 
         //For converting Dates to strings
         var formatTime = d3.timeFormat("%Y");
@@ -59,12 +59,19 @@ export default function TransitionGraph() {
         const xAxis = d3.axisBottom()
                 .scale(xScale)
                 .ticks(5)
-                .tickFormat(formatTime)
+                .tickFormat(formatTime) 
+                // .tickSize()
+                // .tickValues(0)
+
+            // xAxis
+            // .selectAll(".tick")
+            // .attr("font-size","20");
 
         //Define Y axis
         const yAxis = d3.axisLeft()
                 .scale(yScale)
-                .ticks(10);
+                .ticks(10)
+                .tickFormat(d3.format(".2s"));
 
         console.log(d3.max(dataset, function(d) { return typeof(d.quantity); }))
         console.log(d3.line().x(function(d) { return xScale(d.dataset); }))
@@ -90,7 +97,15 @@ export default function TransitionGraph() {
 
         console.log(svg)
         console.log(dataset)
-	
+
+        const tooltip = d3.select(svgRef.current)
+            .append("div")
+            .style("position", "absolute")
+            .style("opacity", 0)
+            .attr("class", "tooltip")
+            .style("background-color", "white")
+            .style("padding", "5px")
+  
         //Create axes
 		svg.append("g")
 			.attr("class", "axis")
@@ -101,6 +116,35 @@ export default function TransitionGraph() {
 			.attr("class", "axis")
 			.attr("transform", "translate(" + padding + ",0)")
 			.call(yAxis);
+
+        svg.append("g")
+            .selectAll("dot")
+            .data(dataset)
+            .enter()
+            .append("circle")
+            .attr("cx", function(d) { return xScale(d.date) } )
+            .attr("cy", function(d) { return yScale(d.quantity) } )
+            .attr("r", 5)
+            .attr("fill", "white")
+            .attr("cursor", "pointer")
+            .on("mouseover", function(event,d) {
+                tooltip
+                  .style("opacity", 1)
+              })
+            .on("mousemove",  function(event,d) {
+                tooltip
+                .style("opacity", 1);
+                tooltip
+                .html("Exact value: " + d.quantity)
+                .style("left", `${event.layerX}px`)
+                .style("top", `${event.layerY-40}px`)
+                })
+            .on("mouseout", function(d) {
+                d3.select(this)
+                .style("opacity", 1)
+                tooltip
+                .style("opacity", 0);
+            })
         },[])
 
     return (<><div className='transition-graph'  ref={svgRef}></div>

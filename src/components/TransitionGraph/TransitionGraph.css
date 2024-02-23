@@ -1,5 +1,8 @@
 .transition-graph{
-    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .line {
@@ -9,5 +12,14 @@
 }
 
 .axis{
-    color: white
+    color: white;
+    font-family: inherit;
+    font-size: 12px;
 }
+
+/* path {
+    stroke: black;
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round
+  } */
