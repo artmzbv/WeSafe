@@ -36,9 +36,18 @@
     color: #001F3D;
     width: 100%;
     font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.team__profession{
+    color: #001F3D;
+    font-weight: bold;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .team__description{
+    margin-top: 12px;
     word-wrap:break-word;
     color: #001F3D;
     white-space: pre-wrap;

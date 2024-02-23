@@ -37,7 +37,7 @@ export default function AboutProblem() {
                     </p>
                 </div>
             </div>
-            <h1 className='problem__title problem__title_end'>{'Agissez en "Bonne Mere - Bon pere de famille"'}</h1>
+            {/* <h1 className='problem__title problem__title_end'>{'Agissez en "Bonne Mere - Bon pere de famille"'}</h1> */}
         </section>
         </>
     )
