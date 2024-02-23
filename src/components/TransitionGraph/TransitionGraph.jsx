@@ -15,9 +15,10 @@ const data = [
 
 export default function TransitionGraph() {
     const svgRef = useRef();
-    const w = 400;
+    const w = 450;
     const h = 300;
-    var padding = 60;
+    const margin = 20
+    var padding = 50;
 
     useEffect(() =>{
         d3.select("svg").remove()
@@ -43,14 +44,14 @@ export default function TransitionGraph() {
 
         const xScale = d3.scaleTime()
         .domain([
-        d3.min(dataset, function(d) { return     d.date}),
+        d3.min(dataset, function(d) { return d.date}),
         d3.max(dataset, function(d) { return d.date})
         ])
-        .range([padding, w-15]);
+        .range([padding, w-30]);
 
         const yScale = d3.scaleLinear()
-        .domain([0, d3.max(dataset, function(d) { return d.quantity; })])
-        .range([h-padding, 10]);
+        .domain([20000, d3.max(dataset, function(d) { return d.quantity; })])
+        .range([h-padding, 30]);
 
         //For converting Dates to strings
         var formatTime = d3.timeFormat("%Y");
@@ -63,14 +64,10 @@ export default function TransitionGraph() {
                 // .tickSize()
                 // .tickValues(0)
 
-            // xAxis
-            // .selectAll(".tick")
-            // .attr("font-size","20");
-
         //Define Y axis
         const yAxis = d3.axisLeft()
                 .scale(yScale)
-                .ticks(10)
+                .ticks(5)
                 .tickFormat(d3.format(".2s"));
 
         console.log(d3.max(dataset, function(d) { return typeof(d.quantity); }))
@@ -131,7 +128,7 @@ export default function TransitionGraph() {
                 tooltip
                   .style("opacity", 1)
               })
-            .on("mousemove",  function(event,d) {
+            .on("mousemove", function(event,d) {
                 tooltip
                 .style("opacity", 1);
                 tooltip
@@ -145,6 +142,26 @@ export default function TransitionGraph() {
                 tooltip
                 .style("opacity", 0);
             })
+            
+            svg.append("g")
+            .selectAll("text")
+            .data(dataset)
+            .enter()
+            .append("text")
+            .text(function(d){
+                return (d.quantity/1000).toFixed(1)
+            })
+            .attr("x", function(d) {
+                return xScale(d.date)-5
+                })
+            .attr("y", function(d) {
+                return yScale(d.quantity)-10
+                })
+            .attr("font-family", "sans-serif")
+            .attr("font-size", "12px")
+            .attr("fill", "white")
+            .attr("font-weight", "bold")
+
         },[])
 
     return (<><div className='transition-graph'  ref={svgRef}></div>
