@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.d7843acd.css",
-    "main.js": "/WeSafe/static/js/main.66f165cc.js",
+    "main.css": "/WeSafe/static/css/main.09616391.css",
+    "main.js": "/WeSafe/static/js/main.eeda22a3.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/photo_jerome.png": "/WeSafe/static/media/photo_jerome.e4e9abe41cc7b84ea4f3.png",
     "static/media/graphics.png": "/WeSafe/static/media/graphics.09caaaadef6325d8f33a.png",
@@ -24,12 +24,12 @@
     "index.html": "/WeSafe/index.html",
     "static/media/burger.svg": "/WeSafe/static/media/burger.fe779850e92d38259169.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.afc7d42c418608a80a66.svg",
-    "main.d7843acd.css.map": "/WeSafe/static/css/main.d7843acd.css.map",
-    "main.66f165cc.js.map": "/WeSafe/static/js/main.66f165cc.js.map",
+    "main.09616391.css.map": "/WeSafe/static/css/main.09616391.css.map",
+    "main.eeda22a3.js.map": "/WeSafe/static/js/main.eeda22a3.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7843acd.css",
-    "static/js/main.66f165cc.js"
+    "static/css/main.09616391.css",
+    "static/js/main.eeda22a3.js"
   ]
 }
