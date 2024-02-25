@@ -109,8 +109,7 @@ export default function TransitionGraph() {
         // https://d3-graph-gallery.com/graph/custom_responsive.html
         const w = parseInt(d3.select('#transition-graph').style('width'), 10)
         const h = parseInt(d3.select('#transition-graph').style('height'), 10)
-        const margin = 30;
-        const padding = 50;
+        const padding = h/6
           
         const dataset = dataReady
 

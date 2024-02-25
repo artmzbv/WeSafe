@@ -11,6 +11,10 @@
     height: 300px;
     /* margin-top: 20px; */
 }
+.transition-graph__parameters{
+    margin: 30px;
+    padding: 50px;
+}
 
 .transition-graph__title{
     color: white;
@@ -72,13 +76,12 @@
 @media screen and (max-width: 500px) {
     .transition-graph__graphics{
         width: 400px;
-        height: 300px;
+        height: 400px;
     }
 }
 
 @media screen and (max-width: 420px) {
     .transition-graph__graphics{
         width: 300px;
-        height: 300px;
     }
 }
