@@ -2,33 +2,8 @@ import {React, useState, useRef, useEffect} from 'react';
 import * as d3 from 'd3'
 import './TransitionGraph.css'
 
-const data = [
-     {"date": "2022", "quantity": 25501.86},
-    //  {"date": "2023", "quantity": 25501.86},
-    //  {"date": "2024", "quantity": 25501.86},
-    {"date": "2025", "quantity": 26754.9},
-    {"date": "2030", "quantity": 30848.25},
-    {"date": "2035", "quantity": 31538.56},
-    {"date": "2040", "quantity": 33163.58},
-    {"date": "2045", "quantity": 35788.9},
-    {"date": "2050", "quantity": 36353.5},
-]
 
-const dat = [
-   {"date": "2022", "copper": 25501.86, "nickel": 22933.685},
-   {"date": "2025", "copper": 26754.9, "nickel": 23264.069},
-   {"date": "2030", "copper": 30848.25, "nickel": 23901.33},
-   {"date": "2035", "copper": 31538.56, "nickel": 24168.24},
-   {"date": "2040", "copper": 33163.58, "nickel": 24761.43},
-   {"date": "2045", "copper": 35788.9, "nickel": 24769.29},
-   {"date": "2050", "copper": 36353.5, "nickel": 24848.96},
-]
-// https://d3-graph-gallery.com/graph/connectedscatter_multi.html
-
-
-// console.log(dat.map(function (d){return ({value: d.copper})}))
-
-var datt = [
+var data = [
     {
       "name":"copper",
       "values":[
@@ -80,36 +55,22 @@ export default function TransitionGraph() {
             };
         }
 
-        console.log(datt[0].values)
-        console.log(dat)
-
         var dataReady = allGroup.map(function(grpName) { // .map allows to do something for each element of the list
             return {
               name: grpName,
-              values: datt[option-1].values.map(function(d) {
-                return {date: +d.date, quantity: +d[grpName]};
+              values: data[option-1].values.map(function(d) {
+                return {date: +d.date, quantity: +d[grpName]/1000};
               })
             };
           })
-          console.log(dataReady)
+        //   console.log(dataReady)
+        // console.log(dataReady[0].values[1].date)
 
-        //   datt.forEach(function (kv) {
-        //     var labelName = kv.label;
-        //     kv.values.forEach(function (d) {
-        //       d.value = +d.value; 
-        //       d.name = labelName;
-        //     });
-        //   });
-        
-        console.log(dataReady[0].values[1].date)
-        console.log(typeof(dataReady[0].values[1].date))
-        console.log(dataReady[0].values[1].quantity)
-        console.log(typeof(dataReady[0].values[1].quantity))
         // https://stackoverflow.com/questions/44017721/d3-js-v4-9-get-the-calculated-width-of-selected-element
         // https://d3-graph-gallery.com/graph/custom_responsive.html
         const w = parseInt(d3.select('#transition-graph').style('width'), 10)
         const h = parseInt(d3.select('#transition-graph').style('height'), 10)
-        const padding = h/6
+        const padding = h/9
           
         const dataset = dataReady
 
@@ -117,12 +78,11 @@ export default function TransitionGraph() {
 
         function scaleY () {
             if (option === "1"){
-                return [20000, 45000]
+                return [20, 45]
             } else if (option === "2"){
-                return  [0, 10000]
+                return  [0, 10]
         }
         }
-        console.log(scaleY())
         
         const xScale = d3.scaleLinear()
         .domain([
@@ -134,16 +94,17 @@ export default function TransitionGraph() {
         const yScale = d3.scaleLinear()
         .domain(scaleY())
         .range([h-padding, h*0.25]);
-        console.log( d3.max(dataset, function(d) { return d.quantity; }))
+
+        // console.log( d3.max(dataset, function(d) { return d.quantity; }))
         //For converting Dates to strings
-        var formatTime = d3.timeFormat("%Y");
+        // var formatTime = d3.timeFormat("%Y");
 
         //Define axes
         const xAxis = d3.axisBottom()
                 .scale(xScale)
                 .ticks(5)
                 // .tickFormat()
-                // .tickFormat(formatTime)
+                .tickFormat(d => d.toFixed(0))
                 // .tickSize()
                 // .tickValues(0)
 
@@ -151,8 +112,7 @@ export default function TransitionGraph() {
         const yAxis = d3.axisLeft()
                 .scale(yScale)
                 .ticks(4)
-                .tickFormat(d3.format(".2s"));
-
+                .tickFormat(d => d.toFixed(0))
         // console.log(d3.max(dataset, function(d) { return typeof(d.quantity); }))
         // console.log(d3.line().x(function(d) { return xScale(d.dataset); }))
         
@@ -177,18 +137,18 @@ export default function TransitionGraph() {
         .append("div")
         .style("position", "absolute")
         .style("opacity", 0)
-        .attr("class", "tooltip")
+        .attr("class", "transition-graph__tooltip")
         .style("background-color", "white")
         .style("padding", "5px")
 
     //Create axes
     svg.append("g")
-        .attr("class", "axis")
+        .attr("class", "transition-graph__axis")
         .attr("transform", "translate(0," + (h - padding) + ")")
         .call(xAxis);
 
     svg.append("g")
-        .attr("class", "axis")
+        .attr("class", "transition-graph__axis")
         .attr("transform", "translate(" + padding + ",0)")
         .call(yAxis);
 
@@ -199,7 +159,7 @@ export default function TransitionGraph() {
         .datum(dataset[i].values)
         .append("path")
         .attr("d", (d) => line(d))
-        .attr("class", "line")
+        .attr("class", "transition-graph__line")
         .attr("d", line)
         .attr("stroke", color[i])
         
@@ -238,7 +198,7 @@ export default function TransitionGraph() {
             .enter()
             .append("text")
             .text(function(d){
-                return (d.quantity/1000).toFixed(1)
+                return (d.quantity).toFixed(1)
             })
             .attr("x", function(d) {
                 return xScale(d.date)-5
@@ -264,7 +224,7 @@ export default function TransitionGraph() {
       .text(function(d) { return d.name; })
       .style("fill", function(d){ return myColor(d.name) })
       .style("font-size", 12)
-      .style("font-weight", "bold")
+    //   .style("font-weight", "bold")
     //   .on("click", function(d){
     //   is the element currently visible ?
     //   currentOpacity = d3.selectAll("." + d.name).style("opacity")
@@ -275,12 +235,13 @@ export default function TransitionGraph() {
 
     return (
     <section className='transition-graph'>
-    <div className='transition-graph__title'> Projections de la demande mondiale pour métaux critiques</div>
+    <div className='transition-graph__title'> Projections de la demande mondiale (mln de tonnes)</div>
     <div className='transition-graph__buttons'>
     <button id={"1"} className={`transition-graph__button ${option === "1" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Cuivre</button>
     <button id={"2"} className={`transition-graph__button ${option === "2" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Nickel</button>
     </div>
     <div id='transition-graph' className='transition-graph__graphics'  ref={svgRef}></div>
+    <div className='transition-graph__source'>Source: Agence internationale de l'énergie</div>
     </section>
     )
 }

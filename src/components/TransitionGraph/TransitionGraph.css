@@ -3,7 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 40px;
+}
+
+.transition-graph__tooltip{
+
 }
 
 .transition-graph__graphics{
@@ -11,14 +15,11 @@
     height: 300px;
     /* margin-top: 20px; */
 }
-.transition-graph__parameters{
-    margin: 30px;
-    padding: 50px;
-}
 
 .transition-graph__title{
     color: white;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 .transition-graph__buttons{
@@ -54,22 +55,41 @@
     color: white;
 }
 
-.line {
+.transition-graph__line {
     fill: none;
     /* stroke: white; */
     stroke-width: 1;
 }
 
-.axis{
+.transition-graph__axis{
     color: white;
     font-family: inherit;
     font-size: 12px;
+}
+
+.transition-graph__source{
+    width: 450px;
+    text-align: start;
+    color: white;
+    font-size: 10px;
+    font-style: italic;
+    padding-left: 50px;
 }
 
 @media screen and (max-width: 768px) {
     .transition-graph{
         border-top: 1px solid white;
         padding-top: 20px;
+        margin-right: 0;
+    }
+
+    .transition-graph__buttons{
+        justify-content: flex-start;
+        width: 70%;
+    }
+
+    .transition-graph__button{
+        margin: 15px 15px 15px 0;
     }
 }
 
@@ -77,6 +97,11 @@
     .transition-graph__graphics{
         width: 400px;
         height: 400px;
+    }
+    .transition-graph__source{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
     }
 }
 
