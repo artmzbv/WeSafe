@@ -33,7 +33,7 @@ var data = [
   var allGroup = ["Stated policies scenario", "Announced pledges scenario","Net Zero Emissions by 2050 scenario"]
   var myColor = d3.scaleOrdinal()
   .domain(allGroup)
-  .range(["red", "white", "green"]);
+  .range(["#AB3131", "white", "#799163"]);
 
 export default function TransitionGraph() {
     const [option, setOption] = useState("1");
@@ -111,8 +111,7 @@ export default function TransitionGraph() {
         //Define Y axis
         const yAxis = d3.axisLeft()
                 .scale(yScale)
-                .ticks(4)
-                .tickFormat(d => d.toFixed(0))
+                .ticks(0)
         // console.log(d3.max(dataset, function(d) { return typeof(d.quantity); }))
         // console.log(d3.line().x(function(d) { return xScale(d.dataset); }))
         
@@ -138,8 +137,6 @@ export default function TransitionGraph() {
         .style("position", "absolute")
         .style("opacity", 0)
         .attr("class", "transition-graph__tooltip")
-        .style("background-color", "white")
-        .style("padding", "5px")
 
     //Create axes
     svg.append("g")
@@ -152,7 +149,24 @@ export default function TransitionGraph() {
         .attr("transform", "translate(" + padding + ",0)")
         .call(yAxis);
 
-    const color =["red", "white", "green"]
+    var yAxisGrid = yAxis
+        .tickSize(-w, 0)
+        .ticks(5)
+        .tickPadding(10)
+        .tickFormat(d => d.toFixed(0))
+        // .tickFormat("")
+        // .orient()
+
+    svg.append("g")
+        .classed('transition-graph__grid', true)
+        .attr("transform", "translate(" + padding + ",0)")
+        .call(yAxisGrid)
+        // .selectAll('line') 
+        .style("stroke-dasharray", ("3, 3"))
+
+
+
+    const color =["#AB3131", "white", "#799163"]
 
     dataset.forEach(function(d,i) {
         svg
@@ -176,14 +190,18 @@ export default function TransitionGraph() {
         .on("mouseover", function(event,d) {
             tooltip
             .style("opacity", 1)
+            // .tooltip
+            // .html(d.quantity.toFixed(1) +" mln t<br>" + d.date)
+            // .style("left", `${event.layerX}px`)
+            // .style("top", `${event.layerY-30}px`)
             })
         .on("mousemove", function(event,d) {
             tooltip
             .style("opacity", 1);
             tooltip
-            .html("Exact value: " + d.quantity)
+            .html(d.quantity.toFixed(1) +" mln t<br>" + d.date)
             .style("left", `${event.layerX}px`)
-            .style("top", `${event.layerY-40}px`)
+            .style("top", `${event.layerY-30}px`)
             })
         .on("mouseout", function(d) {
             d3.select(this)
@@ -191,25 +209,24 @@ export default function TransitionGraph() {
             tooltip
             .style("opacity", 0);
             })
-
-        svg.append("g")
-           .selectAll("text")
-            .data(dataset[i].values)
-            .enter()
-            .append("text")
-            .text(function(d){
-                return (d.quantity).toFixed(1)
-            })
-            .attr("x", function(d) {
-                return xScale(d.date)-5
-                })
-            .attr("y", function(d) {
-                return yScale(d.quantity)-10
-                })
-            .attr("font-family", "Montserrat")
-            .attr("font-size", "12px")
-            .attr("fill", "white")
-            // .attr("font-weight", "bold")
+        // svg.append("g")
+        //    .selectAll("text")
+        //     .data(dataset[i].values)
+        //     .enter()
+        //     .append("text")
+        //     .text(function(d){
+        //         return (d.quantity).toFixed(1)
+        //     })
+        //     .attr("x", function(d) {
+        //         return xScale(d.date)-5
+        //         })
+        //     .attr("y", function(d) {
+        //         return yScale(d.quantity)-10
+        //         })
+        //     .attr("font-family", "Montserrat")
+        //     .attr("font-size", "12px")
+        //     .attr("fill", "white")
+        //     // .attr("font-weight", "bold")
         })
     
     // Add a legend (interactive)

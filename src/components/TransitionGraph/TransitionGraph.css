@@ -7,7 +7,9 @@
 }
 
 .transition-graph__tooltip{
-
+    background-color: white;
+    padding: 5px;
+    font-size: 12px;
 }
 
 .transition-graph__graphics{
@@ -76,6 +78,12 @@
     padding-left: 50px;
 }
 
+.transition-graph__grid{
+    color: white;
+    font-family: inherit;
+    font-size: 12px;
+}
+
 @media screen and (max-width: 768px) {
     .transition-graph{
         border-top: 1px solid white;
@@ -98,6 +106,7 @@
         width: 400px;
         height: 400px;
     }
+    
     .transition-graph__source{
         width: 100%;
         text-align: center;
@@ -106,6 +115,12 @@
 }
 
 @media screen and (max-width: 420px) {
+    .transition-graph__graphics{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 320px) {
     .transition-graph__graphics{
         width: 300px;
     }

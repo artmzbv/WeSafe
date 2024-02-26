@@ -13,7 +13,7 @@ export default function Offer() {
             <div className="offer__card">
                 <div className="offer__card-image"></div>
                 <h1 className="offer__card-title">D’accéder à un marché normalement réservé aux industriels</h1>
-                <p className="offer__card-description">avec des montants d’investissement faibles (inferieur a 30 k euros en propriété réelle) et des possibilités régulières d’augmenter les investissements ou de diversifier le portefeuille avec de nouveaux métaux critiques</p>
+                <p className="offer__card-description">avec des montants d’investissement faibles (inferieur a 10 k euros en propriété réelle) et des possibilités régulières d’augmenter les investissements ou de diversifier le portefeuille avec de nouveaux métaux critiques</p>
             </div>
             <div className="offer__card">
                 <div className="offer__card-image"></div>
