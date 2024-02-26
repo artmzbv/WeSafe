@@ -93,7 +93,7 @@ export default function TransitionGraph() {
 
         const yScale = d3.scaleLinear()
         .domain(scaleY())
-        .range([h-padding, h*0.25]);
+        .range([h-padding, h*0.1]);
 
         //Define axes
         const xAxis = d3.axisBottom()
@@ -127,7 +127,7 @@ export default function TransitionGraph() {
         .attr("width", w)
         .attr("height", h);
         
-        console.log(line)
+
         const tooltip = d3.select(svgRef.current)
         .append("div")
         .style("position", "absolute")
@@ -172,6 +172,18 @@ export default function TransitionGraph() {
         .attr("d", line)
         .attr("stroke", color[i])
         
+
+        const tooltipPosition = (event) => {
+            const tooltipWidth = parseInt(getComputedStyle(document.querySelector('.transition-graph__tooltip')).width.replace("px", ""))+50
+            console.log(tooltipWidth)
+            console.log(window.screen.width-event.layerX)
+            if (window.screen.width-event.layerX > (tooltipWidth)) {
+            return (event.layerX+10) + "px"}
+            else {
+            return (event.layerX-tooltipWidth+40) + "px"
+            }
+          }
+
         svg.append("g")
         .selectAll("dot")
         .data(dataset[i].values)
@@ -195,7 +207,7 @@ export default function TransitionGraph() {
             .style("opacity", 1);
             tooltip
             .html(d.quantity.toFixed(1) +" mln t<br> +" + ((d.quantity/dataset[i].values[0].quantity-1)*100).toFixed(0) + "% p/r à 2022" )
-            .style("left", `${event.layerX+10}px`)
+            .style("left", tooltipPosition(event))
             .style("top", `${event.layerY+10}px`)
             })
         .on("mouseleave", function(d) {
@@ -227,17 +239,17 @@ export default function TransitionGraph() {
         })
     
     // Add a legend (interactive)
-    svg
-      .selectAll("myLegend")
-      .data(dataReady)
-      .enter()
-      .append('g')
-      .append("text")
-      .attr('x', function(d,i){ return 0.1*w })
-      .attr('y',function(d,i){ return 0.2*h - i*20 })
-      .text(function(d) { return d.name; })
-      .style("fill", function(d){ return myColor(d.name) })
-      .style("font-size", 12)
+    // svg
+    //   .selectAll("myLegend")
+    //   .data(dataReady)
+    //   .enter()
+    //   .append('g')
+    //   .append("text")
+    //   .attr('x', function(d,i){ return 0.1*w })
+    //   .attr('y',function(d,i){ return 0.2*h - i*20 })
+    //   .text(function(d) { return d.name; })
+    //   .style("fill", function(d){ return myColor(d.name) })
+    //   .style("font-size", 14)
     //   .style("font-weight", "bold")
     //   .on("click", function(d){
     //   is the element currently visible ?
@@ -254,6 +266,11 @@ export default function TransitionGraph() {
     <button id={"1"} className={`transition-graph__button ${option === "1" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Cuivre</button>
     <button id={"2"} className={`transition-graph__button ${option === "2" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Nickel</button>
     </div>
+    <ul className='transition-graph__legends'>
+    <li className='transition-graph__legend transition-graph__legend_n0'>Net Zero Emissions by 2050 scenario</li>
+    <li className='transition-graph__legend transition-graph__legend_ans'>Announced pledges scenario</li>
+    <li className='transition-graph__legend transition-graph__legend_spc'>Stated policies scenario</li>
+    </ul>
     <div id='transition-graph' className='transition-graph__graphics'  ref={svgRef}></div>
     <div className='transition-graph__source'>Source: Agence internationale de l'énergie</div>
     </section>

@@ -4,22 +4,24 @@
     justify-content: center;
     align-items: center;
     margin-right: 40px;
+    max-width: 50%;
 }
 
 .transition-graph__tooltip{
     background-color: white;
     padding: 7px 5px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 10px;
     color:#001F3D;
-    width: 100px;
+    width: 120px;
 }
 
 .transition-graph__graphics{
     width: 700px;
     height: 300px;
+    object-fit: cover;
     /* margin-top: 20px; */
 }
 
@@ -27,13 +29,15 @@
     color: white;
     margin-bottom: 0;
     font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
 }
 
 .transition-graph__buttons{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: flex-start;
+    width: 90%;
     background-color: inherit;
     /* width: 60%; */
 }
@@ -46,7 +50,7 @@
     font-weight: bold;
     border-radius: 30px;
     font-size: 14px;
-    margin: 15px auto 0;
+    margin: 15px 10px 0;
     width: 80px;
     height: 25px;
 }
@@ -62,6 +66,36 @@
     color: white;
 }
 
+.transition-graph__legends{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid white;
+}
+
+.transition-graph__legend{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    width: 30%;
+}
+
+.transition-graph__legend_n0{
+    color: #799163;
+}
+
+.transition-graph__legend_ans{
+    color: white;
+}
+
+.transition-graph__legend_spc{
+    color:#AB3131
+}
+
 .transition-graph__line {
     fill: none;
     /* stroke: white; */
@@ -75,10 +109,10 @@
 }
 
 .transition-graph__source{
-    width: 450px;
+    width: 700px;
     text-align: start;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     font-style: italic;
     padding-left: 50px;
 }
@@ -89,20 +123,39 @@
     font-size: 14px;
 }
 
+@media screen and (max-width: 1200px) {
+    .transition-graph{
+    margin-right: 0;
+    }
+    .transition-graph__graphics{
+        width: 500px;
+    }
+    
+    .transition-graph__source{
+            width: 700px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .transition-graph{
         border-top: 1px solid white;
         padding-top: 20px;
         margin-right: 0;
+        max-width:100%;
     }
 
     .transition-graph__buttons{
         justify-content: flex-start;
-        width: 70%;
+        width: 80%;
     }
 
     .transition-graph__button{
         margin: 15px 15px 15px 0;
+    }
+
+    .transition-graph__legends{
+        padding: 0;
+        padding-top: 20px;
     }
 }
 
@@ -122,6 +175,9 @@
 @media screen and (max-width: 420px) {
     .transition-graph__graphics{
         width: 350px;
+    }
+    .transition-graph__buttons{
+        width: 100%;
     }
 }
 
