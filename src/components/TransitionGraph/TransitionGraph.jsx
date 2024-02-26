@@ -80,7 +80,7 @@ export default function TransitionGraph() {
             if (option === "1"){
                 return [20, 45]
             } else if (option === "2"){
-                return  [0, 10]
+                return  [0, 8]
         }
         }
         
@@ -94,10 +94,6 @@ export default function TransitionGraph() {
         const yScale = d3.scaleLinear()
         .domain(scaleY())
         .range([h-padding, h*0.25]);
-
-        // console.log( d3.max(dataset, function(d) { return d.quantity; }))
-        //For converting Dates to strings
-        // var formatTime = d3.timeFormat("%Y");
 
         //Define axes
         const xAxis = d3.axisBottom()
@@ -161,10 +157,9 @@ export default function TransitionGraph() {
         .classed('transition-graph__grid', true)
         .attr("transform", "translate(" + padding + ",0)")
         .call(yAxisGrid)
-        // .selectAll('line') 
         .style("stroke-dasharray", ("3, 3"))
 
-
+    console.log(dataset[0].values[0].quantity)
 
     const color =["#AB3131", "white", "#799163"]
 
@@ -184,31 +179,33 @@ export default function TransitionGraph() {
         .append("circle")
         .attr("cx", function(d) { return xScale(d.date) } )
         .attr("cy", function(d) { return yScale(d.quantity) } )
-        .attr("r", 5)
-        .attr("fill", color[i])
+        .attr("r", 6)
+        .attr("fill",  color[i])
+        .attr("fill-opacity", 1)  
         .attr("cursor", "pointer")
+        .style("stroke", color[i])  
+        .style("stroke-opacity", 0.4)  
+        .style("stroke-width", 6)  
         .on("mouseover", function(event,d) {
             tooltip
-            .style("opacity", 1)
-            // .tooltip
-            // .html(d.quantity.toFixed(1) +" mln t<br>" + d.date)
-            // .style("left", `${event.layerX}px`)
-            // .style("top", `${event.layerY-30}px`)
+            .style("opacity", 1);
             })
         .on("mousemove", function(event,d) {
             tooltip
             .style("opacity", 1);
             tooltip
-            .html(d.quantity.toFixed(1) +" mln t<br>" + d.date)
-            .style("left", `${event.layerX}px`)
-            .style("top", `${event.layerY-30}px`)
+            .html(d.quantity.toFixed(1) +" mln t<br> +" + ((d.quantity/dataset[i].values[0].quantity-1)*100).toFixed(0) + "% p/r à 2022" )
+            .style("left", `${event.layerX+10}px`)
+            .style("top", `${event.layerY+10}px`)
             })
-        .on("mouseout", function(d) {
-            d3.select(this)
-            .style("opacity", 1)
+        .on("mouseleave", function(d) {
             tooltip
-            .style("opacity", 0);
+            .transition()
+            .duration(200)
+            .style("opacity", 0)
             })
+
+
         // svg.append("g")
         //    .selectAll("text")
         //     .data(dataset[i].values)
