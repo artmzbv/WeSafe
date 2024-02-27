@@ -19,9 +19,11 @@
 }
 
 .transition-graph__graphics{
+    display: inline-block;
     width: 700px;
     height: 300px;
     object-fit: cover;
+    font-size: 50px;
     /* margin-top: 20px; */
 }
 
@@ -125,14 +127,15 @@
 
 @media screen and (max-width: 1200px) {
     .transition-graph{
-    margin-right: 0;
+        margin-right: 0;
     }
     .transition-graph__graphics{
         width: 500px;
+        font-size: 40px;
     }
     
     .transition-graph__source{
-            width: 700px;
+        width: 500px;
     }
 }
 
@@ -142,6 +145,7 @@
         padding-top: 20px;
         margin-right: 0;
         max-width:100%;
+        font-size: 30px;
     }
 
     .transition-graph__buttons{
@@ -156,6 +160,7 @@
     .transition-graph__legends{
         padding: 0;
         padding-top: 20px;
+        margin-bottom: 0;
     }
 }
 

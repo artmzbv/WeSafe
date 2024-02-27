@@ -70,7 +70,8 @@ export default function TransitionGraph() {
         // https://d3-graph-gallery.com/graph/custom_responsive.html
         const w = parseInt(d3.select('#transition-graph').style('width'), 10)
         const h = parseInt(d3.select('#transition-graph').style('height'), 10)
-        const padding = h/9
+        const padding = parseInt(d3.select('#transition-graph').style('font-size'), 10)
+        //h/9-15
           
         const dataset = dataReady
 
@@ -93,7 +94,8 @@ export default function TransitionGraph() {
 
         const yScale = d3.scaleLinear()
         .domain(scaleY())
-        .range([h-padding, h*0.1]);
+        .range([h-padding, h*0.1])
+        
 
         //Define axes
         const xAxis = d3.axisBottom()
@@ -138,15 +140,15 @@ export default function TransitionGraph() {
     svg.append("g")
         .attr("class", "transition-graph__axis")
         .attr("transform", "translate(0," + (h - padding) + ")")
-        .call(xAxis);
+        .call(xAxis)
 
     svg.append("g")
         .attr("class", "transition-graph__axis")
         .attr("transform", "translate(" + padding + ",0)")
-        .call(yAxis);
+        .call(yAxis)
 
     var yAxisGrid = yAxis
-        .tickSize(-w, 0)
+        .tickSize(-w+padding+h*0.085, 0)
         .ticks(5)
         .tickPadding(10)
         .tickFormat(d => d.toFixed(0))
@@ -158,6 +160,8 @@ export default function TransitionGraph() {
         .attr("transform", "translate(" + padding + ",0)")
         .call(yAxisGrid)
         .style("stroke-dasharray", ("3, 3"))
+        .call(g => g.select(".domain").remove())
+        .filter(function (d, i) { return i === 1;}).remove()
 
     console.log(dataset[0].values[0].quantity)
 
@@ -174,13 +178,14 @@ export default function TransitionGraph() {
         
 
         const tooltipPosition = (event) => {
-            const tooltipWidth = parseInt(getComputedStyle(document.querySelector('.transition-graph__tooltip')).width.replace("px", ""))+50
+            const tooltipWidth = parseInt(getComputedStyle(document.querySelector('.transition-graph__tooltip')).width.replace("px", ""))
             console.log(tooltipWidth)
+            console.log(event.layerX)
             console.log(window.screen.width-event.layerX)
-            if (window.screen.width-event.layerX > (tooltipWidth)) {
-            return (event.layerX+10) + "px"}
+            if (window.screen.width-event.layerX > tooltipWidth + w/10) {
+            return (event.layerX) + "px"}
             else {
-            return (event.layerX-tooltipWidth+40) + "px"
+            return (event.layerX-tooltipWidth) + "px"
             }
           }
 
