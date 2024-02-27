@@ -6,18 +6,50 @@ import commande from '../../images/commande.jpg'
 import selection from '../../images/selection.jpg'
 
 export default function AboutProduct() {
-    const [isIntersecting, setIsIntersecting] = useState(false);
+    const [isIntersectingSel, setIsIntersectingSel] = useState(false);
+    const [isIntersectingCom, setIsIntersectingCom] = useState(false);
+    const [isIntersectingLiv, setIsIntersectingLiv] = useState(false);
+    const [isIntersectingRev, setIsIntersectingRev] = useState(false);
     // store a reference to a DOM element 
-    console.log(isIntersecting);
-    const ref = useRef(null);
+
+    const selRef = useRef(null);
+    const comRef = useRef(null);
+    const livRef = useRef(null);
+    const revRef = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
           console.log(entry)
-          setIsIntersecting(entry.isIntersecting);
+          setIsIntersectingSel(entry.isIntersecting);
         },{ rootMargin: "0px" });
-        console.log(ref);
-        observer.observe(ref.current);
+        observer.observe(selRef.current);
+        return () => observer.disconnect();
+      }, []);
+    
+      useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          console.log(entry)
+          setIsIntersectingCom(entry.isIntersecting);
+        },{ rootMargin: "0px" });
+        observer.observe(comRef.current);
+        return () => observer.disconnect();
+      }, []);
+
+      useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          console.log(entry)
+          setIsIntersectingLiv(entry.isIntersecting);
+        },{ rootMargin: "0px" });
+        observer.observe(livRef.current);
+        return () => observer.disconnect();
+      }, []);
+
+      useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          console.log(entry)
+          setIsIntersectingRev(entry.isIntersecting);
+        },{ rootMargin: "0px" });
+        observer.observe(revRef.current);
         return () => observer.disconnect();
       }, []);
     
@@ -31,8 +63,8 @@ export default function AboutProduct() {
                     <h2 className='product__subtitle'>1.Selection</h2>
                     <div className='product__image-content'>
                     <img className='product__image' src={selection} alt='selection'></img>
-                    <div className='product__more-description'>&#8593;</div>
-                    <div className={`product__description  ${isIntersecting ? 'product__description_hover' : null}`} ref={ref}>
+                    <div className='product__more-description'>{'En savoir plus'}&#8593;</div>
+                    <div className={`product__description  ${isIntersectingSel ? 'product__description_hover' : null}`} ref={selRef}>
                     <p>Vous choisisez et selectionnez seul ou avec un de nos consultants via WeSafe App</p>
                     </div>
                     </div>
@@ -42,7 +74,7 @@ export default function AboutProduct() {
                     <div className='product__image-content'>
                     <img className='product__image' src={commande} alt='commande'></img>
                     <div className='product__more-description'>{'En savoir plus'} &#8593;</div>
-                    <div className={`product__description  ${isIntersecting ? 'product__description_hover' : null}`} ref={ref}>
+                    <div className={`product__description  ${isIntersectingCom ? 'product__description_hover' : null}`} ref={comRef}>
                     <p>Après la réservation la commande est transmise à l'un de nos fournisseurs</p>
                     </div>
                 </div>
@@ -52,7 +84,7 @@ export default function AboutProduct() {
                     <div className='product__image-content'>
                     <img className='product__image' src={livraison} alt='livraison'></img>
                     <div className='product__more-description'>{'En savoir plus'} &#8593;</div>
-                    <div className={`product__description  ${isIntersecting ? 'product__description_hover' : null}`} ref={ref}>
+                    <div className={`product__description  ${isIntersectingLiv ? 'product__description_hover' : null}`} ref={livRef}>
                     <p>La commande est tranportée et livrée par notre fournisseur, puis stockée dans l'un de nos entrepôts ultra-sécurisés</p>
                     </div>
                 </div>
@@ -69,7 +101,7 @@ export default function AboutProduct() {
                     <div className='product__image-content'>
                     <img className='product__image' src={stockage} alt='stockage'></img>
                     <div className='product__more-description'>{'En savoir plus'} &#8593;</div>
-                    <div className={`product__description  ${isIntersecting ? 'product__description_hover' : null}`} ref={ref}>
+                    <div className={`product__description  ${isIntersectingRev ? 'product__description_hover' : null}`} ref={revRef}>
                     <p>A moyen ou long termes suivant vos objectifs, bénéficier de notre service de revente aupres des industriels</p>
                     </div>
                 </div>

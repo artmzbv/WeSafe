@@ -100,10 +100,6 @@
     font-size: 14px;
 }
 
-.product__description_hover{
-    transform: translateY(0%)  
-}
-
 .product__image-content:hover .product__description{
     transform: translateY(0%)
 }
@@ -129,18 +125,19 @@
         min-height: 240px;
         width: 100%;
     }
-    .product__description{
-        /* height: 50%; */
+
+    .product__more-description{
+        display: none;
+    }
+        
+    .product__description_hover{
+        transform: translateY(0%)  
     }
 }
 
 @media screen and (max-width: 500px) {
     .product{
         width: 90%
-    }
-    
-    .product__description_hover{
-        transform: translateY(0%)  
     }
 
     .product__title{
