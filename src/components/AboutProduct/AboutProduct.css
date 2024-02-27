@@ -138,6 +138,10 @@
     .product{
         width: 90%
     }
+    
+    .product__description_hover{
+        transform: translateY(0%)  
+    }
 
     .product__title{
         font-size: 36px;
