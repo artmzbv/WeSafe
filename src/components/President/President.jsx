@@ -1,5 +1,5 @@
 import './President.css';
-import jerome from '../../images/photo_jerome.png'
+import jerome from '../../images/aboutteam/photo_jerome.png'
 
 export default function President() {
     return(

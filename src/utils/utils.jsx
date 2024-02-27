@@ -1,8 +1,8 @@
 import copperA from '../images/offer_copper.jpg'
 import copperB from '../images/offer_copper.jpg'
-import copperOffer from '../images/copper.jpg'
-import aluminiumOffer from '../images/aluminium.jpg'
-import nickelOffer from '../images/nickel.jpg'
+import copperOffer from '../images/aboutmetals/copper.jpg'
+import aluminiumOffer from '../images/aboutmetals/aluminium.jpg'
+import nickelOffer from '../images/aboutmetals/nickel.jpg'
 
 
 export const insights = [

@@ -1,5 +1,5 @@
 import './AboutSolution.css';
-import graphics from '../../images/graphics.png'
+// import graphics from '../../images/graphics.png'
 
 export default function AboutSolution() {
     return(

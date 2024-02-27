@@ -1,9 +1,10 @@
 import './AboutProduct.css';
 import {React, useState, useRef, useEffect}  from "react";
-import livraison from '../../images/livraison.jpg'
-import stockage from '../../images/stockage.jpg'
-import commande from '../../images/commande.jpg'
-import selection from '../../images/selection.jpg'
+import livraison from '../../images/aboutproduct/livraison.jpg'
+import stockage from '../../images/aboutproduct/stockage.jpg'
+import commande from '../../images/aboutproduct/commande.jpg'
+import selection from '../../images/aboutproduct/selection.jpg'
+import revente from '../../images/aboutproduct/revente.jpg'
 
 export default function AboutProduct() {
     const [isIntersectingSel, setIsIntersectingSel] = useState(false);
@@ -99,7 +100,7 @@ export default function AboutProduct() {
                 <div className='product__card'>
                     <h2 className='product__subtitle'>4.Revente</h2>
                     <div className='product__image-content'>
-                    <img className='product__image' src={stockage} alt='stockage'></img>
+                    <img className='product__image' src={revente} alt='stockage'></img>
                     <div className='product__more-description'>{'En savoir plus'} &#8593;</div>
                     <div className={`product__description  ${isIntersectingRev ? 'product__description_hover' : null}`} ref={revRef}>
                     <p>A moyen ou long termes suivant vos objectifs, bénéficier de notre service de revente aupres des industriels</p>

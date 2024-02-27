@@ -1,7 +1,7 @@
 import './AboutProblem.css';
-import circle1 from '../../images/circle1.svg'
-import circle2 from '../../images/circle2.svg'
-import circle3 from '../../images/circle3.svg'
+import circle1 from '../../images/aboutproblem/circle1.svg'
+import circle2 from '../../images/aboutproblem/circle2.svg'
+import circle3 from '../../images/aboutproblem/circle3.svg'
 
 export default function AboutProblem() {
     return(
