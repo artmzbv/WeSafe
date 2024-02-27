@@ -23,11 +23,20 @@
     margin-bottom: 20px;
 }
 
-.regulation__list{
+.regulation__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     color: #001F3D;
     list-style-type: none;
     text-align: start;
-    height: 35vw;
+    padding:0;
+    margin:0;
+}
+
+.regulation__item{
+    width: 30%;
 }
 
 
