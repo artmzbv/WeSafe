@@ -31,7 +31,7 @@
 }
 
 .product__subtitle{
-    margin:0;
+    margin: 0;
     line-height: 30px;
     margin-bottom: 10px;
     height: 60px;
@@ -46,6 +46,9 @@
     cursor: pointer;
 }
 
+/* .slide-in {
+    transform: translateX(0) !important;
+  } */
 
 .product__image{
     position: absolute;
@@ -97,6 +100,9 @@
     font-size: 14px;
 }
 
+.product__description_hover{
+    transform: translateY(0%)  
+}
 
 .product__image-content:hover .product__description{
     transform: translateY(0%)

@@ -196,13 +196,17 @@ export default function TransitionGraph() {
         .append("circle")
         .attr("cx", function(d) { return xScale(d.date) } )
         .attr("cy", function(d) { return yScale(d.quantity) } )
-        .attr("r", 6)
+        .attr("r", 7)
         .attr("fill",  color[i])
         .attr("fill-opacity", 1)  
         .attr("cursor", "pointer")
         .style("stroke", color[i])  
         .style("stroke-opacity", 0.4)  
-        .style("stroke-width", 6)  
+        .style("stroke-width", 7)
+        .on("click", function(event, d){
+          tooltip
+            .style("opacity", 1)
+          })
         .on("mouseover", function(event,d) {
             tooltip
             .style("opacity", 1);

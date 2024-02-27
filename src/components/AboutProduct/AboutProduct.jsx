@@ -1,15 +1,30 @@
 import './AboutProduct.css';
-import {React, useState}  from "react";
+import {React, useState, useRef, useEffect}  from "react";
 import livraison from '../../images/livraison.jpg'
 import stockage from '../../images/stockage.jpg'
 import commande from '../../images/commande.jpg'
 import selection from '../../images/selection.jpg'
 
 export default function AboutProduct() {
+    const [isIntersecting, setIsIntersecting] = useState(false);
+    // store a reference to a DOM element 
+    console.log(isIntersecting);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          console.log(entry)
+          setIsIntersecting(entry.isIntersecting);
+        });
+        console.log(ref);
+        observer.observe(ref.current);
+        return () => observer.disconnect();
+      }, []);
     
+
     return(
         <>
-        <section className='product'>
+        <section className='product' ref={ref}>
             <h1 className='product__title'>{'Comment fonctionne votre platforme digitale?\n - 4 etapes'}</h1>
             <div className='product__container'>
                 <div className='product__card'>
@@ -17,7 +32,7 @@ export default function AboutProduct() {
                     <div className='product__image-content'>
                     <img className='product__image' src={selection} alt='selection'></img>
                     <div className='product__more-description'>&#8593;</div>
-                    <div className='product__description'>
+                    <div className={`product__description  ${isIntersecting ? 'product__description_hover' : null}`}>
                     <p>Vous choisisez et selectionnez seul ou avec un de nos consultants via WeSafe App</p>
                     </div>
                     </div>
