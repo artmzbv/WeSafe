@@ -40,6 +40,10 @@
     width: 18vw;
 }
 
+/* img.problem__icon{
+    shape-renderer: crispEdges;
+} */
+
 .problem__description{
     color: #001F3D;
     white-space: pre-wrap;

@@ -2,6 +2,7 @@ import './AboutProblem.css';
 import circle1 from '../../images/aboutproblem/circle1.svg'
 import circle2 from '../../images/aboutproblem/circle2.svg'
 import circle3 from '../../images/aboutproblem/circle3.svg'
+import circle4 from '../../images/aboutproblem/circle4.svg'
 
 export default function AboutProblem() {
     return(
@@ -31,7 +32,7 @@ export default function AboutProblem() {
                     </p>
                 </div>
                 <div className='problem__card'>
-                <img className='problem__icon' src={circle3} alt='opportunities'/>
+                <img className='problem__icon' src={circle4} alt='opportunities'/>
                     <p className='problem__description'>
                     {'Beneficiez de la "Ruee" sur les matieres premieres  en vous protegeant de l inflation.'} 
                     </p>
