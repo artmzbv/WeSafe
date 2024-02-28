@@ -134,6 +134,14 @@
 }
 
 @media screen and (max-width: 950px) {
+    .regulation__description_hover{
+        transform: translateY(0%)  
+    }
+
+    .regulation__more-description{
+        display: none;
+    }
+    
     .regulation{
         width: 90%;
         margin: 5% auto; 

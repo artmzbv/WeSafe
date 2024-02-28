@@ -1,4 +1,5 @@
 import './AboutRegulation.css';
+import {React, useState, useRef, useEffect}  from "react";
 import metal from '../../images/aboutregulation/metal.jpg'
 import leaders from '../../images/aboutregulation/leaders.jpg'
 import analytics from '../../images/aboutregulation/analytics.jpg'
@@ -7,6 +8,75 @@ import garanties from '../../images/aboutregulation/garanties.jpg'
 import administration from '../../images/aboutregulation/administration.jpg'
 
 export default function AboutRegulation() {
+    const [isIntersectingMetals, setIsIntersectingMetals] = useState(false);
+    const [isIntersectingPrice, setIsIntersectingPrice] = useState(false);
+    const [isIntersectingStock, setIsIntersectingStock] = useState(false);
+    const [isIntersectingAnalyse, setIsIntersectingAnalyse] = useState(false);
+    const [isIntersectingSecurity, setIsIntersectingSecurity] = useState(false);
+    const [isIntersectingAdm, setIsIntersectingAdm] = useState(false);
+    // store a reference to a DOM element 
+
+    const metRef = useRef(null);
+    const priRef = useRef(null);
+    const stoRef = useRef(null);
+    const anaRef = useRef(null);
+    const secRef = useRef(null);
+    const admRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          console.log(entry)
+          setIsIntersectingMetals(entry.isIntersecting);
+        },{ rootMargin: "0px" });
+        observer.observe(metRef.current);
+        return () => observer.disconnect();
+      }, []);
+    
+      useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          console.log(entry)
+          setIsIntersectingPrice(entry.isIntersecting);
+        },{ rootMargin: "0px" });
+        observer.observe(priRef.current);
+        return () => observer.disconnect();
+      }, []);
+
+      useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          console.log(entry)
+          setIsIntersectingStock(entry.isIntersecting);
+        },{ rootMargin: "0px" });
+        observer.observe(stoRef.current);
+        return () => observer.disconnect();
+      }, []);
+
+      useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          console.log(entry)
+          setIsIntersectingAnalyse(entry.isIntersecting);
+        },{ rootMargin: "0px" });
+        observer.observe(anaRef.current);
+        return () => observer.disconnect();
+      }, []);
+
+      useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          console.log(entry)
+          setIsIntersectingSecurity(entry.isIntersecting);
+        },{ rootMargin: "0px" });
+        observer.observe(secRef.current);
+        return () => observer.disconnect();
+      }, []);
+      
+      useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+          console.log(entry)
+          setIsIntersectingAdm(entry.isIntersecting);
+        },{ rootMargin: "0px" });
+        observer.observe(admRef.current);
+        return () => observer.disconnect();
+      }, []);
+    
     return(
         <>
         <section className='regulation'>
@@ -18,7 +88,7 @@ export default function AboutRegulation() {
                     <div className='regulation__image-content'>
                         <img className='regulation__image' src={metal} alt='selection'></img> 
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
-                        <div className='regulation__description'>
+                        <div className={`regulation__description  ${isIntersectingMetals ? 'regulation__description_hover' : null}`}  ref={metRef}>
                             <p className='regulation__paragraph'>Tout notre catalogue répond aux normes UE et à la législation sur les Métaux </p>
                             <p className='regulation__paragraph'>Nos produits industriels standards sont enregistrés au LME </p>
                             <p className='regulation__paragraph'>Nos produits issus de l économie circulaire ou de l industrie de transformation sont conformes 
@@ -32,7 +102,7 @@ export default function AboutRegulation() {
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={transparency} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
-                        <div className='regulation__description'>
+                        <div className={`regulation__description  ${isIntersectingPrice ? 'regulation__description_hover' : null}`} ref={priRef}>
                         <p className='regulation__paragraph'>Nos prix sur les produits industriels standards (hors commissions) sont transparents / LME 
                             (London Metal Exchange, bourse internationale des Métaux) </p>
                         <p className='regulation__paragraph'>Nos prix sur les produits issus de l'économie circulaire ou de l' industrie de transformation 
@@ -46,7 +116,7 @@ export default function AboutRegulation() {
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={leaders} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
-                        <div className='regulation__description'>
+                        <div className={`regulation__description  ${isIntersectingStock ? 'regulation__description_hover' : null}`} ref={stoRef}>
                         <p className='regulation__paragraph'>Nous travaillons uniquement avec des Leader du secteur</p>
                         </div>
                         </div>
@@ -57,7 +127,7 @@ export default function AboutRegulation() {
                     <div className='regulation__image-content'>
                         <img className='regulation__image' src={analytics} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
-                        <div className='regulation__description'>
+                        <div className={`regulation__description  ${isIntersectingAnalyse ? 'regulation__description_hover' : null}`} ref={anaRef}>
                         <p className='regulation__paragraph'>Nos analystes vous informe régulièrement des informations macro économiques du marché national, européens et internationaux des métaux.</p>
                         </div>
                     </div>
@@ -68,7 +138,7 @@ export default function AboutRegulation() {
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={garanties} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
-                        <div className='regulation__description'>
+                        <div className={`regulation__description  ${isIntersectingSecurity ? 'regulation__description_hover' : null}`} ref={secRef}>
                         <p className='regulation__paragraph'>Nos partenaires financiers et bancaires garantissent le paiement de vos commandes</p>
                         </div>
                         </div>
@@ -79,7 +149,7 @@ export default function AboutRegulation() {
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={administration} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
-                        <div className='regulation__description'>
+                        <div className={`regulation__description  ${isIntersectingAdm ? 'regulation__description_hover' : null}`} ref={admRef}>
                         <p className='regulation__paragraph'>Pour toute question nous vous orienterons (si besoin) vers des partenaires agréés spécialisés 
                             dans le formalisme et les déclarations liés à l' achat de Métaux Industriels</p>
                         </div>
