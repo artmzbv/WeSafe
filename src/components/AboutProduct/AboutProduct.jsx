@@ -20,7 +20,7 @@ export default function AboutProduct() {
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-          console.log(entry)
+          // console.log(entry)
           setIsIntersectingSel(entry.isIntersecting);
         },{ rootMargin: "0px" });
         observer.observe(selRef.current);
@@ -29,7 +29,6 @@ export default function AboutProduct() {
     
       useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-          console.log(entry)
           setIsIntersectingCom(entry.isIntersecting);
         },{ rootMargin: "0px" });
         observer.observe(comRef.current);
@@ -38,7 +37,6 @@ export default function AboutProduct() {
 
       useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-          console.log(entry)
           setIsIntersectingLiv(entry.isIntersecting);
         },{ rootMargin: "0px" });
         observer.observe(livRef.current);
@@ -47,7 +45,6 @@ export default function AboutProduct() {
 
       useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-          console.log(entry)
           setIsIntersectingRev(entry.isIntersecting);
         },{ rootMargin: "0px" });
         observer.observe(revRef.current);

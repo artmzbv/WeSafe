@@ -22,57 +22,52 @@ export default function AboutRegulation() {
     const anaRef = useRef(null);
     const secRef = useRef(null);
     const admRef = useRef(null);
+    const rootMargin = "-150px"
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-          console.log(entry)
           setIsIntersectingMetals(entry.isIntersecting);
-        },{ rootMargin: "0px" });
+        },{ rootMargin: rootMargin });
         observer.observe(metRef.current);
         return () => observer.disconnect();
       }, []);
     
       useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-          console.log(entry)
           setIsIntersectingPrice(entry.isIntersecting);
-        },{ rootMargin: "0px" });
+        },{ rootMargin: rootMargin });
         observer.observe(priRef.current);
         return () => observer.disconnect();
       }, []);
 
       useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-          console.log(entry)
           setIsIntersectingStock(entry.isIntersecting);
-        },{ rootMargin: "0px" });
+        },{ rootMargin: rootMargin });
         observer.observe(stoRef.current);
         return () => observer.disconnect();
       }, []);
 
       useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-          console.log(entry)
           setIsIntersectingAnalyse(entry.isIntersecting);
-        },{ rootMargin: "0px" });
+        },{ rootMargin: rootMargin });
         observer.observe(anaRef.current);
         return () => observer.disconnect();
       }, []);
 
       useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-          console.log(entry)
           setIsIntersectingSecurity(entry.isIntersecting);
-        },{ rootMargin: "0px" });
+        },{ rootMargin: rootMargin });
         observer.observe(secRef.current);
         return () => observer.disconnect();
       }, []);
       
       useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-          console.log(entry)
           setIsIntersectingAdm(entry.isIntersecting);
-        },{ rootMargin: "0px" });
+        },{ rootMargin: rootMargin });
         observer.observe(admRef.current);
         return () => observer.disconnect();
       }, []);
