@@ -80,6 +80,7 @@
     }
     .metals__container{
         width: 100%;   
+        margin-bottom: 50px;
     }
 }
 @media screen and (max-width: 450px) {

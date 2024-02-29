@@ -13,8 +13,8 @@ export default function AboutQuestions() {
             </Link></h2>
             <div className='questions__attention'>
             <h2 className='questions__subtitle questions__subtitle_attention'>Attention</h2>
-            <p className='questions__paragraph'>{'Nous ne sommes ni conseilleurs financiers, ni conseilleurs de patrimoine.'}</p>
-            <p className='questions__paragraph'>{'Notre metier est les transactions sur les materieux critiques.'}</p>
+            <p className='questions__paragraph'>{'Nous ne sommes ni conseilleurs financiers,\nni conseilleurs de patrimoine.'}</p>
+            <p className='questions__paragraph'>{'Notre metier est les transactions\nsur les materieux critiques.'}</p>
             </div>
         </section>
         </>
