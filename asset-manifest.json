@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.ba16d5cb.css",
+    "main.css": "/WeSafe/static/css/main.508ec54e.css",
     "main.js": "/WeSafe/static/js/main.6f8d3ab5.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/garanties.jpg": "/WeSafe/static/media/garanties.d50d289c32b0491a780f.jpg",
@@ -31,12 +31,12 @@
     "index.html": "/WeSafe/index.html",
     "static/media/burger.svg": "/WeSafe/static/media/burger.fe779850e92d38259169.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.afc7d42c418608a80a66.svg",
-    "main.ba16d5cb.css.map": "/WeSafe/static/css/main.ba16d5cb.css.map",
+    "main.508ec54e.css.map": "/WeSafe/static/css/main.508ec54e.css.map",
     "main.6f8d3ab5.js.map": "/WeSafe/static/js/main.6f8d3ab5.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba16d5cb.css",
+    "static/css/main.508ec54e.css",
     "static/js/main.6f8d3ab5.js"
   ]
 }
