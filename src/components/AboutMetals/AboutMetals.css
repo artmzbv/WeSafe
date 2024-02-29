@@ -64,14 +64,19 @@
     font-size: 26px;
     font-weight: bold;
     cursor: pointer;
+    content: "\1F86D";
     /* margin: 50px auto; */
     /* text-decoration: underline; */
     
 }
+
 .metals__subtitle:hover {
     color: #646060;
-
 }
+.metals__subtitle:after{
+    content: "\1F86D";
+}
+
 
 @media screen and (max-width: 900px) {
     .metals__info{

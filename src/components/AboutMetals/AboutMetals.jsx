@@ -1,6 +1,7 @@
 import { Link} from "react-router-dom";
 import './AboutMetals.css';
 import TransitionGraph from '../TransitionGraph/TransitionGraph'
+import refsvg from '../../images/ref.svg'
 
 export default function AboutMetals() {
     return(
@@ -21,7 +22,7 @@ export default function AboutMetals() {
             Les prix des metaux vont augmenter au cours des 20 prochaines années
             </p> */}
                 <Link className='metals__link-insights' to="/insights">
-                <button className='metals__subtitle'>Voyez aussi nos insights sur le marche &#129133;</button>
+                <button className='metals__subtitle'>Voyez aussi nos insights sur le marche</button>
             </Link>
             </div>
             <TransitionGraph className='metals__graphics'/>

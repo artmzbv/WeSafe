@@ -116,17 +116,6 @@ export default function AboutRegulation() {
                         </div>
                         </div>
                     </li>
-                    
-                    <li className='regulation__item'>
-                    <h3 className='regulation__item-title'>Analyse Marches des Metaux Critiques</h3>
-                    <div className='regulation__image-content'>
-                        <img className='regulation__image' src={analytics} alt='selection'></img>
-                        <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
-                        <div className={`regulation__description  ${isIntersectingAnalyse ? 'regulation__description_hover' : null}`} ref={anaRef}>
-                        <p className='regulation__paragraph'>Nos analystes vous informe régulièrement des informations macro économiques du marché national, européens et internationaux des métaux.</p>
-                        </div>
-                    </div>
-                    </li>
 
                     <li className='regulation__item'>
                         <h3 className='regulation__item-title'>Securite des vos paiements</h3>
@@ -137,6 +126,17 @@ export default function AboutRegulation() {
                         <p className='regulation__paragraph'>Nos partenaires financiers et bancaires garantissent le paiement de vos commandes</p>
                         </div>
                         </div>
+                    </li>
+                    
+                    <li className='regulation__item'>
+                    <h3 className='regulation__item-title'>Analyse Marches des Metaux Critiques</h3>
+                    <div className='regulation__image-content'>
+                        <img className='regulation__image' src={analytics} alt='selection'></img>
+                        <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
+                        <div className={`regulation__description  ${isIntersectingAnalyse ? 'regulation__description_hover' : null}`} ref={anaRef}>
+                        <p className='regulation__paragraph'>Nos analystes vous informe régulièrement des informations macro économiques du marché national, européens et internationaux des métaux.</p>
+                        </div>
+                    </div>
                     </li>
 
                     <li className='regulation__item'>
