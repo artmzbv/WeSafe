@@ -123,11 +123,15 @@ export default function TransitionGraph() {
         console.log(line(dataset[0].values))
         //Print data to console as table, for verification
         console.table(dataset, ["date", "quantity"]);
+        console.log(h)
+        console.log(w)
         
         const svg = d3.select(svgRef.current)
         .append("svg")
-        .attr("width", w)
-        .attr("height", h);
+        // .attr("width", w)
+        // .attr("height", h)
+        .attr("viewBox", '0 0 ' + w + ' ' + h)
+        .attr("preserveAspectRatio", 'xMidYMax slice')
         
 
         const tooltip = d3.select(svgRef.current)
