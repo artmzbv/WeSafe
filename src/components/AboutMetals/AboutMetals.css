@@ -73,7 +73,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .metals{
+    .metals__info{
         flex-direction: column;
         justify-content: space-between;
     }
