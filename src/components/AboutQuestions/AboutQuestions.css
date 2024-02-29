@@ -43,6 +43,28 @@
     color: #646060;
 }
 
+.questions__attention{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px 0;
+
+}
+
+.questions__subtitle_attention{
+    color: #001F3D;
+    margin: auto auto;
+}
+
+.questions__paragraph{
+    color: #001F3D;
+    font-size: 18px;
+    font-weight: normal;
+    white-space: pre-wrap;
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .questions {
         padding: 0 5%;

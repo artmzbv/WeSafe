@@ -131,7 +131,7 @@ export default function TransitionGraph() {
         // .attr("width", w)
         // .attr("height", h)
         .attr("viewBox", '0 0 ' + w + ' ' + h)
-        .attr("preserveAspectRatio", 'xMidYMax meet')
+        // .attr("preserveAspectRatio", 'xMidYMax meet')
         
 
         const tooltip = d3.select(svgRef.current)
@@ -219,7 +219,7 @@ export default function TransitionGraph() {
             tooltip
             .style("opacity", 1);
             tooltip
-            .html(d.quantity.toFixed(1) +" mln t<br> +" + ((d.quantity/dataset[i].values[0].quantity-1)*100).toFixed(0) + "% p/r à 2022" )
+            .html(d.quantity.toFixed(1) +" Mln t<br> +" + ((d.quantity/dataset[i].values[0].quantity-1)*100).toFixed(0) + "% p/r à 2022" )
             .style("left", tooltipPosition(event))
             .style("top", `${event.layerY+10}px`)
             })
