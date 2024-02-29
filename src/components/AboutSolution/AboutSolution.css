@@ -51,10 +51,13 @@
 
 .solution__graph{
     width: 40vw;
-    height: 20vw;
+    height: 25vw;
     color: white;
     border: white solid 1px;
     margin-right: 0;
+    background-image: url(../../images/alchemist.jpg);
+    background-size: cover;
+    background-position: right 50px top -40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -81,6 +84,11 @@
     }
     .solution__item{
         margin-top: 50px;
+    }
+    .solution__graph{
+        align-self: flex-end;
+        width: 40vw;
+        height: 30vw;
     }
 }
 
@@ -123,5 +131,6 @@
         width: 90vw;
         /* margin-top: 20px; */
         height: 50vw;
+        background-position: right 0px top -40px;
     }
 }
