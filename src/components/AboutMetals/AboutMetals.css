@@ -1,10 +1,13 @@
 .metals{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width:90%;
     padding: 25px 5%;
     background-color: #001F3D;
+}
+
+.metals__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .metals__container{
@@ -45,7 +48,31 @@
     margin-bottom: 40px;
 }
 
-@media screen and (max-width: 768px) {
+.metals__link-insights{
+    text-decoration: none;
+    /* margin-top: 100px; */
+}
+
+.metals__subtitle{
+    text-decoration: none;
+    background-color: #001F3D;
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: start;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 50px auto;
+    /* text-decoration: underline; */
+    
+}
+.metals__subtitle:hover {
+    color: #646060;
+
+}
+
+@media screen and (max-width: 900px) {
     .metals{
         flex-direction: column;
         justify-content: space-between;

@@ -131,7 +131,7 @@ export default function TransitionGraph() {
         // .attr("width", w)
         // .attr("height", h)
         .attr("viewBox", '0 0 ' + w + ' ' + h)
-        .attr("preserveAspectRatio", 'xMidYMax slice')
+        .attr("preserveAspectRatio", 'xMidYMax meet')
         
 
         const tooltip = d3.select(svgRef.current)
@@ -274,7 +274,7 @@ export default function TransitionGraph() {
 
     return (
     <section className='transition-graph'>
-    <div className='transition-graph__title'> Projections de la demande mondiale (mln de tonnes)</div>
+    <div className='transition-graph__title'> {'Projections de la demande mondiale\n(mln de tonnes)'}</div>
     <div className='transition-graph__buttons'>
     <button id={"1"} className={`transition-graph__button ${option === "1" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Cuivre</button>
     <button id={"2"} className={`transition-graph__button ${option === "2" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Nickel</button>

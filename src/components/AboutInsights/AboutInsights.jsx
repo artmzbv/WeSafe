@@ -15,9 +15,9 @@ export default function AboutInsights() {
             <AboutInsightsCard product={product}/>
             )}
             </div>
-                <Link className='market__link-insights' to="/insights">
+                {/* <Link className='market__link-insights' to="/insights">
                 <button className='market__subtitle'>Voyez aussi nos insights sur le marche &rarr;</button>
-                </Link>
+                </Link> */}
         </section>
         </>
     )
