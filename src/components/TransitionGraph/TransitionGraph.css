@@ -88,7 +88,7 @@
 }
 
 .transition-graph__legend_n0{
-    color: #799163;
+    color: #679004;
 }
 
 .transition-graph__legend_ans{
@@ -96,7 +96,7 @@
 }
 
 .transition-graph__legend_spc{
-    color:#AB3131
+    color:#f3ce25
 }
 
 .transition-graph__line {
@@ -183,7 +183,7 @@
 
 @media screen and (max-width: 900px) {
     .transition-graph__graphics{
-        width: 400px;
+        width: 700px;
         height: 300px;
     }
 
@@ -192,9 +192,9 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     .transition-graph__graphics{
-        width: 400px;
+        width: 500px;
         height: 300px;
     }
     
@@ -202,6 +202,12 @@
         width: 100%;
         text-align: center;
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .transition-graph__graphics{
+        width: 400px;
     }
 }
 

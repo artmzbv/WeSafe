@@ -169,7 +169,7 @@ export default function TransitionGraph() {
 
     console.log(dataset[0].values[0].quantity)
 
-    const color =["#AB3131", "white", "#799163"]
+    const color =["#f3ce25", "white", "#679004"]
 
     dataset.forEach(function(d,i) {
         svg
