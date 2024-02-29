@@ -8,6 +8,7 @@ export default function AboutMetals() {
         <section className='metals'>
         <div className='metals__info'>
         <div className='metals__container'>
+            <div>
             <h1 className='metals__title'>Pourquoi les métaux critiques ?</h1>
             <div className='metals__description'>
             <p className='metals__paragraph'>
@@ -16,16 +17,17 @@ export default function AboutMetals() {
             <p className='metals__paragraph'>
             La sécurisation de ces métaux représente un enjeu de souveraineté majeur ainsi qu’une opportunité d’épargne exceptionnelle pour les 30 ans à venir.
             </p>
+            </div>
+            </div>
             {/* <p className='metals__paragraph'>
             Les prix des metaux vont augmenter au cours des 20 prochaines années
             </p> */}
-            </div>
+                <Link className='metals__link-insights' to="/insights">
+                <button className='metals__subtitle'>Voyez aussi nos insights sur le marche &#129133;</button>
+            </Link>
             </div>
             <TransitionGraph className='metals__graphics'/>
             </div>
-            <Link className='metals__link-insights' to="/insights">
-                <button className='metals__subtitle'>Voyez aussi nos insights sur le marche &#129133;</button>
-            </Link>
         </section>
         </>
     )
