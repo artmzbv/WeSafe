@@ -150,7 +150,7 @@
         justify-content: center;
         padding-left: 5%;
         padding-top: 65px;
-        height: 20vh;
+        height: 195px;
     }
 
     .insights__title{
@@ -158,7 +158,7 @@
         width: 80%;
     }
     .insights__subtitle{
-        margin: 12px 0 auto;  
+        margin: 12px 0 0;  
     }
 
     .insights__buttons{
@@ -180,14 +180,14 @@
 
     .insights__title{
         width: 90%;
-        margin: 0 auto;
+        margin: 20px auto 0;
         font-size: 2em;
         text-align: center;
     }
 
     .insights__subtitle{
         width: 90%;
-        margin: 12px auto 6%;  
+        margin: 12px auto 20px;  
         font-size: 1.5em;
         text-align: center;
     }
@@ -210,7 +210,7 @@
 
     .insights__more-button{
         width: 40vw;
-        height: 6vh;
+        height: 10vw;
     }
 }
 

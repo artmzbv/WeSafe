@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.8d3f3eab.css",
-    "main.js": "/WeSafe/static/js/main.6507c3fa.js",
+    "main.css": "/WeSafe/static/css/main.39d4311d.css",
+    "main.js": "/WeSafe/static/js/main.da38e89f.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/garanties.jpg": "/WeSafe/static/media/garanties.e91caa0625ebd7cafd87.jpg",
     "static/media/livraison.jpg": "/WeSafe/static/media/livraison.24cb67e0734a5848ef83.jpg",
@@ -28,15 +28,16 @@
     "static/media/circle3.svg": "/WeSafe/static/media/circle3.7e8635cbc50c0c6264817d76edd962b0.svg",
     "static/media/circle4.svg": "/WeSafe/static/media/circle4.7e002c632461e142ad7a4a29e0e9e800.svg",
     "static/media/circle1.svg": "/WeSafe/static/media/circle1.8771a3ce295d3b857756e25b337300fa.svg",
+    "static/media/ref.svg": "/WeSafe/static/media/ref.b5c47417d3a0b079bceec9214c7b2caf.svg",
     "index.html": "/WeSafe/index.html",
     "static/media/burger.svg": "/WeSafe/static/media/burger.fe779850e92d38259169.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.afc7d42c418608a80a66.svg",
-    "main.8d3f3eab.css.map": "/WeSafe/static/css/main.8d3f3eab.css.map",
-    "main.6507c3fa.js.map": "/WeSafe/static/js/main.6507c3fa.js.map",
+    "main.39d4311d.css.map": "/WeSafe/static/css/main.39d4311d.css.map",
+    "main.da38e89f.js.map": "/WeSafe/static/js/main.da38e89f.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d3f3eab.css",
-    "static/js/main.6507c3fa.js"
+    "static/css/main.39d4311d.css",
+    "static/js/main.da38e89f.js"
   ]
 }

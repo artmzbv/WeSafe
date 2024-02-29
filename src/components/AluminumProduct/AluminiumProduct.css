@@ -1,7 +1,3 @@
-.aluminium{
-    height: 180vh;
-}
-
 .aluminium__topic{
     display:flex;
     flex-direction: column;
@@ -57,10 +53,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .aluminium{
-        height: 200vh;
-    }
-    
     .aluminium__title{
         /* width: 80%; */
         width: 90%;
@@ -75,31 +67,25 @@
 }
 
 @media screen and (max-width: 768px) {
-    .aluminium{
-        height: 200vh;
-    }
-
     .aluminium__topic{
         justify-content: center;
         padding-left: 5%;
         padding-top: 65px;
-        height: 20vh;
+        height: 195px;
     }
     
     .aluminium__title{
         margin: 0;
         width: 80%;
+        margin: 0 auto 65px;
     }
+
     .aluminium__subtitle{
-        margin: 12px 0 auto;  
+        margin: 12px 0 0;  
     }
 }
 
 @media screen and (max-width: 650px) {
-    .aluminium{
-        height: 220vh;
-    }
-
     .aluminium__topic{
         justify-content: center;
         align-items: center;
@@ -121,7 +107,7 @@
     }
 
     .aluminium__container{
-        margin-top: 5vh;
+        margin-top: 20px;
         width: 95%;
         margin-left: 5%;
         padding: 0;

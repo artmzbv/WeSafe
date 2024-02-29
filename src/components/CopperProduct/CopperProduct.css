@@ -53,10 +53,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .copper{
-        height: 200vh;
-    }
-    
     .copper__title{
         /* width: 80%; */
         width: 90%;
@@ -71,15 +67,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .copper{
-        height: 200vh;
-    }
-
     .copper__topic{
         justify-content: center;
         padding-left: 5%;
         padding-top: 65px;
-        height: 20vh;
+        height: 195px;
     }
     
     .copper__title{
@@ -92,10 +84,6 @@
 }
 
 @media screen and (max-width: 650px) {
-    .copper{
-        height: 220vh;
-    }
-
     .copper__topic{
         justify-content: center;
         align-items: center;
@@ -117,7 +105,7 @@
     }
 
     .copper__container{
-        margin-top: 5vh;
+        margin-top: 20px;
         width: 95%;
         margin-left: 5%;
         padding: 0;

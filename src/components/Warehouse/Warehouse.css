@@ -1,10 +1,11 @@
 .warehouse{
-    margin-top: 10vh;
+    /* margin-top: 5vh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     height: 60vh;
+    margin-top: 20px;
     /* width: 90%; */
 }
 
@@ -29,20 +30,18 @@
     background-image: url(../../images/offer_copper.jpg);
     width: 80%;
     margin: 0 auto;
-    height: 40vh;
+    height: 40vw;
  }
 
  @media screen and (max-width: 768px) {
    .warehouse{
-       height: 80vh;
+       height: 100%;
+       margin-bottom: 50px;
    }
    .warehouse__photo{
-      height: 30vh;
+      height: 30vw;
    }
 }
 
 @media screen and (max-width: 450px) {
-   .warehouse{
-       height: 70vh;
-   }
 }

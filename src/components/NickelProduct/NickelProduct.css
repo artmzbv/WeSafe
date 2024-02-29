@@ -53,10 +53,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .nickel{
-        height: 170vh;
-    }
-    
     .nickel__title{
         width: 90%;
         margin: 0 auto 4vh;
@@ -69,15 +65,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .nickel{
-        height: 200vh;
-    }
-
     .nickel__topic{
         justify-content: center;
         padding-left: 5%;
         padding-top: 65px;
-        height: 20vh;
+        height: 195px;
     }
     
     .nickel__title{
@@ -92,9 +84,6 @@
 
 
 @media screen and (max-width: 650px) {
-    .nickel{
-        height: 220vh;
-    }
     .nickel__topic{
         justify-content: center;
         align-items: center;
@@ -116,7 +105,7 @@
     }
 
     .nickel__container{
-        margin-top: 5vh;
+        margin-top: 20px;
         width: 95%;
         margin-left: 5%;
         padding: 0;
