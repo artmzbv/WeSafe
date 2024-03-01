@@ -131,7 +131,7 @@ export default function TransitionGraph() {
         // .attr("width", w)
         // .attr("height", h)
         .attr("viewBox", '0 0 ' + w + ' ' + h)
-        // .attr("preserveAspectRatio", 'xMidYMax meet')
+        .attr("preserveAspectRatio", 'xMidYMin meet')
         
 
         const tooltip = d3.select(svgRef.current)

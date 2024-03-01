@@ -5,6 +5,7 @@
     align-items: center;
     margin-right: 40px;
     max-width: 50%;
+    height: 100%;
 }
 
 .transition-graph__tooltip{
@@ -22,6 +23,7 @@
     display: inline-block;
     width: 700px;
     height: 300px;
+    resize: both;
     object-fit: cover;
     font-size: 50px;
     /* margin-top: 20px; */
@@ -151,6 +153,7 @@
     .transition-graph__graphics{
         width: 500px;
         height: 300px;
+        resize: both;
     }
 
     .transition-graph{
@@ -186,6 +189,7 @@
     .transition-graph__graphics{
         width: 700px;
         height: 300px;
+        resize: both;
     }
     .transition-graph__buttons{
         width: 100%;
@@ -200,6 +204,7 @@
     .transition-graph__graphics{
         width: 500px;
         height: 300px;
+        resize: both;
     }
     
     .transition-graph__source{

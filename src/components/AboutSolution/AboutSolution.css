@@ -57,7 +57,7 @@
     margin-right: 0;
     background-image: url(../../images/alchemist.jpg);
     background-size: cover;
-    background-position: right 50px top -40px;
+    /* background-position: right 50px top -40px; */
 }
 
 @media screen and (max-width: 768px) {
