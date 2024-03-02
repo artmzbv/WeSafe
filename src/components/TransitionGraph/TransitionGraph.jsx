@@ -35,11 +35,33 @@ var data = [
   .domain(allGroup)
   .range(["#AB3131", "white", "#799163"]);
 
+  
+
 export default function TransitionGraph() {
+    const contRef = useRef();
     const [option, setOption] = useState("1");
     const handleActiveOption = (e) => {
         setOption(e.target.id);
-      }
+    }
+
+    //UseEffect to control resize parameters for svg graphics
+    const useResizeObserver = ref => {
+      const [dimensions, setDimensions] = useState(null);
+      useEffect(() => {
+        const observeTarget = ref.current;
+        const resizeObserver = new ResizeObserver(entries => {
+          entries.forEach(entry => {
+            setDimensions(entry.contentRect);
+          });
+        });
+        resizeObserver.observe(observeTarget);
+        return () => {
+          resizeObserver.unobserve(observeTarget);
+        };
+      }, [ref]);
+      return dimensions;
+    };
+    const dimensions = useResizeObserver(contRef);
 
     const svgRef = useRef();
 
@@ -47,6 +69,9 @@ export default function TransitionGraph() {
         d3.select("svg").remove()
         d3.select("svg").remove()
         d3.select("svg").remove()
+
+        console.log(dimensions)
+        if (!dimensions) return;
 
         var rowConverter = function(d) {
             return {
@@ -68,8 +93,12 @@ export default function TransitionGraph() {
 
         // https://stackoverflow.com/questions/44017721/d3-js-v4-9-get-the-calculated-width-of-selected-element
         // https://d3-graph-gallery.com/graph/custom_responsive.html
-        const w = parseInt(d3.select('#transition-graph').style('width'), 10)
-        const h = parseInt(d3.select('#transition-graph').style('height'), 10)
+        //https://www.youtube.com/watch?v=a4rstx9Pz2o&list=PLDZ4p-ENjbiPo4WH7KdHjh_EMI7Ic8b2B&index=8
+        const w = dimensions.width
+        const h = dimensions.height
+        console.log(h)
+        console.log(window.innerHeight)
+        console.log(window.onresize =()=>{console.log(parseInt(d3.select('#transition-graph').style('height')))}) 
         const padding = parseInt(d3.select('#transition-graph').style('font-size'), 10)
         //h/9-15
           
@@ -84,6 +113,8 @@ export default function TransitionGraph() {
                 return  [0, 8]
         }
         }
+
+        
         
         const xScale = d3.scaleLinear()
         .domain([
@@ -131,8 +162,9 @@ export default function TransitionGraph() {
         // .attr("width", w)
         // .attr("height", h)
         .attr("viewBox", '0 0 ' + w + ' ' + h)
-        .attr("preserveAspectRatio", 'xMidYMin meet')
-        
+        // .classed("svg-content", true)
+        // .attr("preserveAspectRatio", 'xMinYMin meet')
+        .attr("preserveAspectRatio", 'none')
 
         const tooltip = d3.select(svgRef.current)
         .append("div")
@@ -270,7 +302,7 @@ export default function TransitionGraph() {
     //   Change the opacity: from 0 to 1 or from 1 to 0
     //    d3.selectAll("." + d.name).transition().style("opacity", currentOpacity == 1 ? 0:1)
     //   })
-    },[option])
+    },[option, dimensions])
 
     return (
     <section className='transition-graph'>
@@ -284,7 +316,9 @@ export default function TransitionGraph() {
     <li className='transition-graph__legend transition-graph__legend_ans'>Announced pledges scenario</li>
     <li className='transition-graph__legend transition-graph__legend_spc'>Stated policies scenario</li>
     </ul>
-    <div id='transition-graph' className='transition-graph__graphics'  ref={svgRef}></div>
+    <div id='transition-graph' className='transition-graph__graphics' ref={contRef}>
+    <div className='transition-graph__graphics_inside' ref={svgRef}></div>
+    </div>
     <div className='transition-graph__source'>Source: Agence internationale de l'énergie</div>
     </section>
     )
