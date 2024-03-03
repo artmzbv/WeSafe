@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.d6886765.css",
-    "main.js": "/WeSafe/static/js/main.51ca134a.js",
+    "main.css": "/WeSafe/static/css/main.1e602ba1.css",
+    "main.js": "/WeSafe/static/js/main.25b86bcd.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.b096248260f81fdf96e6.jpg",
     "static/media/garanties.jpg": "/WeSafe/static/media/garanties.e91caa0625ebd7cafd87.jpg",
@@ -33,12 +33,12 @@
     "index.html": "/WeSafe/index.html",
     "static/media/burger.svg": "/WeSafe/static/media/burger.fe779850e92d38259169.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.afc7d42c418608a80a66.svg",
-    "main.d6886765.css.map": "/WeSafe/static/css/main.d6886765.css.map",
-    "main.51ca134a.js.map": "/WeSafe/static/js/main.51ca134a.js.map",
+    "main.1e602ba1.css.map": "/WeSafe/static/css/main.1e602ba1.css.map",
+    "main.25b86bcd.js.map": "/WeSafe/static/js/main.25b86bcd.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6886765.css",
-    "static/js/main.51ca134a.js"
+    "static/css/main.1e602ba1.css",
+    "static/js/main.25b86bcd.js"
   ]
 }
