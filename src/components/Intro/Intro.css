@@ -9,20 +9,21 @@
 }
 
 .intro__title{
-    margin-top: 12%;
+    margin-top: 40px auto;
     font-size: 48px;
     line-height: 60px;
-    margin-bottom: 40px;
 }
 
 .intro__text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 50vw;
+    height: 40vw;
     color: white;
     justify-self: center;
     text-align: center; 
+    padding: 0 10px;
 }
 
 .intro__description{
@@ -50,6 +51,7 @@
 
 .intro__picture{
     width: 50vw;
+    /* height: 50vw; */
     margin-top: 0;
 }
 
@@ -57,6 +59,12 @@
     .intro__picture{
         width: 50vw;
         height: 50vw;
+    }
+    .intro__text{
+        height: 50vw;
+    }
+    .intro__title{
+        font-size: 44px;
     }
 }
 @media screen and (max-width: 1000px) {

@@ -53,11 +53,17 @@
     width: 40vw;
     height: 25vw;
     color: white;
-    border: white solid 1px;
+    box-shadow:#001F3D;
     margin-right: 0;
-    background-image: url(../../images/alchemist.jpg);
+    background-image: url(../../images/copper_solution.jpg);
     background-size: cover;
     /* background-position: right 50px top -40px; */
+    transition:  0.2s ease-in-out;
+    -webkit-transform: scale(0.96);
+}
+
+.solution__graph_hover{
+    -webkit-transform: scale(1);
 }
 
 @media screen and (max-width: 768px) {
