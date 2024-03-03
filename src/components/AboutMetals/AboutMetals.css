@@ -70,12 +70,27 @@
     /* text-decoration: underline; */   
 }
 
-/* .metals__subtitle:after {
+.metals__subtitle:after {
     position: absolute;
     content: " ";
     height: 7px;
     width: 7px;
-  } */
+    border: 3px solid white;
+        /* background-color: #001F3D; */
+    /* border-right-width: 0px;
+    border-bottom-width: 0px;
+    bottom: 30%;
+    right: 10px;
+    transform: rotate(90deg); */
+    vertical-align: bottom;
+    z-index: 2;
+    transform: rotate(45deg);
+    border-bottom-right-radius: 3px solid white ;
+    stroke: white;
+    clip-path: path(
+        "M1 19L19.5 0.485929"
+      );
+  }
 
 .metals__paragraph{
     font-size: 18px;
