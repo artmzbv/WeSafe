@@ -5,6 +5,7 @@
     align-items: center;
     padding-top: 10vh;
     background-color: #001F3D;
+    height: 100%;
 }
 
 .intro__title{
@@ -15,6 +16,9 @@
 }
 
 .intro__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 50vw;
     color: white;
     justify-self: center;
@@ -32,8 +36,8 @@
     line-height: 1.5;
     font-weight: bold;
     border-radius: 30px;
+    align-self: flex-end;
     border: none;
-    margin-top: 20vh;
     width: 190px;
     height: 40px;
     color: #001F3D;
@@ -46,7 +50,19 @@
 
 .intro__picture{
     width: 50vw;
-    height: 90vh;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .intro__picture{
+        width: 50vw;
+        height: 50vw;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .intro{
+        padding-top: 65px;
+    }
 }
 
 @media screen and (max-width: 950px) {
