@@ -112,6 +112,10 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    .metals__description{
+        width:90%;
+        padding: 0 5%;
+    }
 
     .metals__container{
         width: 100%;   
@@ -123,5 +127,8 @@
         font-size: 30px;
         line-height: 36px;
         text-align: center;
+    }
+    .metals__paragraph{
+        font-size: 16px;
     }
 }

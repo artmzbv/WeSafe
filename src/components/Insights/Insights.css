@@ -167,6 +167,7 @@
     }
     .insights__button{
         width: 16vw;
+        height:100%;
     }
 }
 
@@ -210,7 +211,7 @@
 
     .insights__more-button{
         width: 40vw;
-        height: 10vw;
+        height: 40px;
     }
 }
 
