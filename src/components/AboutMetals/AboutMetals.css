@@ -51,7 +51,12 @@
 
 .metals__link-insights{
     text-decoration: none;
+    text-align: start;
     /* margin-top: 100px; */
+}
+
+.metals__array-container{
+
 }
 
 .metals__subtitle{
@@ -60,37 +65,49 @@
     background-color: #001F3D;
     color: white;
     border: none;
-    width: 100%;
+    /* width: 100%; */
     text-align: start;
     font-size: 26px;
     font-weight: bold;
     cursor: pointer;
+    line-height: 30px ;
+    text-decoration: 1.5px white underline;
+    /* text-decoration-style: dotted; */
+    /* text-decoration-line: ; */
     /* content: "\1F86D"; */
     /* margin: 50px auto; */
     /* text-decoration: underline; */   
 }
 
-.metals__subtitle:after {
+/* .metals__array:after {
     position: absolute;
     content: " ";
     height: 7px;
     width: 7px;
-    border: 3px solid white;
-        /* background-color: #001F3D; */
+    border: 3px solid white; */
+    /* background-color: #001F3D; */
     /* border-right-width: 0px;
     border-bottom-width: 0px;
-    bottom: 30%;
-    right: 10px;
-    transform: rotate(90deg); */
-    vertical-align: bottom;
+    bottom: 40%;
+    right: -3%;
+    transform: rotate(90deg);
     z-index: 2;
-    transform: rotate(45deg);
-    border-bottom-right-radius: 3px solid white ;
-    stroke: white;
-    clip-path: path(
-        "M1 19L19.5 0.485929"
-      );
-  }
+  } */
+
+  /* .metals__array:before{
+    position: absolute;
+    content: " ";
+    height: 14px;
+    width: 14px;
+    border: 3px solid white;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    bottom: 10%;
+    right: -4.5%;
+    transform: rotate(222deg);
+    z-index: 2;
+  } */
 
 .metals__paragraph{
     font-size: 18px;
@@ -99,13 +116,41 @@
     list-style-position: outside;
 }
 
-.metals__subtitle:hover {
+.metals__btbtitle:hover {
     color: #646060;
 }
 /* .metals__subtitle:after{
     content: "\1F86D";
 } */
 
+/* @media screen and (max-width: 1350px) {
+    .metals__subtitle{
+        width: 70%;
+    }
+
+    .metals__array:after {
+        bottom: 20%;
+        left: 35%;
+      }
+    
+      .metals__array:before{
+        bottom: 5%;
+        left: 35%;
+      }
+    } */
+
+/* @media screen and (max-width: 1350px) {
+        .metals__array:after {
+            bottom: 20%;
+            left: 35%;
+          }
+        
+          .metals__array:before{
+            bottom: 5%;
+            left: 35%;
+          }
+        }
+     */
 
 @media screen and (max-width: 900px) {
     .metals__info{
@@ -121,6 +166,19 @@
         width: 100%;   
         margin-bottom: 50px;
     }
+    
+    .metals__subtitle{
+        font-size: 20px;
+        padding-left: 5%;
+        text-align: start;
+    }
+}
+@media screen and (max-width: 600px) {
+    .metals__subtitle{
+        font-size: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 450px) {
     .metals__title{
@@ -128,6 +186,13 @@
         line-height: 36px;
         text-align: center;
     }
+
+    .metals__subtitle{
+        font-size: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .metals__paragraph{
         font-size: 16px;
     }

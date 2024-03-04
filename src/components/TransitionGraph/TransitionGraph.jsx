@@ -3,7 +3,7 @@ import * as d3 from 'd3'
 import './TransitionGraph.css'
 
 
-var data = [
+const data = [
     {
       "name":"copper",
       "values":[
@@ -30,6 +30,21 @@ var data = [
     }
   ]
 
+  const methodology = [
+    {"name": "Stated policies scenario",
+     "text": "The Announced Pledges Scenario (APS), introduced in 2021, illustrates the extent to which announced ambitions and targets can deliver the emissions reductions needed to achieve net zero emissions by 2050. It includes all recent major national announcements as of the end of August 2023, both 2030 targets and longer-term net zero or carbon neutrality pledges, regardless of whether these announcements have been anchored in legislation or in updated Nationally Determined Contributions. In the APS, countries implement their national targets in full and on time. The outlook for exporters of fossil fuels and low-emissions fuels, such as hydrogen, is shaped by what full implementation of all targets means for global demand. The APS also assumes that all country-level targets for access to electricity and clean cooking are achieved on time and in full."
+    },
+    {"name": "Announced pledges scenario",
+     "text": "lalalalal1"
+   },
+   {"name": "Net Zero Emissions by 2050 scenario",
+    "text": "lalalalal2"
+   }
+  ]
+
+  console.log(methodology[0].text)
+
+
   var allGroup = ["Stated policies scenario", "Announced pledges scenario","Net Zero Emissions by 2050 scenario"]
   var myColor = d3.scaleOrdinal()
   .domain(allGroup)
@@ -40,7 +55,30 @@ var data = [
 export default function TransitionGraph() {
     const contRef = useRef();
     const [option, setOption] = useState("1");
-    const handleActiveOption = (e) => {
+    const [info, setInfo] = useState(null)
+    
+
+  // const handlePosition = (e) => {
+  //   if(e) {
+  //       return {id: e.target.id, x: e.pageX, y: e.pageY}
+  //     }
+  //   }
+
+  // const tooltip = (e) =>{
+  //    if (info===null){
+  //       return null
+  //   }else{
+  //       return(
+  //   <div className='transition-graph__legends-tooltip' style={{top:e.pageY, right:e.pageX}}>
+  //       {methodology[info].text}
+  //   </div>
+  //    )
+  //   }
+  // }
+
+  // console.log(tooltip(0))
+    
+  const handleActiveOption = (e) => {
         setOption(e.target.id);
     }
 
@@ -88,7 +126,8 @@ export default function TransitionGraph() {
               })
             };
           })
-        //   console.log(dataReady)
+
+        // console.log(dataReady)
         // console.log(dataReady[0].values[1].date)
 
         // https://stackoverflow.com/questions/44017721/d3-js-v4-9-get-the-calculated-width-of-selected-element
@@ -262,7 +301,6 @@ export default function TransitionGraph() {
             .style("opacity", 0)
             })
 
-
         // svg.append("g")
         //    .selectAll("text")
         //     .data(dataset[i].values)
@@ -282,40 +320,58 @@ export default function TransitionGraph() {
         //     .attr("fill", "white")
         //     // .attr("font-weight", "bold")
         })
-    
-    // Add a legend (interactive)
-    // svg
-    //   .selectAll("myLegend")
-    //   .data(dataReady)
-    //   .enter()
-    //   .append('g')
-    //   .append("text")
-    //   .attr('x', function(d,i){ return 0.1*w })
-    //   .attr('y',function(d,i){ return 0.2*h - i*20 })
-    //   .text(function(d) { return d.name; })
-    //   .style("fill", function(d){ return myColor(d.name) })
-    //   .style("font-size", 14)
-    //   .style("font-weight", "bold")
-    //   .on("click", function(d){
-    //   is the element currently visible ?
-    //   currentOpacity = d3.selectAll("." + d.name).style("opacity")
-    //   Change the opacity: from 0 to 1 or from 1 to 0
-    //    d3.selectAll("." + d.name).transition().style("opacity", currentOpacity == 1 ? 0:1)
-    //   })
+        
+        // Add a legend (interactive)
+        // svg
+        //   .selectAll("myLegend")
+        //   .data(dataReady)
+        //   .enter()
+        //   .append('g')
+        //   .append("text")
+        //   .attr('x', function(d,i){ return 0.1*w })
+        //   .attr('y',function(d,i){ return 0.2*h - i*20 })
+        //   .text(function(d) { return d.name; })
+        //   .style("fill", function(d){ return myColor(d.name) })
+        //   .style("font-size", 14)
+        //   .style("font-weight", "bold")
+        //   .on("click", function(d){
+        //   is the element currently visible ?
+        //   currentOpacity = d3.selectAll("." + d.name).style("opacity")
+        //   Change the opacity: from 0 to 1 or from 1 to 0
+        //   d3.selectAll("." + d.name).transition().style("opacity", currentOpacity == 1 ? 0:1)
+        //  })
+        // console.log(tooltip(1))
     },[option, dimensions])
+    console.log(info)
+    // console.log(methodology[0].text)
 
     return (
     <section className='transition-graph'>
     <div className='transition-graph__title'> {'Projections de la demande mondiale\n(mln de tonnes)'}</div>
-    <div className='transition-graph__buttons'>
-    <button id={"1"} className={`transition-graph__button ${option === "1" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Cuivre</button>
-    <button id={"2"} className={`transition-graph__button ${option === "2" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Nickel</button>
-    </div>
     <ul className='transition-graph__legends'>
-    <li className='transition-graph__legend transition-graph__legend_n0'>Net Zero Emissions by 2050 scenario</li>
-    <li className='transition-graph__legend transition-graph__legend_ans'>Announced pledges scenario</li>
-    <li className='transition-graph__legend transition-graph__legend_spc'>Stated policies scenario</li>
+        <li className='transition-graph__legend transition-graph__legend_n0'>{'Net Zero Emissions by 2050 scenario   '} 
+        <button id={"0"} className='transition-graph__legend-button transition-graph__legend-button_n0' onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>
+          i
+          </button>
+          </li>
+        <li className='transition-graph__legend transition-graph__legend_ans'>{'Announced pledges scenario   '}
+        <button  id={"1"} className='transition-graph__legend-button transition-graph__legend-button_ans'onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>
+          i
+        </button>
+        </li>
+        <li className='transition-graph__legend transition-graph__legend_spc'>{'Stated policies scenario   '}
+        <button id={"2"} className='transition-graph__legend-button transition-graph__legend-button_spc' onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>
+          i
+          </button>
+        </li>
     </ul>
+    { info !==null ? (
+    <div className='transition-graph__background' >
+    <div className='transition-graph__legends-tooltip'>
+            <h1 className='transition-graph__legends-title'>{methodology[info].name}</h1>
+            <p className='transition-graph__legends-paragraph'>{methodology[info].text}</p>
+    </div>
+    </div>) : null}
     <div id='transition-graph' className='transition-graph__graphics' ref={contRef}>
     <div className='transition-graph__graphics_inside' ref={svgRef}></div>
     </div>
