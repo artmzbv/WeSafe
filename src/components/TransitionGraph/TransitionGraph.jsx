@@ -353,17 +353,17 @@ export default function TransitionGraph() {
     <ul className='transition-graph__legends'>
         <li className='transition-graph__legend transition-graph__legend_n0'>{'Net Zero Emissions by 2050 scenario   '} 
         <button id={"0"} className='transition-graph__legend-button transition-graph__legend-button_n0' onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>
-          i
+        {'i'}
           </button>
           </li>
         <li className='transition-graph__legend transition-graph__legend_ans'>{'Announced pledges scenario   '}
-        <button  id={"1"} className='transition-graph__legend-button transition-graph__legend-button_ans'onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>
-          i
+        <button  id={"1"} className='transition-graph__legend-button transition-graph__legend-button_ans' onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>
+          {'i'}
         </button>
         </li>
         <li className='transition-graph__legend transition-graph__legend_spc'>{'Stated policies scenario   '}
         <button id={"2"} className='transition-graph__legend-button transition-graph__legend-button_spc' onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>
-          i
+        {'i'}
           </button>
         </li>
     </ul>

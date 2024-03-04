@@ -334,6 +334,7 @@
         width: 100%;
         height: 100%; 
         border-left: 2px white solid;
+        /* border-top: 1px white solid; */
     }
 
     .transition-graph__legends-tooltip{
@@ -353,6 +354,11 @@
     .transition-graph__legends-paragraph{
         font-size: 14px;
     }
+
+    /* .transition-graph__legend-button{
+        width: 18px;
+        height: 18px;
+    }    */
 }
 
 @media screen and (max-width: 750px) {
