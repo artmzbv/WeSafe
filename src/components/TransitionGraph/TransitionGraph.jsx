@@ -368,9 +368,9 @@ export default function TransitionGraph() {
         </li>
     </ul>
     { info !==null ? (
-    <div className='transition-graph__background' >
+    <div className='transition-graph__background'>
     <div className='transition-graph__legends-tooltip'>
-            <h1 className='transition-graph__legends-title'>{methodology[info].name}</h1>
+            <h1 className={`${info === "0" ? 'transition-graph__legend_n0': info === "1" ? 'transition-graph__legend_ans' : 'transition-graph__legend_spc'} transition-graph__legends-title`}>{methodology[info].name}</h1>
             <p className='transition-graph__legends-paragraph'>{methodology[info].text}</p>
     </div>
     </div>) : null}

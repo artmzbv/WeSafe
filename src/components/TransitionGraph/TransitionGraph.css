@@ -110,6 +110,10 @@
     color: #679004;
 }
 
+/* .transition-graph__legend_0{
+    color: #679004;
+} */
+
 .transition-graph__legend_ans{
     color: white;
 }
@@ -197,7 +201,7 @@
     width: 90%;
     text-align: start;
     z-index: 3;
-    color:white;
+    /* color:white; */
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     -ms-verrflow-style: none;
@@ -222,6 +226,7 @@
     font-size: 16px;
     line-height: 24px;
     white-space: pre-wrap;
+    color:white;
 }
 
 /* .transition-graph__legends-tooltip_1{
