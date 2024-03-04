@@ -212,6 +212,16 @@
     display: none;
 }
 
+.transition-graph__legends-title{
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.transition-graph__legends-paragraph{
+    margin-top: 40px;
+    font-size: 16px;
+}
+
 /* .transition-graph__legends-tooltip_1{
     display:block;
 }

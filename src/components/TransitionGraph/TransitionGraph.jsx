@@ -31,15 +31,15 @@ const data = [
   ]
 
   const methodology = [
-    {"name": "Stated policies scenario",
-     "text": "The Announced Pledges Scenario (APS), introduced in 2021, illustrates the extent to which announced ambitions and targets can deliver the emissions reductions needed to achieve net zero emissions by 2050. It includes all recent major national announcements as of the end of August 2023, both 2030 targets and longer-term net zero or carbon neutrality pledges, regardless of whether these announcements have been anchored in legislation or in updated Nationally Determined Contributions. In the APS, countries implement their national targets in full and on time. The outlook for exporters of fossil fuels and low-emissions fuels, such as hydrogen, is shaped by what full implementation of all targets means for global demand. The APS also assumes that all country-level targets for access to electricity and clean cooking are achieved on time and in full."
-    },
-    {"name": "Announced pledges scenario",
-     "text": "lalalalal1"
-   },
-   {"name": "Net Zero Emissions by 2050 scenario",
-    "text": "lalalalal2"
-   }
+      {"name": "Net Zero Emissions by 2050 scenario",
+        "text": "lalalalal2"
+      },
+      {"name": "Announced pledges scenario",
+      "text": "The Announced Pledges Scenario (APS), introduced in 2021, illustrates the extent to which announced ambitions and targets can deliver the emissions reductions needed to achieve net zero emissions by 2050. It includes all recent major national announcements as of the end of August 2023, both 2030 targets and longer-term net zero or carbon neutrality pledges, regardless of whether these announcements have been anchored in legislation or in updated Nationally Determined Contributions. In the APS, countries implement their national targets in full and on time. The outlook for exporters of fossil fuels and low-emissions fuels, such as hydrogen, is shaped by what full implementation of all targets means for global demand. The APS also assumes that all country-level targets for access to electricity and clean cooking are achieved on time and in full"
+      },
+      {"name": "Stated policies scenario",
+        "text": "Th"
+      },
   ]
 
   console.log(methodology[0].text)
