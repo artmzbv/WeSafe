@@ -350,6 +350,10 @@ export default function TransitionGraph() {
     return (
     <section className='transition-graph'>
     <div className='transition-graph__title'> {'Projections de la demande mondiale\n(mln de tonnes)'}</div>
+    <div className='transition-graph__buttons'>
+    <button id={"1"} className={`transition-graph__button ${option === "1" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Cuivre</button>
+    <button id={"2"} className={`transition-graph__button ${option === "2" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Nickel</button>
+    </div>
     <ul className='transition-graph__legends'>
         <li className='transition-graph__legend transition-graph__legend_n0'>{'Net Zero Emissions by 2050 scenario   '} 
         <button id={"0"} className='transition-graph__legend-button transition-graph__legend-button_n0' onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>

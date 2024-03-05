@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.e99441e1.css",
-    "main.js": "/WeSafe/static/js/main.9c64a251.js",
+    "main.css": "/WeSafe/static/css/main.2adeb8fb.css",
+    "main.js": "/WeSafe/static/js/main.59c85190.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.b096248260f81fdf96e6.jpg",
-    "static/media/garanties.jpg": "/WeSafe/static/media/garanties.e91caa0625ebd7cafd87.jpg",
     "static/media/livraison.jpg": "/WeSafe/static/media/livraison.24cb67e0734a5848ef83.jpg",
+    "static/media/garanties.jpg": "/WeSafe/static/media/garanties.cdaa125d6b3bd19a507b.jpg",
     "static/media/metal.jpg": "/WeSafe/static/media/metal.7b99a134313d624aac3b.jpg",
     "static/media/analytics.jpg": "/WeSafe/static/media/analytics.7ee7ab3aa9007a7912eb.jpg",
     "static/media/revente.jpg": "/WeSafe/static/media/revente.adeaa101257939232d3e.jpg",
     "static/media/administration.jpg": "/WeSafe/static/media/administration.1241cbf925163156d9f1.jpg",
     "static/media/leaders.jpg": "/WeSafe/static/media/leaders.02323b73bfe4de17b1d9.jpg",
-    "static/media/transparency.jpg": "/WeSafe/static/media/transparency.ce271bce295f2d381b87.jpg",
+    "static/media/transparency.jpg": "/WeSafe/static/media/transparency.f55b21959221b8d2897c.jpg",
     "static/media/photo_jerome.png": "/WeSafe/static/media/photo_jerome.e4e9abe41cc7b84ea4f3.png",
     "static/media/selection.jpg": "/WeSafe/static/media/selection.7bf49562842a7fadb59a.jpg",
     "static/media/aluminium.jpg": "/WeSafe/static/media/aluminium.8b90227876b3dc491b65.jpg",
@@ -33,12 +33,12 @@
     "index.html": "/WeSafe/index.html",
     "static/media/burger.svg": "/WeSafe/static/media/burger.fe779850e92d38259169.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.afc7d42c418608a80a66.svg",
-    "main.e99441e1.css.map": "/WeSafe/static/css/main.e99441e1.css.map",
-    "main.9c64a251.js.map": "/WeSafe/static/js/main.9c64a251.js.map",
+    "main.2adeb8fb.css.map": "/WeSafe/static/css/main.2adeb8fb.css.map",
+    "main.59c85190.js.map": "/WeSafe/static/js/main.59c85190.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e99441e1.css",
-    "static/js/main.9c64a251.js"
+    "static/css/main.2adeb8fb.css",
+    "static/js/main.59c85190.js"
   ]
 }
