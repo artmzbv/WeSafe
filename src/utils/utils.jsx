@@ -47,5 +47,5 @@ export const products = [
 export const team =[
     {name: 'Jerome Thomasse' , src:jerome, profession: 'CEO', description:'Specialiste de la Gestion de Patrimoine et de l Epargne depuis 30 ans'},
     {name: 'Christophe Roy' , src:christophe, profession: 'CMO', description:'Gestionnaire de Projet / Specialiste Marketing/ Conseiller Financier'},
-    {name: 'Artem Zubov' , src:christophe, profession: 'CTO', description:'Développeur Web, Analyste Macro & Commodities'}
+    {name: 'Artem Zubov' , src:christophe, profession: 'CTO', description:'Développeur Web, Analyste Macro & Commodities'},
 ]
