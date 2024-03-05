@@ -21,10 +21,12 @@ export default function CopperProduct() {
                 <h2 className="copper__subtitle">CUIVRE</h2>
         </div>
         <h3 className='copper__intro'>Nous vous proposons de garder un des nos produits dans nos entrepots</h3>
-        <p className='copper__description'>Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
-        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
-        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
-        Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala</p>
+          <p className='copper__description'>
+            Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
+            Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
+            Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
+            Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
+        </p>
         <div className="copper__container">
         {cards.map((card) => (
             <>

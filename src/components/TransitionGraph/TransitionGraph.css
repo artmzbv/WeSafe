@@ -107,7 +107,7 @@
 }
 
 .transition-graph__legend_n0{
-    color: #679004;
+    color: #5ae316;
 }
 
 /* .transition-graph__legend_0{
@@ -119,7 +119,7 @@
 }
 
 .transition-graph__legend_spc{
-    color:#f3ce25
+    color: yellow;
 }
 
 .transition-graph__line {
@@ -162,8 +162,8 @@
 }
 
 .transition-graph__legend-button_n0{
-    color: #679004;
-    border: 2px #679004 solid;
+    color: #5ae316;
+    border: 2px #5ae316 solid;
 }
 
 .transition-graph__legend-button_ans{
@@ -172,8 +172,8 @@
 }
 
 .transition-graph__legend-button_spc{
-    color:#f3ce25;
-    border: 2px #f3ce25 solid;
+    color: yellow;
+    border: 2px yellow solid;
 }
 
 .transition-graph__background{
