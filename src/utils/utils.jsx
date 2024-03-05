@@ -3,6 +3,8 @@ import copperB from '../images/offer_copper.jpg'
 import copperOffer from '../images/aboutmetals/copper.jpg'
 import aluminiumOffer from '../images/aboutmetals/aluminium.jpg'
 import nickelOffer from '../images/aboutmetals/nickel.jpg'
+import jerome from '../images/aboutteam/photo_jerome.png'
+import christophe from '../images/aboutteam/photo_christophe.jpg'
 
 
 export const insights = [
@@ -40,4 +42,10 @@ export const products = [
     {title:'Cuivre', src: copperOffer, link: './copper'},
     {title:'Aluminium', src: aluminiumOffer, link: './aluminium'},
     {title:'Nickel', src: nickelOffer, link: './nickel'},
+]
+
+export const team =[
+    {name: 'Jerome Thomasse' , src:jerome, profession: 'CEO', description:'Specialiste de la Gestion de Patrimoine et de l Epargne depuis 30 ans'},
+    {name: 'Christophe Roy' , src:christophe, profession: 'CMO', description:'Gestionnaire de Projet / Specialiste Marketing/ Conseiller Financier'},
+    {name: 'Artem Zubov' , src:christophe, profession: 'CTO', description:'Développeur Web, Analyste Macro & Commodities'}
 ]
