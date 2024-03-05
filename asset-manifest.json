@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WeSafe/static/css/main.2adeb8fb.css",
-    "main.js": "/WeSafe/static/js/main.59c85190.js",
+    "main.js": "/WeSafe/static/js/main.90b34d4b.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.b096248260f81fdf96e6.jpg",
     "static/media/livraison.jpg": "/WeSafe/static/media/livraison.24cb67e0734a5848ef83.jpg",
@@ -34,11 +34,11 @@
     "static/media/burger.svg": "/WeSafe/static/media/burger.fe779850e92d38259169.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.afc7d42c418608a80a66.svg",
     "main.2adeb8fb.css.map": "/WeSafe/static/css/main.2adeb8fb.css.map",
-    "main.59c85190.js.map": "/WeSafe/static/js/main.59c85190.js.map",
+    "main.90b34d4b.js.map": "/WeSafe/static/js/main.90b34d4b.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2adeb8fb.css",
-    "static/js/main.59c85190.js"
+    "static/js/main.90b34d4b.js"
   ]
 }
