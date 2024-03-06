@@ -1,4 +1,4 @@
-.aluminium__topic{
+.cobalt__topic{
     display:flex;
     flex-direction: column;
     justify-content: end;
@@ -9,7 +9,7 @@
     margin-bottom: 5vh;
 }
 
-.aluminium__title{
+.cobalt__title{
     color: white;
     width: 60%;
     margin: 0 0 0 5vw;
@@ -18,7 +18,7 @@
     font-size: 24px;
 }
 
-.aluminium__subtitle{
+.cobalt__subtitle{
     color: white;
     width: 60%;
     margin-left: 5vw;
@@ -28,7 +28,7 @@
     font-size: 38px;
 }
 
-.aluminium__intro{
+.cobalt__intro{
     margin-top: 20px;
     text-align: start;
     color: #001F3D;
@@ -36,7 +36,7 @@
     margin: 0 auto;
  }
  
- .aluminium__description{
+ .cobalt__description{
     text-align: start;
     color: #001F3D;
     width: 90%;
@@ -44,7 +44,7 @@
     margin-top:10px;
  }
 
-.aluminium__container{
+.cobalt__container{
     display: flex;
     margin: 0 10vw;
     flex-direction: row;
@@ -53,13 +53,13 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .aluminium__title{
+    .cobalt__title{
         /* width: 80%; */
         width: 90%;
         margin: 0 auto 4vh;
     }
 
-    .aluminium__container {
+    .cobalt__container {
         /* height: 100%; */
         padding: 5% 0%;
         margin: 0 5%;
@@ -67,45 +67,45 @@
 }
 
 @media screen and (max-width: 768px) {
-    .aluminium__topic{
+    .cobalt__topic{
         justify-content: center;
         padding-left: 5%;
         padding-top: 65px;
         height: 195px;
     }
     
-    .aluminium__title{
+    .cobalt__title{
         margin: 0;
         width: 80%;
     }
 
-    .aluminium__subtitle{
+    .cobalt__subtitle{
         margin: 12px 0 0;  
     }
 }
 
 @media screen and (max-width: 650px) {
-    .aluminium__topic{
+    .cobalt__topic{
         justify-content: center;
         align-items: center;
         padding-left: 0;
     }
 
-    .aluminium__title{
+    .cobalt__title{
         width: 90%;
         margin: 0 auto;
         font-size: 2em;
         text-align: center;
     }
     
-    .aluminium__subtitle{
+    .cobalt__subtitle{
         width: 90%;
         margin: 12px auto auto;  
         font-size: 2em;
         text-align: center;
     }
 
-    .aluminium__container{
+    .cobalt__container{
         margin-top: 20px;
         width: 95%;
         margin-left: 5%;
@@ -118,7 +118,7 @@
         scrollbar-width: none;
         -ms-overflow-style: none; 
     }
-    .aluminium__container::-webkit-scrollbar{
+    .cobalt__container::-webkit-scrollbar{
         width:0;
     }
 }

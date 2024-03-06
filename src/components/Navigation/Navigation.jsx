@@ -43,8 +43,8 @@ function Navigation({active, handleActiveClick, isShowMenu, setIsShowMenu}) {
                     </li>
                     <li className="navigation__dropdown-item">
                           <button className='navigation__dropdown-button' onClick={(e) => {setOpenMetals(false); handleActiveClick(e); handleCloseBurgerMenu()}}>
-                            <Link id={"2"} className="navigation__link" to="/aluminium">
-                            Alumnium
+                            <Link id={"2"} className="navigation__link" to="/cobalt">
+                            Cobalt
                             </Link>
                           </button>
                     </li>

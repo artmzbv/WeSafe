@@ -1,10 +1,10 @@
-import "./AluminiumProduct.css"
+import "./CobaltProduct.css"
 import Warehouse from '../Warehouse/Warehouse'
 import MetalCard from '../MetalCard/MetalCard'
 import copperA from '../../images/offer_copper.jpg'
 import copperB from '../../images/offer_copper.jpg'
 
-export default function AluminiumProduct() {
+export default function CobaltProduct() {
 
     const cards = [
         {title:'Cathodes de cuivre grade A', link: copperA, name: 'copper'},
@@ -14,17 +14,17 @@ export default function AluminiumProduct() {
 
     return(
         <>
-        <section className="aluminium">
-        <div className="aluminium__topic">
-                <h1 className="aluminium__title">Nos produits</h1>
-                <h2 className="aluminium__subtitle">ALUMINIUM</h2>
+        <section className="cobalt">
+        <div className="cobalt__topic">
+                <h1 className="cobalt__title">Nos produits</h1>
+                <h2 className="cobalt__subtitle">COBALT</h2>
         </div>
-        <h3 className='aluminium__intro'>Nous vous proposons de garder un des nos produits dans nos entrepots</h3>
-        <p className='aluminium__description'>Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
+        <h3 className='cobalt__intro'>Nous vous proposons de garder un des nos produits dans nos entrepots</h3>
+        <p className='cobalt__description'>Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala</p>
-        <div className="aluminium__container">
+        <div className="cobalt__container">
             {cards.map((card) => (
             <MetalCard card={card}/>
         ))}
