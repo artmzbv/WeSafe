@@ -292,7 +292,7 @@ export default function TransitionGraph() {
             tooltip
             .style("opacity", 1);
             tooltip
-            .html(d.quantity.toFixed(1) +" Mln t<br> +" + ((d.quantity/dataset[i].values[0].quantity-1)*100).toFixed(0) + "% p/r à 2022" )
+            .html(d.quantity.toFixed(1) +" M t<br> +" + ((d.quantity/dataset[i].values[0].quantity-1)*100).toFixed(0) + "% p/r à 2022" )
             .style("left", tooltipPosition(event))
             .style("top", `${event.layerY+10}px`)
             })
@@ -349,7 +349,7 @@ export default function TransitionGraph() {
 
     return (
     <section className='transition-graph'>
-    <div className='transition-graph__title'> {'Projections de la demande mondiale\n(mln de tonnes)'}</div>
+    <div className='transition-graph__title'> {'Projections de la demande mondiale\n(Millions de tonnes)'}</div>
     <div className='transition-graph__buttons'>
     <button id={"1"} className={`transition-graph__button ${option === "1" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Cuivre</button>
     <button id={"2"} className={`transition-graph__button ${option === "2" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Nickel</button>

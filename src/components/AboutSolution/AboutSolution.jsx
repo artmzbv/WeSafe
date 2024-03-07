@@ -19,14 +19,14 @@ export default function AboutSolution() {
     return(
         <>
         <section className='solution'>
-            <h1 className='solution__title'>{'Transformer votre épargne avec les métaux industriels de la transition numerique et énergétique'}</h1>
+            <h1 className='solution__title'>{'Transformer votre épargne en métaux industriels de la transition numérique et énergétique'}</h1>
             <div className='solution__container'>
                 <ul className='solution__list'>
                     <li className='solution__item'>
-                        Epargne alternative
+                        Épargne alternative
                     </li>
                     <li className='solution__item'>
-                        Epargne vertueuse
+                        Épargne vertueuse
                     </li>
                     <li className='solution__item'>
                         Profits potentiels

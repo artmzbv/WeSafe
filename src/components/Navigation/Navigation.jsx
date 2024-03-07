@@ -37,7 +37,7 @@ function Navigation({active, handleActiveClick, isShowMenu, setIsShowMenu}) {
                     <li className="navigation__dropdown-item">
                           <button className='navigation__dropdown-button' onClick={(e) => {setOpenMetals(false); handleActiveClick(e); handleCloseBurgerMenu()}}>
                             <Link id={"2"} className="navigation__link" to="/copper">
-                            Copper
+                            Cuivre
                             </Link>
                           </button>
                     </li>
@@ -60,7 +60,7 @@ function Navigation({active, handleActiveClick, isShowMenu, setIsShowMenu}) {
         ) : null}
         </button>
     <Link id={"3"} className={`navigation__link navigation__link_main ${active === "3" ? "navigation__link_active" : null}`} onClick={(e) => {handleActiveClick(e); handleCloseBurgerMenu()}} to="/insights">
-        Insights
+        Le Marché
     </Link>
     <Link id={"4"} className={`navigation__link navigation__link_main ${active === "4" ? "navigation__link_active" : null}`} onClick={(e) => {handleActiveClick(e); handleCloseBurgerMenu()}} to="/about-us">
         Qui sommes-nous?

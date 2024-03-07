@@ -8,9 +8,9 @@ import copperB from '../../images/offer_copper.jpg'
 
 export default function CopperProduct() {
     const cards = [
-        {title:'Cathodes de cuivre grade A', link: copperA, name: 'copper'},
-        {title:'Cuivre Milberry', link: copperB, name: 'copper', description: 'The highest quality copper scrap. It consists of No. 1 bare, uncoated, unalloyed copper wire, commonly known as Bare Bright copper wire. Wire gauge subject to agreement between buyer and seller.'},
-        {title:'Bobine de cuivre', link: copperB, name: 'copper'},
+        {title:'Cathodes de cuivre grade A', link: copperA, name: 'copper', description: `La cathode de cuivre est le premier produit pur issu du minerai. Après être restée plusieurs semaines dans une électrolyse de sulfate de cuivre, les cathodes sont retirées et sont utilisées comme anodes de cuivre en galvanoplastie`},
+        {title:'Cuivre Milberry', link: copperB, name: 'copper', description: `Le cuivre Millberry est composé uniquement de cuivre issu recyclage par dénudage de câble électrique industriel. Il est de couleur rouge brillant. Dans cette qualité n'est toléré aucune adhésion et se compose à 99,9 % de cuivre.`},
+        {title:'Grenaille de cuivre', link: copperB, name: 'copper', description: `Issus du recyclage de câbles la grenaille est utilisée pour différentes applications, principalement dans les fontes de cuivre pour obtenir des lingots, du câble du fil machine ou autres produits dérivés. Leur pureté en cuivre varie entre 98 et 99,5%.`},
     ]
 
     return(

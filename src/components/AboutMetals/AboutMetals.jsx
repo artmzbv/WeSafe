@@ -12,10 +12,10 @@ export default function AboutMetals() {
             <h1 className='metals__title'>Pourquoi les métaux critiques ?</h1>
             <div className='metals__description'>
             <p className='metals__paragraph'>
-            Ces métaux constituent la base des transitions numérique et énergétique.
+            Ces métaux constituent la base de la transition numérique et énergétique
             </p>
             <p className='metals__paragraph'>
-            La sécurisation de ces métaux représente un enjeu de souveraineté majeur ainsi qu’une opportunité d’épargne exceptionnelle pour les 30 ans à venir.
+            La sécurisation de ces métaux représente un enjeu de souveraineté majeur ainsi qu’une opportunité d’épargne exceptionnelle pour les 30 ans à venir
             </p>
             </div>
             {/* <p className='metals__paragraph'>
@@ -23,7 +23,7 @@ export default function AboutMetals() {
             </p> */}
                 <Link className='metals__link-insights'to="/insights">
                 <button className='metals__subtitle'>
-                Voyez aussi nos insights sur le marché
+                Voyez aussi nos informations sur le marché
                 <div className="metals__array"></div>
                 {/* &#129133; */}
                 {/* <svg width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg">

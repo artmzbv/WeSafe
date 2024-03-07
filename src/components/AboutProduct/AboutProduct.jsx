@@ -63,7 +63,8 @@ export default function AboutProduct() {
                     <img className='product__image' src={selection} alt='selection'></img>
                     <div className='product__more-description'>{'En savoir plus'}&#8593;</div>
                     <div className={`product__description  ${isIntersectingSel ? 'product__description_hover' : null}`} ref={selRef}>
-                    <p>Vous choisisez et selectionnez seul ou avec un de nos consultants via WeSafe App</p>
+                    <p>Vous choisissez et sélectionnez seul ou avec un de nos consultants</p>
+                    {/* //via WeSafe App */}
                     </div>
                     </div>
                 </div>
@@ -73,7 +74,7 @@ export default function AboutProduct() {
                     <img className='product__image' src={commande} alt='commande'></img>
                     <div className='product__more-description'>{'En savoir plus'} &#8593;</div>
                     <div className={`product__description  ${isIntersectingCom ? 'product__description_hover' : null}`} ref={comRef}>
-                    <p>Après la réservation la commande est transmise à l'un de nos fournisseurs</p>
+                    <p>Après la réservation, la commande est transmise à l'un de nos fournisseurs</p>
                     </div>
                 </div>
                 </div>
@@ -100,7 +101,7 @@ export default function AboutProduct() {
                     <img className='product__image' src={revente} alt='stockage'></img>
                     <div className='product__more-description'>{'En savoir plus'} &#8593;</div>
                     <div className={`product__description  ${isIntersectingRev ? 'product__description_hover' : null}`} ref={revRef}>
-                    <p>A moyen ou long termes suivant vos objectifs, bénéficier de notre service de revente aupres des industriels</p>
+                    <p>A moyen ou long terme suivant vos objectifs, bénéficier de notre service de revente aupres des épargnants et des professionels</p>
                     </div>
                 </div>
             </div>
