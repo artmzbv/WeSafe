@@ -89,11 +89,11 @@
   }
   
   .popup__close-button_hover::after{
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .popup__close-button_hover::before{
-    opacity: 0.6;
+    opacity: 0.8;
   }
   
   @media (max-width: 1024px) {
