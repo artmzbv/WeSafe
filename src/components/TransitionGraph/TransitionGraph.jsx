@@ -27,7 +27,19 @@ const data = [
         {"date": 2045,"Stated policies scenario":4769.29, "Announced pledges scenario":6172.88, "Net Zero Emissions by 2050 scenario":6354.18},
         {"date": 2050,"Stated policies scenario":4848.96, "Announced pledges scenario":6507.69, "Net Zero Emissions by 2050 scenario":6196.03},
       ]
-    }
+    },
+    {
+      "name": "cobalt",
+      "values": [
+        {"date": 2022,"Stated policies scenario":171.1765, "Announced pledges scenario":171.1765, "Net Zero Emissions by 2050 scenario":171.1765},
+        {"date": 2025,"Stated policies scenario":208.4872, "Announced pledges scenario":225.7845, "Net Zero Emissions by 2050 scenario":280.819},
+        {"date": 2030,"Stated policies scenario":236.4245, "Announced pledges scenario":284.603, "Net Zero Emissions by 2050 scenario":368.361},
+        {"date": 2035,"Stated policies scenario":256.8699, "Announced pledges scenario":347.717, "Net Zero Emissions by 2050 scenario":427.807},
+        {"date": 2040,"Stated policies scenario":300.073, "Announced pledges scenario":416.562, "Net Zero Emissions by 2050 scenario":454.523},
+        {"date": 2045,"Stated policies scenario":342.27, "Announced pledges scenario":474.829, "Net Zero Emissions by 2050 scenario":498.248},
+        {"date": 2050,"Stated policies scenario":367.648, "Announced pledges scenario":524.779, "Net Zero Emissions by 2050 scenario":519.666},
+      ]
+    },
   ]
 
   const methodology = [
@@ -152,7 +164,9 @@ export default function TransitionGraph() {
                 return [20, 45]
             } else if (option === "2"){
                 return  [0, 8]
-        }
+            } else if (option === "3"){
+              return  [0, 0.5]
+            }
         }
 
         
@@ -228,7 +242,8 @@ export default function TransitionGraph() {
         .tickSize(-w+padding+h*0.085, 0)
         .ticks(5)
         .tickPadding(10)
-        .tickFormat(d => d.toFixed(0))
+        // .tickFormat(d => d.toFixed(0))
+        .tickFormat(d => option ==="3" ? d.toFixed(1) :  d.toFixed(0))
         // .tickFormat("")
         // .orient()
 
@@ -353,6 +368,7 @@ export default function TransitionGraph() {
     <div className='transition-graph__buttons'>
     <button id={"1"} className={`transition-graph__button ${option === "1" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Cuivre</button>
     <button id={"2"} className={`transition-graph__button ${option === "2" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Nickel</button>
+    <button id={"3"} className={`transition-graph__button ${option === "3" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Cobalt</button>
     </div>
     <ul className='transition-graph__legends'>
         <li className='transition-graph__legend transition-graph__legend_n0'>{'Net Zero Emissions by 2050 scenario   '} 
