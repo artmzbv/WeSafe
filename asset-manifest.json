@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.16cc039e.css",
+    "main.css": "/WeSafe/static/css/main.163f9bb2.css",
     "main.js": "/WeSafe/static/js/main.e674200b.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.b096248260f81fdf96e6.jpg",
@@ -31,16 +31,16 @@
     "static/media/circle3.svg": "/WeSafe/static/media/circle3.7e8635cbc50c0c6264817d76edd962b0.svg",
     "static/media/circle4.svg": "/WeSafe/static/media/circle4.7e002c632461e142ad7a4a29e0e9e800.svg",
     "static/media/circle1.svg": "/WeSafe/static/media/circle1.8771a3ce295d3b857756e25b337300fa.svg",
-    "static/media/ref.svg": "/WeSafe/static/media/ref.b5c47417d3a0b079bceec9214c7b2caf.svg",
     "index.html": "/WeSafe/index.html",
-    "static/media/burger.svg": "/WeSafe/static/media/burger.fe779850e92d38259169.svg",
-    "static/media/close-button.svg": "/WeSafe/static/media/close-button.afc7d42c418608a80a66.svg",
-    "main.16cc039e.css.map": "/WeSafe/static/css/main.16cc039e.css.map",
+    "static/media/ref.svg": "/WeSafe/static/media/ref.cee3cc92eb70847cda9f3b17c68a789d.svg",
+    "static/media/burger.svg": "/WeSafe/static/media/burger.00878a777adbe56929a2.svg",
+    "static/media/close-button.svg": "/WeSafe/static/media/close-button.396f7157a69a3b7c66df.svg",
+    "main.163f9bb2.css.map": "/WeSafe/static/css/main.163f9bb2.css.map",
     "main.e674200b.js.map": "/WeSafe/static/js/main.e674200b.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16cc039e.css",
+    "static/css/main.163f9bb2.css",
     "static/js/main.e674200b.js"
   ]
 }
