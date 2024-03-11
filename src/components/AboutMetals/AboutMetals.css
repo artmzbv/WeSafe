@@ -79,6 +79,11 @@
     /* text-decoration: underline; */   
 }
 
+.metals__subtitle:hover{
+    color: #646060; 
+    text-decoration: 1.5px #646060 underline;
+}
+
 /* .metals__array:after {
     position: absolute;
     content: " ";
