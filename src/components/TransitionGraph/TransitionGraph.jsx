@@ -149,9 +149,9 @@ export default function TransitionGraph() {
         //https://www.youtube.com/watch?v=a4rstx9Pz2o&list=PLDZ4p-ENjbiPo4WH7KdHjh_EMI7Ic8b2B&index=8
         const w = dimensions.width
         const h = dimensions.height
-        console.log(h)
-        console.log(window.innerHeight)
-        console.log(window.onresize =()=>{console.log(parseInt(d3.select('#transition-graph').style('height')))}) 
+        // console.log(h)
+        // console.log(window.innerHeight)
+        // console.log(window.onresize =()=>{console.log(parseInt(d3.select('#transition-graph').style('height')))}) 
         const padding = parseInt(d3.select('#transition-graph').style('font-size'), 10)
         //h/9-15
           

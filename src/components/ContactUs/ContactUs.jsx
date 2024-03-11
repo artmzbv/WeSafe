@@ -1,50 +1,40 @@
 import {React, useState, useRef, useEffect}  from "react";
 import "./ContactUs.css"
+import axios from "axios";
 
 export default function ContactUs() {
-    const [inputName, setInputName] = useState("");
-    const [inputSurname, setInputSurname] = useState("");
-    const [inputAdress, setInputAdress] = useState("");
-    const [inputPhone, setInputPhone] = useState("");
-    const [inputMessage, setInputMessage] = useState("");
-
-    const handleInputNameChange = (e) => {
-        setInputName(e.target.value)
+    const defaultData = {
+        name:"",
+        surname:"",
+        adress:"",
+        phone:"",
+        message:""
     }
+    const [data, setData] = useState(defaultData)
 
-    const handleInputSurnameChange = (e) => {
-        setInputSurname(e.target.value)
+    const handleData = (e) => {
+        const inputData={...data}
+        inputData[e.target.id] = e.target.value
+        setData(inputData)
     }
-
-    const handleInputAdressChange = (e) => {
-        setInputAdress(e.target.value)
-    }
-
-    const handleInputPhoneChange = (e) => {
-        setInputPhone(e.target.value)
-    }
-
-    const handleInputMessageChange = (e) => {
-        setInputMessage(e.target.value)
-    }
+    
+    const url = "" 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const data ={
-            name: inputName,
-            surname: inputSurname,
-            adress: inputAdress,
-            phone: inputPhone,
-            message: inputMessage
-        }
-        console.log(data)
-        
-        setInputName("")
-        setInputSurname("")
-        setInputAdress("")
-        setInputPhone("")
-        setInputMessage("")
-    } 
+        axios.post(url,{
+            name: data.name,
+            surname: data.surname,
+            adress: data.adress,
+            phone: data.phone,
+            message: data.message
+        }).then(res =>{
+            console.log(res.data)
+        })
+
+        setData(defaultData)
+    }
+
  
     return(
         <>
@@ -54,16 +44,16 @@ export default function ContactUs() {
         </div>
             <div className="contact__container">  
             <h2 className="contact__text">Si vous-avez des question, envoyez-nous une message par mail a soutien@wesafe.com</h2>
-            <form className="contact__form" onSubmit={handleSubmit}>
+            <form className="contact__form" onSubmit={(e) => handleSubmit(e)}>
                 <div className="contact__form-line">
-                <input className="contact__input" placeholder="Prenom" value={inputName} onChange={handleInputNameChange}></input>
-                <input className="contact__input" placeholder="Nom" value={inputSurname} onChange={handleInputSurnameChange}></input>
+                <input id="name"  className="contact__input" placeholder="Prenom" value={data.name} onChange={(e) => handleData(e)}></input>
+                <input id="surname" className="contact__input" placeholder="Nom" value={data.surname} onChange={(e) => handleData(e)}></input>
                 </div>
                 <div className="contact__form-line">
-                <input className="contact__input" placeholder="Adresse mail*" required value={inputAdress} onChange={handleInputAdressChange}></input>
-                <input className="contact__input" placeholder="Numero de telephone" value={inputPhone} onChange={handleInputPhoneChange}></input>
+                <input id="adress" className="contact__input" placeholder="Adresse mail*" required value={data.adress} onChange={(e) => handleData(e)}></input>
+                <input id="phone" className="contact__input" placeholder="Numero de telephone" value={data.phone} onChange={(e) => handleData(e)}></input>
                 </div>
-                <textarea className="contact__input-message" placeholder="Message" value={inputMessage} onChange={handleInputMessageChange}></textarea>
+                <textarea id="message" className="contact__input-message" placeholder="Message" value={data.message} onChange={(e) => handleData(e)}></textarea>
                 <p className="contact__note">*Note: necessaire a remplir</p>
                 <button className="contact__submit" type="submit">Envoyer</button>
             </form>

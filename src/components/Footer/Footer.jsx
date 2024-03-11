@@ -5,6 +5,7 @@ export default function Footer() {
     return(
         <>
         <footer className='footer'>
+        <div className='footer__info'>
         <Link className='footer__link footer__link_title' to="./offer">
             Notre Offre
         </Link>
@@ -35,6 +36,11 @@ export default function Footer() {
         <Link className='footer__link footer__link_title' to="./contact-us">
             <div className='footer__link'>Contactez-nous</div>
         </Link>  
+        </div>
+        <div className='footer__reg'>
+            <p className="footer__reg-copyright">© WeSafe 2024</p>
+            <Link className="footer__reg-link" to="./legal-notice">{'Mentions légales'}</Link>
+        </div>
         </footer>
         </>
     )

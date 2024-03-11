@@ -13,6 +13,7 @@ import ContactUs from "../ContactUs/ContactUs"
 import Insights from "../Insights/Insights"
 import Article from "../Article/Article"
 import PageNotFound from "../PageNotFound/PageNotFound";
+import LegalNotice from "../LegalNotice/LegalNotice"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Route exact path="/insights/:date/:title" element={<Article/>}/> 
       <Route exact path="/about-us" element={<AboutUs/>} />
       <Route exact path="/contact-us" element={<ContactUs/>} />
+      <Route exact path="/legal-notice" element={<LegalNotice/>} />
       <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer/>
