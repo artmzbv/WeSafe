@@ -1,7 +1,7 @@
 import copperA from '../images/offer_copper.jpg'
 import copperB from '../images/offer_copper.jpg'
 import copperOffer from '../images/aboutmetals/copper.jpg'
-import aluminiumOffer from '../images/aboutmetals/aluminium.jpg'
+import cobaltOffer from '../images/aboutmetals/cobalt.jpg'
 import nickelOffer from '../images/aboutmetals/nickel.jpg'
 import jerome from '../images/aboutteam/photo_jerome.png'
 import christophe from '../images/aboutteam/photo_christophe.jpg'
@@ -41,7 +41,7 @@ export const insights = [
 export const products = [
     {title:'Cuivre', src: copperOffer, link: './copper'},
     {title:'Nickel\n(été 2024)', src: nickelOffer, link: './nickel'},
-    {title:'Cobalt\n(automne 2024)', src: aluminiumOffer, link: './cobalt'},
+    {title:'Cobalt\n(automne 2024)', src: cobaltOffer, link: './cobalt'},
 ]
 
 export const team =[

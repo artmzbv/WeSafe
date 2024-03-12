@@ -4,11 +4,12 @@ import axios from "axios";
 
 export default function ContactUs() {
     const defaultData = {
-        name:"",
-        surname:"",
-        adress:"",
-        phone:"",
-        message:""
+        "your-name":"",
+        "your-surname":"",
+        "your-adress":"",
+        "your-phone":"",
+        "your-message":"",
+        _wpcf7_unit_tag: "8b9d7fa",
     }
     const [data, setData] = useState(defaultData)
 
@@ -18,16 +19,19 @@ export default function ContactUs() {
         setData(inputData)
     }
     
-    const url = "" 
+    const url = "https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37" 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post(url,{
-            name: data.name,
-            surname: data.surname,
-            adress: data.adress,
-            phone: data.phone,
-            message: data.message
+        axios.post("https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37" ,{
+            "your-name": data.name,
+            "your-surname": data.surname,
+            "your-adress": data.adress,
+            "your-phone": data.phone,
+            "your-message": data.message,
+            _wpcf7_unit_tag: "8b9d7fa",
+            // validation_error: false,
+            // validation_message: '',
         }).then(res =>{
             console.log(res.data)
         })
