@@ -32,6 +32,7 @@
     color: white;
     z-index: 2;
     opacity:1 ;
+    white-space: pre-wrap;
 }
 
 .market__subtitle{

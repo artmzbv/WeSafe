@@ -20,15 +20,27 @@ export default function CopperProduct() {
         <section className="copper">
         <div className="copper__topic">
                 <h1 className="copper__title">Nos produits</h1>
-                <h2 className="copper__subtitle">CUIVRE</h2>
+                <h2 className="copper__subtitle">LE CUIVRE</h2>
         </div>
-        <h3 className='copper__intro'>Nous vous proposons de garder un des nos produits dans nos entrepots</h3>
-          <p className='copper__description'>
-            Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
-            Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
-            Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
-            Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
-        </p>
+        <h3 className='copper__intro'>{`WeSafe vous propose actuellement 3 produits issus du minerai de cuivre`}</h3>
+        <ul> 
+            <li className='copper__intro-list'>À différents stade de la Supply Chain, nous couvrons des besoins différenciés des multiples acteurs industriels</li>
+            <li className='copper__intro-list'>L'objectif  est de constituer un stock diversifié</li>
+            <li className='copper__intro-list'>Chaque produit a ses spécificités, nos conseillers se tiennent à votre disposition pour en discuter</li>
+        </ul>
+        
+        {/* <h4 className='copper__intro-title'>Le cuivre dans son utilisation traditionnelle</h4>
+          {/* <p className='copper__description'>
+         {`Le cuivre est utilisé dans de nombreux secteurs, tels que l’industrie de la construction , le secteur de l’énergie , celui de l’industrie, des transports ou des produits finis comme les biens de consommation.`} */}
+        {/* </p> */}
+        {/* <h4 className='copper__intro-title'>Le cuivre et transition énergétique mondiale</h4> */}
+        {/* <p className='copper__description'> */}
+         {/* {`La substitution des technologies traditionnelles par des solutions décarbonées aura des conséquences sur la demande en cuivre puisque le contenu en cuivre de ces dernières est plus important que ce soit dans le secteur électrique ou le transport.`} */}
+        {/* </p> */}
+        {/* <h4 className='copper__intro-title'>Le cuivre et transition numérique mondiale</h4> */}
+        {/* <p className='copper__description'> */}
+         {/* {`Dans le numérique, le cuivre est utilisé comme support physique de transmission des données dans les réseaux de télécommunications fixes (réseaux DSL et réseaux coaxiaux), et pour assurer des fonctions de connexion électrique (du fait de sa conductivité) au sein de certains composants des équipements électroniques.`}
+        </p>     */}
         <div className="copper__container">
         {cards.map((card) => (
             <>

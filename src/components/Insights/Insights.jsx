@@ -41,7 +41,7 @@ export default function Insights() {
             {/* В индексе мапа все равно сохраняется изначальный массив */}
             {insights.filter(filterInsights).map((insight, index) => {
                 if (isMore > index) {
-                return <InsightsCard insight={insight}/>
+                return <InsightsCard key={insight.title} insight={insight}/>
                 }
             })}
             </div>
