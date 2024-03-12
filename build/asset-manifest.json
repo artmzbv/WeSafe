@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WeSafe/static/css/main.a74b76bb.css",
-    "main.js": "/WeSafe/static/js/main.fcb0bf49.js",
+    "main.js": "/WeSafe/static/js/main.4e6d2444.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.b096248260f81fdf96e6.jpg",
     "static/media/grenaille.jpeg": "/WeSafe/static/media/grenaille.7376e74c936216a94a23.jpeg",
@@ -10,24 +10,24 @@
     "static/media/metal.jpg": "/WeSafe/static/media/metal.7b99a134313d624aac3b.jpg",
     "static/media/analytics.jpg": "/WeSafe/static/media/analytics.7ee7ab3aa9007a7912eb.jpg",
     "static/media/revente.jpg": "/WeSafe/static/media/revente.adeaa101257939232d3e.jpg",
+    "static/media/transparency.jpg": "/WeSafe/static/media/transparency.4c7f93b2da3e6c10cffe.jpg",
     "static/media/administration.jpg": "/WeSafe/static/media/administration.1241cbf925163156d9f1.jpg",
     "static/media/leaders.jpg": "/WeSafe/static/media/leaders.02323b73bfe4de17b1d9.jpg",
-    "static/media/transparency.jpg": "/WeSafe/static/media/transparency.f55b21959221b8d2897c.jpg",
     "static/media/photo_jerome.png": "/WeSafe/static/media/photo_jerome.e4e9abe41cc7b84ea4f3.png",
     "static/media/selection.jpg": "/WeSafe/static/media/selection.7bf49562842a7fadb59a.jpg",
-    "static/media/aluminium.jpg": "/WeSafe/static/media/aluminium.8b90227876b3dc491b65.jpg",
-    "static/media/nickel.jpg": "/WeSafe/static/media/nickel.5b6113169ee5f0dffd5f.jpg",
     "static/media/stockage.jpg": "/WeSafe/static/media/stockage.16ae9a9c3a757eaec2db.jpg",
     "static/media/photo_christophe.jpg": "/WeSafe/static/media/photo_christophe.afa3122d439e8ff7df4d.jpg",
     "static/media/offer_copper.jpg": "/WeSafe/static/media/offer_copper.f97953716c6acea6d6f6.jpg",
     "static/media/milberry.jpg": "/WeSafe/static/media/milberry.d856ebcbba8f0342d7b2.jpg",
-    "static/media/copper.jpg": "/WeSafe/static/media/copper.876ece093a726f9c38fb.jpg",
     "static/media/sheet.jpg": "/WeSafe/static/media/sheet.5230645d39707ff240eb.jpg",
+    "static/media/cobalt.jpg": "/WeSafe/static/media/cobalt.93db136d845c217bfa66.jpg",
     "static/media/Montserrat-Bold.woff": "/WeSafe/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff",
     "static/media/Montserrat-Medium.woff": "/WeSafe/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff",
     "static/media/commande.jpg": "/WeSafe/static/media/commande.329026d1c286c6325abc.jpg",
     "static/media/safebox.jpeg": "/WeSafe/static/media/safebox.9c60a3dd6ec37ea2a5b4.jpeg",
     "static/media/logo_new.jpg": "/WeSafe/static/media/logo_new.8cb328d12ac8eda5898b.jpg",
+    "static/media/nickel.jpg": "/WeSafe/static/media/nickel.1be28827c6d91d1b3c9e.jpg",
+    "static/media/copper.jpg": "/WeSafe/static/media/copper.3aee5a1eceb17e9550ba.jpg",
     "static/media/circle2.svg": "/WeSafe/static/media/circle2.f6acec1384d887dcdb5db6a5f0f3d9bc.svg",
     "static/media/circle3.svg": "/WeSafe/static/media/circle3.7e8635cbc50c0c6264817d76edd962b0.svg",
     "static/media/circle4.svg": "/WeSafe/static/media/circle4.7e002c632461e142ad7a4a29e0e9e800.svg",
@@ -37,11 +37,11 @@
     "static/media/burger.svg": "/WeSafe/static/media/burger.00878a777adbe56929a2.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.396f7157a69a3b7c66df.svg",
     "main.a74b76bb.css.map": "/WeSafe/static/css/main.a74b76bb.css.map",
-    "main.fcb0bf49.js.map": "/WeSafe/static/js/main.fcb0bf49.js.map",
+    "main.4e6d2444.js.map": "/WeSafe/static/js/main.4e6d2444.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a74b76bb.css",
-    "static/js/main.fcb0bf49.js"
+    "static/js/main.4e6d2444.js"
   ]
 }
