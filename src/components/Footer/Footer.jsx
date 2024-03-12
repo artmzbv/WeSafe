@@ -17,13 +17,13 @@ export default function Footer() {
             </Link>
             </li>
             <li className="footer__list-item">
-            <Link className='footer__link footer__link_subtitle' to="./aluminium">
-                Aluminium
+            <Link className='footer__link footer__link_subtitle' to="./nickel">
+                Nickel
             </Link>
             </li>
             <li className="footer__list-item">
-            <Link className='footer__link footer__link_subtitle' to="./nickel">
-                Nickel
+            <Link className='footer__link footer__link_subtitle' to="./cobalt">
+                Cobalt
             </Link>
             </li>
             </ul>
