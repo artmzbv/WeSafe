@@ -26,7 +26,7 @@ export default function NickelProduct() {
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala</p>
         <div className="nickel__container">
             {cards.map((card) => (
-            <MetalCard card={card}/>
+            <MetalCard key={card.title} card={card}/>
         ))}
         </div>
             <Warehouse/>

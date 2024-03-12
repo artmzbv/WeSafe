@@ -10,7 +10,7 @@ export default function AboutTeam() {
             <h1 className='team__title'>Qui sommes-nous?</h1>
             <div className='team__container'>
             {team.map((person) => 
-            <div className='team__card'>
+            <div key={person.name} className='team__card'>
             <img className='team__photo' src={person.src} alt={person.name}/>
             <h2 className='team__name'>{person.name}</h2>
             <p className='team__profession'>{person.profession}</p>

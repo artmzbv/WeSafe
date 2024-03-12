@@ -7,10 +7,10 @@ function App() {
                 <h1 className="notice__title">Mentions légales</h1>
         </div>
         <div className='notice__info'>
-        <h2 className='notice__subtitle'>Site</h2>
-        <p className='notice__text'>
+        <h2 className='notice__subtitle'>En attente</h2>
+        {/* <p className='notice__text'>
         {`Le site WeSafe est édité par la société WeSafe, société par actions simplifiée au capital de SOMME 
-        immatriculée au R.C.S de Paris sous le numéro 915 236 640, dont le siège social est situé au ADRESSE 
+        immatriculée au R.C.S de VILLE sous le numéro , dont le siège social est situé au ADRESSE 
         et qui peut être contactée par email à l’adresse suivante : EMAIL
         Directeur de publication : DIRECTEUR
         L’hébergement du site est assuré par la société SOCIETE, société par actions simplifiée dont le siège social est situé ADRESSE_INSURANCE.`}
@@ -26,7 +26,7 @@ function App() {
         Des procédures internes ont été mises en place par BLAST pour s’assurer du respect de ces règles.
         Pour toute question à ce sujet, vous pouvez nous contacter via l’adresse EMAIL.
         Mentions légales au DATE`}
-        </p>
+        </p> */}
         </div>
       </section>
   );

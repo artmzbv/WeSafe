@@ -44,19 +44,30 @@ const data = [
 
   const methodology = [
       {"name": "Net Zero Emissions by 2050 scenario",
-        "text": "The Net Zero Emissions by 2050 Scenario (NZE Scenario) is a normative scenario that shows a pathway for the global energy sector to achieve net zero CO2 emissions by 2050, with advanced economies reaching net zero emissions in advance of others.\nThis scenario also meets key energy-related Sustainable Development Goals (SDGs), in particular universal energy access by 2030 and major improvements in air quality.\nIt is consistent with limiting the global temperature rise to 1.5 °C (with at least a 50% probability), in line with emissions reductions assessed in the Intergovernmental Panel on Climate Change (IPCC)’s Sixth Assessment Report."
+        "text": `The Net Zero Emissions by 2050 Scenario (NZE Scenario) is a normative scenario that shows a pathway for the global energy sector 
+          to achieve net zero CO2 emissions by 2050, with advanced economies reaching net zero emissions in advance of others.\nThis scenario also meets 
+          key energy-related Sustainable Development Goals (SDGs), in particular universal energy access by 2030 and major improvements in air quality.\nIt is consistent 
+          with limiting the global temperature rise to 1.5 °C (with at least a 50% probability), in line with emissions reductions assessed in the Intergovernmental 
+          Panel on Climate Change (IPCC)’s Sixth Assessment Report.`
       },
       {"name": "Announced pledges scenario",
-      "text": "The Announced Pledges Scenario (APS), introduced in 2021, illustrates the extent to which announced ambitions and targets can deliver the emissions reductions needed to achieve net zero emissions by 2050.\nIt includes all recent major national announcements as of the end of August 2023, both 2030 targets and longer-term net zero or carbon neutrality pledges, regardless of whether these announcements have been anchored in legislation or in updated Nationally Determined Contributions.\n In the APS, countries implement their national targets in full and on time. The outlook for exporters of fossil fuels and low-emissions fuels, such as hydrogen, is shaped by what full implementation of all targets means for global demand.\nThe APS also assumes that all country-level targets for access to electricity and clean cooking are achieved on time and in full"
+      "text": `The Announced Pledges Scenario (APS), introduced in 2021, illustrates the extent to which announced ambitions and targets can deliver the emissions reductions needed to achieve net zero emissions by 2050.
+              \nIt includes all recent major national announcements as of the end of August 2023, both 2030 targets and longer-term net zero or carbon neutrality pledges, 
+              regardless of whether these announcements have been anchored in legislation or in updated Nationally Determined Contributions.\n
+              In the APS, countries implement their national targets in full and on time. The outlook for exporters of fossil fuels and low-emissions fuels, such as hydrogen, is shaped by what full implementation of all targets means for global demand.\nThe APS also assumes that all country-level targets for access to electricity and clean cooking are achieved on time and in full`
       },
       {"name": "Stated policies scenario",
-        "text": "The Stated Policies Scenario (STEPS) is designed to provide a sense of the prevailing direction of energy system progression, based on a detailed review of the current policy landscape.\nIt provides a more granular, sector-by-sector evaluation of the policies that have been put in place to reach stated goals and other energy-related objectives, taking account not only of existing policies and measures but also those that are under development.\nThe STEPS provides a more conservative benchmark for the future than the Announced Pledges Scenario (APS), by not taking for granted that governments will reach all announced goals. Similarly to the APS, it is not designed to achieve a particular outcome"
+        "text": `The Stated Policies Scenario (STEPS) is designed to provide a sense of the prevailing direction of energy system progression, 
+                based on a detailed review of the current policy landscape.\nIt provides a more granular, sector-by-sector evaluation of the policies 
+                that have been put in place to reach stated goals and other energy-related objectives, taking account not only of existing policies and measures 
+                but also those that are under development.\nThe STEPS provides a more conservative benchmark for the future than the Announced Pledges Scenario (APS), 
+                by not taking for granted that governments will reach all announced goals. Similarly to the APS, it is not designed to achieve a particular outcome`
       },
   ]
 
   
 
-  console.log(methodology[0].text)
+  // console.log(methodology[0].text)
 
 
   var allGroup = ["Stated policies scenario", "Announced pledges scenario","Net Zero Emissions by 2050 scenario"]
@@ -122,7 +133,7 @@ export default function TransitionGraph() {
         d3.select("svg").remove()
         d3.select("svg").remove()
 
-        console.log(dimensions)
+        // console.log(dimensions)
         if (!dimensions) return;
 
         var rowConverter = function(d) {
@@ -157,7 +168,7 @@ export default function TransitionGraph() {
           
         const dataset = dataReady
 
-        console.log(d3.max(dataset, function(d) { return d.values}))
+        // console.log(d3.max(dataset, function(d) { return d.values}))
 
         function scaleY () {
             if (option === "1"){
@@ -205,12 +216,12 @@ export default function TransitionGraph() {
         .x(function(d) { return xScale(+d.date); })
         .y(function(d) { return yScale(+d.quantity); });
         
-        console.log(dataset[0])
-        console.log(line(dataset[0].values))
-        //Print data to console as table, for verification
-        console.table(dataset, ["date", "quantity"]);
-        console.log(h)
-        console.log(w)
+        // console.log(dataset[0])
+        // console.log(line(dataset[0].values))
+        // //Print data to console as table, for verification
+        // console.table(dataset, ["date", "quantity"]);
+        // console.log(h)
+        // console.log(w)
         
         const svg = d3.select(svgRef.current)
         .append("svg")
@@ -255,7 +266,7 @@ export default function TransitionGraph() {
         .call(g => g.select(".domain").remove())
         .filter(function (d, i) { return i === 1;}).remove()
 
-    console.log(dataset[0].values[0].quantity)
+    // console.log(dataset[0].values[0].quantity)
 
     const color =["yellow", "white", "#5ae316"]
 
@@ -271,9 +282,9 @@ export default function TransitionGraph() {
 
         const tooltipPosition = (event) => {
             const tooltipWidth = parseInt(getComputedStyle(document.querySelector('.transition-graph__tooltip')).width.replace("px", ""))
-            console.log(tooltipWidth)
-            console.log(event.layerX)
-            console.log(window.screen.width-event.layerX)
+            // console.log(tooltipWidth)
+            // console.log(event.layerX)
+            // console.log(window.screen.width-event.layerX)
             if (window.screen.width-event.layerX > tooltipWidth + w/10) {
             return (event.layerX) + "px"}
             else {
@@ -359,7 +370,7 @@ export default function TransitionGraph() {
         //  })
         // console.log(tooltip(1))
     },[option, dimensions])
-    console.log(info)
+    // console.log(info)
     // console.log(methodology[0].text)
 
     return (

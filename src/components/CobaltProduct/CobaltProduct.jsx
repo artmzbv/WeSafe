@@ -26,7 +26,7 @@ export default function CobaltProduct() {
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala</p>
         <div className="cobalt__container">
             {cards.map((card) => (
-            <MetalCard card={card}/>
+            <MetalCard key={card.title} card={card}/>
         ))}
         </div>
             <Warehouse/>

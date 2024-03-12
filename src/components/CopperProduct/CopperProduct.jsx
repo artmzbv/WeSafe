@@ -32,7 +32,7 @@ export default function CopperProduct() {
         <div className="copper__container">
         {cards.map((card) => (
             <>
-            <MetalCard card={card}/>
+            <MetalCard key={card.title} card={card}/>
             </>
         ))}
         {/* {popup ? (<MetalPopup handleClosePopup={handleClosePopup} />) : null} */}
