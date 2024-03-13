@@ -28,7 +28,7 @@ export default function Footer() {
             </li>
             </ul>
         <Link className='footer__link footer__link_title' to="./insights">
-            <div className='footer__link'>Insights</div>
+            <div className='footer__link'>Le Marché</div>
         </Link>
         <Link className='footer__link footer__link_title' to="./about-us">
             <div className='footer__link'>Qui sommes-nous?</div>

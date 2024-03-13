@@ -93,7 +93,7 @@ export default function AboutRegulation() {
                     </li>
 
                     <li className='regulation__item'>
-                        <h3 className='regulation__item-title'>Prix</h3>
+                        <h3 className='regulation__item-title'>Transparence des Prix</h3>
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={transparency} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>

@@ -4,11 +4,11 @@ import axios from "axios";
 
 export default function ContactUs() {
     const defaultData = {
-        "your-name":"",
-        "your-surname":"",
-        "your-adress":"",
-        "your-phone":"",
-        "your-message":"",
+        name:"",
+        surname:"",
+        adress:"",
+        phone:"",
+        message:"",
         _wpcf7_unit_tag: "8b9d7fa",
     }
     const [data, setData] = useState(defaultData)
@@ -19,25 +19,45 @@ export default function ContactUs() {
         setData(inputData)
     }
     
-    const url = "https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37" 
+    // const url = "https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37" 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        axios.post("https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37" ,{
-            "your-name": data.name,
-            "your-surname": data.surname,
-            "your-adress": data.adress,
-            "your-phone": data.phone,
-            "your-message": data.message,
+        axios.post("https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37/feedback" ,{
+            name: data.name,
+            surname: data.surname,
+            adress: data.adress,
+            phone: data.phone,
+            message: data.message,
             _wpcf7_unit_tag: "8b9d7fa",
             // validation_error: false,
             // validation_message: '',
         }).then(res =>{
             console.log(res.data)
         })
-
         setData(defaultData)
     }
+
+// let handleSubmit = async (e) => {
+//     e.preventDefault();
+//     try {
+//       const req = await fetch("https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37/feedback", {
+//         method: "POST",
+//         body: JSON.stringify({
+//             name: data.name,
+//             surname: data.surname,
+//             adress: data.adress,
+//             phone: data.phone,
+//             message: data.message,
+//         _wpcf7_unit_tag: "8b9d7fa",
+//         }),
+//         }).then(res =>{
+//         console.log(res.data)
+//         })
+//         } catch (err) {
+//             console.log(err);
+//     }
+//     }
 
  
     return(
@@ -50,14 +70,14 @@ export default function ContactUs() {
             <h2 className="contact__text">Si vous-avez des question, envoyez-nous une message par mail a soutien@wesafe.com</h2>
             <form className="contact__form" onSubmit={(e) => handleSubmit(e)}>
                 <div className="contact__form-line">
-                <input id="name"  className="contact__input" placeholder="Prenom" value={data.name} onChange={(e) => handleData(e)}></input>
-                <input id="surname" className="contact__input" placeholder="Nom" value={data.surname} onChange={(e) => handleData(e)}></input>
+                <input id="your-name"  className="contact__input" placeholder="Prenom" value={data.name} onChange={(e) => handleData(e)}></input>
+                <input id="your-surname" className="contact__input" placeholder="Nom" value={data.surname} onChange={(e) => handleData(e)}></input>
                 </div>
                 <div className="contact__form-line">
-                <input id="adress" className="contact__input" placeholder="Adresse mail*" required value={data.adress} onChange={(e) => handleData(e)}></input>
-                <input id="phone" className="contact__input" placeholder="Numero de telephone" value={data.phone} onChange={(e) => handleData(e)}></input>
+                <input id="your-adress" className="contact__input" placeholder="Adresse mail*" required value={data.adress} onChange={(e) => handleData(e)}></input>
+                <input id="your-phone" className="contact__input" placeholder="Numero de telephone" value={data.phone} onChange={(e) => handleData(e)}></input>
                 </div>
-                <textarea id="message" className="contact__input-message" placeholder="Message" value={data.message} onChange={(e) => handleData(e)}></textarea>
+                <textarea id="your-message" className="contact__input-message" placeholder="Message" value={data.message} onChange={(e) => handleData(e)}></textarea>
                 <p className="contact__note">*Note: necessaire a remplir</p>
                 <button className="contact__submit" type="submit">Envoyer</button>
             </form>

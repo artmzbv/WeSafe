@@ -45,10 +45,10 @@ const data = [
   const methodology = [
       {"name": "Net Zero Emissions by 2050 scenario",
         "text": `The Net Zero Emissions by 2050 Scenario (NZE Scenario) is a normative scenario that shows a pathway for the global energy sector 
-          to achieve net zero CO2 emissions by 2050, with advanced economies reaching net zero emissions in advance of others.\nThis scenario also meets 
-          key energy-related Sustainable Development Goals (SDGs), in particular universal energy access by 2030 and major improvements in air quality.\nIt is consistent 
-          with limiting the global temperature rise to 1.5 °C (with at least a 50% probability), in line with emissions reductions assessed in the Intergovernmental 
-          Panel on Climate Change (IPCC)’s Sixth Assessment Report.`
+to achieve net zero CO2 emissions by 2050, with advanced economies reaching net zero emissions in advance of others.\nThis scenario also meets 
+key energy-related Sustainable Development Goals (SDGs), in particular universal energy access by 2030 and major improvements in air quality.\nIt is consistent 
+with limiting the global temperature rise to 1.5 °C (with at least a 50% probability), in line with emissions reductions assessed in the Intergovernmental 
+Panel on Climate Change (IPCC)’s Sixth Assessment Report.`
       },
       {"name": "Announced pledges scenario",
       "text": `The Announced Pledges Scenario (APS), introduced in 2021, illustrates the extent to which announced ambitions and targets can deliver the emissions reductions needed to achieve net zero emissions by 2050.
