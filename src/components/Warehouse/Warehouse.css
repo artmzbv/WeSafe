@@ -33,6 +33,11 @@
     height: 40vw;
     margin-bottom: 100px;
  }
+ 
+ .warehouse__map{
+   border: 4px solid #001F3D;
+   margin-bottom: 50px;
+ }
 
  @media screen and (max-width: 768px) {
    .warehouse{
