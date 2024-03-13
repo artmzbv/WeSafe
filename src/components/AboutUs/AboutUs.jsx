@@ -14,7 +14,7 @@ export default function Copper() {
             <President/>
             <History/>
             <AboutTeam/>
-            <Partners/>
+            {/* <Partners/> */}
         </section>
         </>
     )

@@ -1,6 +1,4 @@
 import './AboutTeam.css';
-import christophe from '../../images/aboutteam/photo_christophe.jpg'
-import jerome from '../../images/aboutteam/photo_jerome.png'
 import {team} from '../../utils/utils'
 
 export default function AboutTeam() {

@@ -5,6 +5,7 @@ import cobaltOffer from '../images/aboutmetals/cobalt.jpg'
 import nickelOffer from '../images/aboutmetals/nickel.jpg'
 import jerome from '../images/aboutteam/photo_jerome.png'
 import christophe from '../images/aboutteam/photo_christophe.jpg'
+import artem from '../images/aboutteam/photo_artem.jpg'
 
 
 export const insights = [
@@ -47,5 +48,5 @@ export const products = [
 export const team =[
     {name: 'Jerome Thomasse' , src:jerome, profession: 'CEO', description:'Specialiste de la Gestion de Patrimoine et de l Epargne depuis 30 ans'},
     {name: 'Christophe Roy' , src:christophe, profession: 'CMO', description:'Gestionnaire de Projet / Specialiste Marketing/ Conseiller Financier'},
-    {name: 'Artem Zubov' , src:christophe, profession: 'CTO', description:'Développeur Web/\n Analyste Macro & Commodities'},
+    {name: 'Artem Zubov' , src:artem, profession: 'CTO', description:'Développeur Web/\n Analyste Macro & Commodities'},
 ]

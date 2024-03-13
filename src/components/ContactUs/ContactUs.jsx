@@ -18,22 +18,22 @@ export default function ContactUs() {
         inputData[e.target.id] = e.target.value
         setData(inputData)
     }
-    
+        
     // const url = "https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37" 
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        axios.post("https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37/feedback" ,{
-            name: data.name,
-            surname: data.surname,
-            adress: data.adress,
-            phone: data.phone,
-            message: data.message,
-            _wpcf7_unit_tag: "8b9d7fa",
-            // validation_error: false,
+     axios.post("https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37/feedback" ,{
+        name: data.name,
+        surname: data.surname,
+        adress: data.adress,
+        phone: data.phone,
+        message: data.message,
+        _wpcf7_unit_tag: "8b9d7fa",
+        // validation_error: false,
             // validation_message: '',
         }).then(res =>{
-            console.log(res.data)
+        console.log(res.data)
         })
         setData(defaultData)
     }
