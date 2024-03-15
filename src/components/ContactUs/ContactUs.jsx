@@ -42,7 +42,7 @@ export default function ContactUs() {
                 //     "Content-Type": "multipart/form-data",
                 //   },
                 body: formdata,
-                redirect: "follow"
+                // redirect: "follow"
             };
             const resultDisplay = (res) => {
                 console.log(res)
@@ -67,7 +67,7 @@ export default function ContactUs() {
                 formdata.delete("your-message", data.message);
                 console.log(clientMessage)
         }
-        
+
         function handleClosePopup() {
             setClientMessage(null);
         }
@@ -92,15 +92,15 @@ export default function ContactUs() {
             <h1 className="contact__title">Contactez-nous pour prendre des actualites</h1>
         </div>
             <div className="contact__container">  
-            <h2 className="contact__text">Si vous-avez des question, envoyez-nous une message par mail a soutien@wesafe.com</h2>
-            <form className="contact__form" onSubmit={(e) => handleSubmit(e)} ref={formRef}>
+            <h2 className="contact__text">Si vous-avez des question, envoyez-nous une message par mail a contact@wesafe.store</h2>
+            <form className="contact__form" onSubmit={(e) => handleSubmit(e)}>
                 <div className="contact__form-line">
                 <input type="text" name="your-name" id="name"  className="contact__input" placeholder="Prenom" value={data.name} onChange={(e) => handleData(e)}></input>
                 <input type="text" name="your-surname" id="surname" className="contact__input" placeholder="Nom" value={data.surname} onChange={(e) => handleData(e)}></input>
                 </div>
                 <div className="contact__form-line">
                 <input type="email" name="your-surname" id="email" className="contact__input" placeholder="Adresse mail*" value={data.email} onChange={(e) => handleData(e)}></input>
-                <input  type="number" name="your-surname" id="phone" className="contact__input" placeholder="Numero de telephone" value={data.phone} onChange={(e) => handleData(e)}></input>
+                <input  type="text" name="your-surname" id="phone" className="contact__input" placeholder="Numero de telephone" value={data.phone} onChange={(e) => handleData(e)}></input>
                 </div>
                 <textarea id="message" name="your-message" className="contact__input-message" placeholder="Message" value={data.message} onChange={(e) => handleData(e)}></textarea>
                 <p type="text" className="contact__note">*Note: necessaire a remplir</p>
