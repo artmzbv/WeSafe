@@ -10,17 +10,17 @@ export default function Intro() {
     // const [featuredImage, setFeaturedImage] = useState()
     // console.log(featuredImage)
 
-    const fetchPosts = () =>[
-        axios
-          .get("http://localhost/wordpress/wp-json/wp/v2/posts")
-          .then((res) => {
-            setPosts(res.data);
-          })
-    ]
+    // const fetchPosts = () =>[
+    //     axios
+    //       .get("http://localhost/wordpress/wp-json/wp/v2/posts")
+    //       .then((res) => {
+    //         setPosts(res.data);
+    //       })
+    // ]
 
-    useEffect(() => {
-        fetchPosts()
-    }, [])
+    // useEffect(() => {
+    //     fetchPosts()
+    // }, [])
 
     // console.log(posts[0]._links["wp:featuredmedia"][0].href)
     // console.log(posts[0].content.rendered)
@@ -44,7 +44,7 @@ export default function Intro() {
                 <button className='intro__button'>Contactez-nous</button>
                 </Link>
             </div>
-            <img className="intro__picture" src={SafeBox}></img>
+            <div className="intro__picture" src={SafeBox}></div>
             {/* <img src={'https://wesafe.store/wp-content/uploads/2024/02/logo-banniere-bleu-En.jpg'}></img> */}
             <div>
                 {/* {posts.map((item) => (

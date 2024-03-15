@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.2ac8fc15.css",
-    "main.js": "/WeSafe/static/js/main.30a05038.js",
+    "main.css": "/WeSafe/static/css/main.df77679b.css",
+    "main.js": "/WeSafe/static/js/main.d7a14d9c.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.b096248260f81fdf96e6.jpg",
     "static/media/grenaille.jpeg": "/WeSafe/static/media/grenaille.7376e74c936216a94a23.jpeg",
@@ -23,6 +23,7 @@
     "static/media/cobalt.jpg": "/WeSafe/static/media/cobalt.93db136d845c217bfa66.jpg",
     "static/media/Montserrat-Bold.woff": "/WeSafe/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff",
     "static/media/Montserrat-Medium.woff": "/WeSafe/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff",
+    "static/media/photo_artem.jpg": "/WeSafe/static/media/photo_artem.49a721da3fe201334dd4.jpg",
     "static/media/safebox.jpeg": "/WeSafe/static/media/safebox.9c60a3dd6ec37ea2a5b4.jpeg",
     "static/media/logo_new.jpg": "/WeSafe/static/media/logo_new.8cb328d12ac8eda5898b.jpg",
     "static/media/commande.jpg": "/WeSafe/static/media/commande.5bccb51ee98765cf87c1.jpg",
@@ -36,12 +37,12 @@
     "static/media/ref.svg": "/WeSafe/static/media/ref.cee3cc92eb70847cda9f3b17c68a789d.svg",
     "static/media/burger.svg": "/WeSafe/static/media/burger.00878a777adbe56929a2.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.396f7157a69a3b7c66df.svg",
-    "main.2ac8fc15.css.map": "/WeSafe/static/css/main.2ac8fc15.css.map",
-    "main.30a05038.js.map": "/WeSafe/static/js/main.30a05038.js.map",
+    "main.df77679b.css.map": "/WeSafe/static/css/main.df77679b.css.map",
+    "main.d7a14d9c.js.map": "/WeSafe/static/js/main.d7a14d9c.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ac8fc15.css",
-    "static/js/main.30a05038.js"
+    "static/css/main.df77679b.css",
+    "static/js/main.d7a14d9c.js"
   ]
 }

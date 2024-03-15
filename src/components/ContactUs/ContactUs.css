@@ -34,6 +34,7 @@
 }
 
 .contact__form{
+    position: relative;
     width:80%;
 }
 
@@ -123,6 +124,66 @@
     color: white;
 }
 
+.contact__popup{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    top: 40%;
+    left: 30%;
+    background-color: #001F3D;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    /* font-weight: bold; */
+    width: 40%;
+    height: 10vw;
+}
+
+.contact__popup_hidden{
+    position: fixed;
+}
+
+.contact__popup:before {
+    position: absolute;
+    content: " ";
+    height: 35px;
+    border: 3px solid #001F3D;
+    color: white;
+    background-color: #001F3D;
+    top: -25%;
+    right: -5%;
+    transform: rotate(45deg);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .contact__popup:after {
+    position: absolute;
+    content: " ";
+    height: 35px;
+    border: 3px solid #001F3D;
+    color: white;
+    background-color: #001F3D;
+    top: -25%;
+    right: -5%;
+    transform: rotate(-45deg);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  /* .contact__popup:hover::after{
+    border: 3px solid #646060;
+    background-color: #646060;
+  }
+
+  .contact__popup::before:hover{
+    border: 3px solid #646060;
+    background-color: #646060;
+  } */
+  
+
 
 @media screen and (max-width: 900px) {
     .contact__topic{
@@ -184,9 +245,16 @@
         height: 35px;
     }
 
+    .contact__popup{
+        top: 40%;
+        left: 20%;
+        width: 60%;
+        height: 15vw;
+    }
+
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .contact__topic{
         justify-content: center;
         align-items: center;
@@ -251,4 +319,22 @@
         border-radius: 10px;
         margin-top: 30px;
     }
+
+    .contact__popup{
+        top: 30%;
+        left: 10%;
+        width: 80%;
+        height: 30vw;
+    }
+    .contact__popup:before {
+        height: 25px;
+        top: -25%;
+        right: -5%;
+      }
+      
+      .contact__popup:after {
+        height: 25px;
+        top: -25%;
+        right: -5%;
+      }
 }

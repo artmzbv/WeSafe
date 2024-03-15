@@ -299,7 +299,7 @@ export default function TransitionGraph() {
         .append("circle")
         .attr("cx", function(d) { return xScale(d.date) } )
         .attr("cy", function(d) { return yScale(d.quantity) } )
-        .attr("r", 7)
+        .attr("r", 5)
         .attr("fill",  color[i])
         .attr("fill-opacity", 1)  
         .attr("cursor", "pointer")
