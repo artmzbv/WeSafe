@@ -65,7 +65,7 @@ export default function ContactUs() {
                 formdata.delete("your-email", data.email);
                 formdata.delete("your-phone", data.phone);
                 formdata.delete("your-message", data.message);
-                console.log(clientMessage)
+                // console.log(clientMessage)
         }
 
         function handleClosePopup() {
