@@ -33,12 +33,17 @@
     height: 40vw;
     margin-bottom: 100px;
  }
- 
- .warehouse__map{
-   position: relative;
-   border: 4px solid #001F3D;
-   margin-bottom: 50px;
- }
+ .warehouse__map-container{
+      width: 1000px;
+      height: 500px;
+      margin-bottom: 100px;
+      border: 4px solid #001F3D;
+} 
+   .warehouse__map{
+      position: relative;
+      margin-bottom: 50px;
+   }
+
  .warehouse__tooltip{
    position: absolute;
    display: flex;
@@ -64,7 +69,26 @@
    .warehouse__photo{
       height: 30vw;
    }
+
+   .warehouse__map-container{
+      width: 450px;
+      height: 400px;
+      margin-bottom: 50px;
+} 
 }
 
 @media screen and (max-width: 450px) {
+   .warehouse__map-container{
+      width: 350px;
+      height: 300px;
+      margin-bottom: 50px;
+} 
+}
+
+@media screen and (max-width: 350px) {
+   .warehouse__map-container{
+      width: 250px;
+      height: 320px;
+      margin-bottom: 50px;
+} 
 }

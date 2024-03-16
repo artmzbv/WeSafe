@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.e2693679.css",
-    "main.js": "/WeSafe/static/js/main.5d0c5044.js",
+    "main.css": "/WeSafe/static/css/main.e05135c5.css",
+    "main.js": "/WeSafe/static/js/main.97f80b67.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.b096248260f81fdf96e6.jpg",
     "static/media/grenaille.jpeg": "/WeSafe/static/media/grenaille.7376e74c936216a94a23.jpeg",
@@ -12,6 +12,7 @@
     "static/media/revente.jpg": "/WeSafe/static/media/revente.adeaa101257939232d3e.jpg",
     "static/media/transparency.jpg": "/WeSafe/static/media/transparency.4c7f93b2da3e6c10cffe.jpg",
     "static/media/administration.jpg": "/WeSafe/static/media/administration.1241cbf925163156d9f1.jpg",
+    "static/media/europe.geojson": "/WeSafe/static/media/europe.4f6e639b3fc58107f55a.geojson",
     "static/media/leaders.jpg": "/WeSafe/static/media/leaders.02323b73bfe4de17b1d9.jpg",
     "static/media/photo_jerome.png": "/WeSafe/static/media/photo_jerome.e4e9abe41cc7b84ea4f3.png",
     "static/media/selection.jpg": "/WeSafe/static/media/selection.7bf49562842a7fadb59a.jpg",
@@ -38,12 +39,12 @@
     "static/media/ref.svg": "/WeSafe/static/media/ref.cee3cc92eb70847cda9f3b17c68a789d.svg",
     "static/media/burger.svg": "/WeSafe/static/media/burger.00878a777adbe56929a2.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.396f7157a69a3b7c66df.svg",
-    "main.e2693679.css.map": "/WeSafe/static/css/main.e2693679.css.map",
-    "main.5d0c5044.js.map": "/WeSafe/static/js/main.5d0c5044.js.map",
+    "main.e05135c5.css.map": "/WeSafe/static/css/main.e05135c5.css.map",
+    "main.97f80b67.js.map": "/WeSafe/static/js/main.97f80b67.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2693679.css",
-    "static/js/main.5d0c5044.js"
+    "static/css/main.e05135c5.css",
+    "static/js/main.97f80b67.js"
   ]
 }

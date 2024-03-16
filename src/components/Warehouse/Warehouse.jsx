@@ -5,16 +5,42 @@ import map from '../../utils/europe.geojson'
 
 export default function Warehouse() {
     const mapRef = useRef();
+    const contRef = useRef();
+
+        //UseEffect to control resize parameters for svg graphics
+        const useResizeObserver = ref => {
+            const [dimensions, setDimensions] = useState(null);
+            useEffect(() => {
+              const observeTarget = ref.current;
+              const resizeObserver = new ResizeObserver(entries => {
+                entries.forEach(entry => {
+                  setDimensions(entry.contentRect);
+                });
+              });
+              resizeObserver.observe(observeTarget);
+              return () => {
+                resizeObserver.unobserve(observeTarget);
+              };
+            }, [ref]);
+            return dimensions;
+          };
+          const dimensions = useResizeObserver(contRef);
     
     useEffect(() =>{
+
+    if (!dimensions) return;
+    const width = dimensions.width
+    const height = dimensions.height
+
     d3.select("svg").remove()
-    const width = 460
-    const height = 400
     // The svg
     const svg = d3.select(mapRef.current)
       .append("svg")
-      .attr("width", width)
-      .attr("height", height)
+    //   .attr("width", width)
+    //   .attr("height", height)
+      .attr("viewBox", '0 0 ' + width + ' ' + height)
+      // .classed("svg-content", true)
+      .attr("preserveAspectRatio", 'xMinYMin meet')
     
     // Map and projection
     const projection = d3.geoMercator()
@@ -103,7 +129,9 @@ export default function Warehouse() {
 Nos conseillers sont à votre disposition pour vous expliquer les modalités de stockages et les coûts afférents.
     </p>
         {/* <div className="warehouse__photo"></div> */}
+        <div className="warehouse__map-container" ref={contRef}>
         <div className="warehouse__map" ref={mapRef}></div>
+        </div>
     </section>
     </>
 )}
