@@ -3,6 +3,7 @@ import Warehouse from '../Warehouse/Warehouse'
 import MetalCard from '../MetalCard/MetalCard'
 import copperA from '../../images/offer_copper.jpg'
 import copperB from '../../images/offer_copper.jpg'
+import nickel from '../../images/aboutmetals/nickel.jpg'
 
 export default function NickelProduct() {
 
@@ -16,10 +17,11 @@ export default function NickelProduct() {
         <>
         <section className="nickel">
         <div className="nickel__topic">
-                <h1 className="nickel__title">Nos produits</h1>
-                <h2 className="nickel__subtitle">NICKEL</h2>
+                <h1 className="nickel__title">{`L'achat de Nickel sera disponible\nà partir de l'été 2024`}</h1>
+                <img className="nickel__image" src={nickel} alt="cobalt" />
+                {/* <h2 className="nickel__subtitle">NICKEL</h2> */}
         </div>
-        <h3 className='nickel__intro'>Nous vous proposons de garder un des nos produits dans nos entrepots</h3>
+        {/* <h3 className='nickel__intro'>Nous vous proposons de garder un des nos produits dans nos entrepots</h3>
         <p className='nickel__description'>Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala 
         Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala Notre offre est lalalala
@@ -29,7 +31,7 @@ export default function NickelProduct() {
             <MetalCard key={card.title} card={card}/>
         ))}
         </div>
-            <Warehouse/>
+            <Warehouse/> */}
         </section>
         </>
     )

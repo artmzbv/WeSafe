@@ -1,33 +1,31 @@
 .nickel__topic{
     display:flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: #001F3D;
-    height: 30vh;
+    height: 100%;
     text-align: start;
-    margin-bottom: 5vh;
+    /* margin-top: 10vh; */
+    /* margin-bottom: 5vh; */
 }
 
 .nickel__title{
     color: white;
-    width: 60%;
-    margin: 0 0 0 5vw;
-    padding: 5vh 0 0;
-    line-height: 30px;
-    font-size: 24px;
+    width: 55%;
+    margin: 10vh 0 0 5vw;
+    /* padding: 5vh 0 0; */
+    line-height: 60px;
+    font-size: 40px;
+    white-space: pre-wrap;
 }
 
-.nickel__subtitle{
-    color: white;
-    width: 60%;
-    margin-left: 5vw;
-    /* margin-bottom: 5vh; */
-    line-height: 40px;
-    margin-top: 20px;
-    font-size: 38px;
+.nickel__image{
+    width: 45%;
+    height: 90vh;
+    margin-top: 10vh;
+    object-fit: cover;
 }
-
 .nickel__intro{
     margin-top: 20px;
     text-align: start;
@@ -53,10 +51,10 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .nickel__title{
+    /* .nickel__title{
         width: 90%;
         margin: 0 auto 4vh;
-    }
+    } */
 
     .nickel__container {
         padding: 5% 0%;
@@ -65,17 +63,45 @@
 }
 
 @media screen and (max-width: 768px) {
-    .nickel__topic{
+    /* .nickel__topic{
         justify-content: center;
         padding-left: 5%;
         padding-top: 65px;
         height: 195px;
     }
-    
-    .nickel__title{
+     */
+    /* .nickel__title{
         margin: 0;
         width: 80%;
+    } */
+    .nickel__topic{
+        /* display:flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 65px;
+        /* background-color: #001F3D;
+        height: 100%;
+        text-align: start; */
     }
+
+    .nickel__title{
+        color: white;
+        width: 90%;
+        margin: 40px auto 20px;
+        /* padding: 5vh 0 0; */
+        line-height:48px;
+        font-size: 36px;
+        white-space: pre-wrap;
+    }
+    
+    .nickel__image{
+        width: 100%;
+        height: 380px;
+        margin-top: 0;
+        object-fit: cover;
+    }
+    
 
     .nickel__subtitle{
         margin: 12px 0 auto;  
@@ -84,17 +110,25 @@
 
 
 @media screen and (max-width: 650px) {
-    .nickel__topic{
+    /* .nickel__topic{
         justify-content: center;
         align-items: center;
         padding-left: 0;
-    }
+    } */
 
-    .nickel__title{
+    /* .nickel__title{
         width: 90%;
         margin: 0 auto;
         font-size: 2em;
         text-align: center;
+    } */
+    .nickel__title{
+        width: 90%;
+        /* margin: 0 auto;
+        font-size: 2em; */
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
     }
     
     .nickel__subtitle{

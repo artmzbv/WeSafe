@@ -1,21 +1,30 @@
 .cobalt__topic{
     display:flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: #001F3D;
-    height: 30vh;
+    height: 100%;
     text-align: start;
-    margin-bottom: 5vh;
+    /* margin-top: 10vh; */
+    /* margin-bottom: 5vh; */
 }
 
 .cobalt__title{
     color: white;
-    width: 60%;
-    margin: 0 0 0 5vw;
-    padding: 5vh 0 0;
-    line-height: 30px;
-    font-size: 24px;
+    width: 55%;
+    margin: 10vh 0 0 5vw;
+    /* padding: 5vh 0 0; */
+    line-height: 60px;
+    font-size: 40px;
+    white-space: pre-wrap;
+}
+
+.cobalt__image{
+    width: 45%;
+    height: 90vh;
+    margin-top: 10vh;
+    object-fit: cover;
 }
 
 .cobalt__subtitle{
@@ -53,11 +62,11 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .cobalt__title{
+    /* .cobalt__title{ */
         /* width: 80%; */
-        width: 90%;
+        /* width: 90%;
         margin: 0 auto 4vh;
-    }
+    } */
 
     .cobalt__container {
         /* height: 100%; */
@@ -67,17 +76,46 @@
 }
 
 @media screen and (max-width: 768px) {
-    .cobalt__topic{
+    /* .cobalt__topic{
         justify-content: center;
         padding-left: 5%;
         padding-top: 65px;
         height: 195px;
+    } */
+    
+    .cobalt__topic{
+        /* display:flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 65px;
+        /* background-color: #001F3D;
+        height: 100%;
+        text-align: start; */
+    }
+
+    .cobalt__title{
+        color: white;
+        width: 90%;
+        margin: 40px auto 20px;
+        /* padding: 5vh 0 0; */
+        line-height:48px;
+        font-size: 36px;
+        white-space: pre-wrap;
     }
     
-    .cobalt__title{
+    .cobalt__image{
+        width: 100%;
+        height: 350px;
+        margin-top: 0;
+        object-fit: cover;
+    }
+    
+    
+    /* .cobalt__title{
         margin: 0;
         width: 80%;
-    }
+    } */
 
     .cobalt__subtitle{
         margin: 12px 0 0;  
@@ -85,17 +123,19 @@
 }
 
 @media screen and (max-width: 650px) {
-    .cobalt__topic{
+    /* .cobalt__topic{
         justify-content: center;
         align-items: center;
         padding-left: 0;
-    }
+    } */
 
     .cobalt__title{
         width: 90%;
-        margin: 0 auto;
-        font-size: 2em;
+        /* margin: 0 auto;
+        font-size: 2em; */
+        font-size: 30px;
         text-align: center;
+        margin-top: 20px;
     }
     
     .cobalt__subtitle{
