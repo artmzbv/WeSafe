@@ -44,12 +44,24 @@
     background-image: url(../../images/offer_copper.jpg);
     background-size: cover;
     width: 20%;
-    height: 650px;   
+    height: 550px;   
+}
+
+@media screen and (max-width: 1200px) {
+    .history__photo{
+        height: 650px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .history__photo{
-        height: 800px;
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .history__photo{
+        height: 770px;
     }
 }
 
