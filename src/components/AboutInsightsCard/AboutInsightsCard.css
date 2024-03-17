@@ -65,6 +65,32 @@
     text-decoration: none;
 }
 
+@media screen and (max-width: 1300px) {
+    .market__card{
+        /* width: 22vw; */
+        height: 24vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .market__card{
+        width: 22vw;
+        height: 28vw;
+    }
+    
+    .market__name{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .market__card{
+        width: 22vw;
+        height: 32vw;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .market__card{
         width: 28vw;
