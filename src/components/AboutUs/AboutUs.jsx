@@ -11,9 +11,9 @@ export default function Copper() {
         <div className="us__topic">
             <h1 className="us__title">Notre Equipe</h1>
             </div>
-            <President/>
-            <History/>
             <AboutTeam/>
+            {/* <President/> */}
+            <History/>
             {/* <Partners/> */}
         </section>
         </>

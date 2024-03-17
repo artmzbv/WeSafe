@@ -1,8 +1,9 @@
 .history{
     background-color: #001F3D;  
-    height: 80vh;
+    height: 100%;
     width:90%;
     margin: 0 5%;
+    margin-bottom: 100px;
 }
 
 .history__container{
@@ -11,7 +12,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     color: #001F3D;
-    height: 40vh;
+    height: 80vh;
 }
 
 .history__text{
@@ -32,10 +33,12 @@
 }
 
 .history__description{
-    margin-top: 5vh;
+
+    margin-bottom: 10px;
     width: 90%;
     text-align: start;
     color: white;
+    white-space: pre-wrap;
 }
 
 .history__photo{
