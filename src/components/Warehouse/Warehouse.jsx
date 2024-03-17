@@ -41,19 +41,22 @@ export default function Warehouse() {
       .attr("viewBox", '0 0 ' + width + ' ' + height)
       // .classed("svg-content", true)
       .attr("preserveAspectRatio", 'xMinYMin meet')
+    //   .call(d3.zoom().on("zoom", function (event) {
+    //     svg.attr("transform", event.transform)
+    //  }))
     
     // Map and projection
     const projection = d3.geoMercator()
-        .center([4, 47])                // GPS of location to zoom on
-        .scale(1020)                       // This is like the zoom
+        .center([7, 48])                // GPS of location to zoom on
+        .scale(900)                       // This is like the zoom
         .translate([ width/2, height/2 ])
     
     // Create data for circles:
     const markers = [
-      {long: -1.679400, lat: 48.114700, name: "Rennes"}, // corsica
-      {long: -0.580816, lat: 44.836151, name: "Bordeaux"}, // nice
-      {long: 2.349, lat: 48.864, name: "Paris"}, // Paris
-      {long: 4.402771, lat: 51.260197, name: "Anvers"}, // Lille
+      {long: -1.679400, lat: 48.114700, name: "Rennes, France"}, // corsica
+      {long: -0.580816, lat: 44.836151, name: "Bordeaux, France"}, // nice
+      {long: 2.349, lat: 48.864, name: "Paris, France"}, // Paris
+      {long: 4.402771, lat: 51.260197, name: "Anvers, Belgique"}, // Lille
     ];
     
     // Load external data and boot
@@ -73,12 +76,14 @@ export default function Warehouse() {
               )
             .style("stroke", "black")
             .style("opacity", .3)
+            // .style("background-color", "black")
     
         // create a tooltip
         const Tooltip = d3.select(mapRef.current)
           .append("div")
           .style("opacity", 0)
           .attr("class", "warehouse__tooltip")
+          
 
         //   d3.select("tooltip__warehouse").remove()
     
@@ -104,18 +109,18 @@ export default function Warehouse() {
           .join("circle")
             .attr("cx", d => projection([d.long, d.lat])[0])
             .attr("cy", d => projection([d.long, d.lat])[1])
-            .attr("r", 7)
+            .attr("r", 8)
             .attr("class", "circle")
             .style("fill", "#001F3D")
             .attr("stroke", "#001F3D")
             .attr("stroke-width", 3)
             .attr("stroke-opacity", .4)
             .attr("cursor", "pointer")
-          .on("mouseover", mouseover)
-          .on("mousemove", mousemove)
-          .on("mouseleave", mouseleave)
-          .on("click", function(event, d){
-            Tooltip
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave)
+            .on("click", function(event, d){
+                Tooltip
               .style("opacity", 1)
             })
     

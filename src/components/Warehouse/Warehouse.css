@@ -42,6 +42,7 @@
    .warehouse__map{
       position: relative;
       margin-bottom: 50px;
+      overflow: hidden;
    }
 
  .warehouse__tooltip{
