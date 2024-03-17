@@ -9,17 +9,17 @@
 .history__container{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     color: #001F3D;
-    height: 80vh;
+    height: 100%;
 }
 
 .history__text{
     margin-top: 4vh;
     margin-left: 4vw;
     margin-right: 0;
-    width: 70%;
+    width: 80%;
 }
 
 .history__title{
@@ -33,7 +33,6 @@
 }
 
 .history__description{
-
     margin-bottom: 10px;
     width: 90%;
     text-align: start;
@@ -44,14 +43,21 @@
 .history__photo{
     background-image: url(../../images/offer_copper.jpg);
     background-size: cover;
-    width: 30%;
-    height: 80vh;   
+    width: 20%;
+    height: 650px;   
+}
+
+@media screen and (max-width: 1000px) {
+    .history__photo{
+        height: 800px;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
     .history__photo{
         width: 15%;
+        height: 850px;
     }
 
     .history__text{
@@ -59,23 +65,33 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
+    .history__photo{
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 510px) {
     .history__container{
         flex-direction: column;
         justify-content: flex-end;
-        height: 80vh;
+        height: 100%;
     }
 
     .history__title{
         width: 90%;
+        margin-bottom: 20px;
+        font-size: 40px;
     }
     .history__text{
         width: 100%;
         height: 80%;
+        font-size: 14px;
+        line-height: 16px;
     }
     .history__photo{
         width: 100%;
-        height: 20%;
+        height: 200px
     }
     .history__title{
         text-align: center;
