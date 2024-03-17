@@ -47,7 +47,7 @@ export default function Warehouse() {
     
     // Map and projection
     const projection = d3.geoMercator()
-        .center([7, 48])                // GPS of location to zoom on
+        .center([4, 48])                // GPS of location to zoom on
         .scale(900)                       // This is like the zoom
         .translate([ width/2, height/2 ])
     
