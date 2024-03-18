@@ -1,6 +1,5 @@
 import './AboutProduct.css';
 import {React, useState, useRef, useEffect}  from "react";
-import livraison from '../../images/aboutproduct/livraison.jpg'
 import stockage from '../../images/aboutproduct/stockage.jpeg'
 import commande from '../../images/aboutproduct/commande.jpg'
 import selection from '../../images/aboutproduct/selection.jpg'
