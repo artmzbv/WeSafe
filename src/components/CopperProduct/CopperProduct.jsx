@@ -4,7 +4,7 @@ import Warehouse from '../Warehouse/Warehouse'
 import MetalCard from '../MetalCard/MetalCard'
 import MetalPopup from '../MetalPopup/MetalPopup'
 import milberry from '../../images/copperpage/milberry.jpg'
-import grenaille from '../../images/copperpage/grenaille.jpeg'  
+import grenaille from '../../images/copperpage/grenaille.jpg'  
 import sheet from '../../images/copperpage/sheet.jpg'
 
 export default function CopperProduct() {

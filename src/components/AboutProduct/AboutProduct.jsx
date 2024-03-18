@@ -1,6 +1,6 @@
 import './AboutProduct.css';
 import {React, useState, useRef, useEffect}  from "react";
-import stockage from '../../images/aboutproduct/stockage.jpeg'
+import stockage from '../../images/aboutproduct/stockage.jpg'
 import commande from '../../images/aboutproduct/commande.jpg'
 import selection from '../../images/aboutproduct/selection.jpg'
 import revente from '../../images/aboutproduct/revente.jpg'
