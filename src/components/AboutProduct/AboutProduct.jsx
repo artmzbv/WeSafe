@@ -1,7 +1,7 @@
 import './AboutProduct.css';
 import {React, useState, useRef, useEffect}  from "react";
 import livraison from '../../images/aboutproduct/livraison.jpg'
-import stockage from '../../images/aboutproduct/stockage.jpg'
+import stockage from '../../images/aboutproduct/stockage.jpeg'
 import commande from '../../images/aboutproduct/commande.jpg'
 import selection from '../../images/aboutproduct/selection.jpg'
 import revente from '../../images/aboutproduct/revente.jpg'
@@ -81,7 +81,7 @@ export default function AboutProduct() {
                 <div className='product__card'>
                     <h2 className='product__subtitle product__subtitle_livraison'>3.Livraison et Stockage</h2>
                     <div className='product__image-content'>
-                    <img className='product__image' src={livraison} alt='livraison'></img>
+                    <img className='product__image product__image_stockage' src={stockage} alt='livraison'></img>
                     <div className='product__more-description'>{'En savoir plus'} &#8593;</div>
                     <div className={`product__description  ${isIntersectingLiv ? 'product__description_hover' : null}`} ref={livRef}>
                     <p>La commande est tranportée et livrée par notre fournisseur, puis stockée dans l'un de nos entrepôts ultra-sécurisés</p>
