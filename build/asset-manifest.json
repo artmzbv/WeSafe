@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/WeSafe/static/css/main.7bfc046d.css",
-    "main.js": "/WeSafe/static/js/main.68cb4475.js",
+    "main.js": "/WeSafe/static/js/main.8453217c.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.b096248260f81fdf96e6.jpg",
     "static/media/grenaille.jpeg": "/WeSafe/static/media/grenaille.7376e74c936216a94a23.jpeg",
+    "static/media/stockage.jpeg": "/WeSafe/static/media/stockage.b9c43df04e2dd28265a8.jpeg",
     "static/media/livraison.jpg": "/WeSafe/static/media/livraison.24cb67e0734a5848ef83.jpg",
     "static/media/garanties.jpg": "/WeSafe/static/media/garanties.cdaa125d6b3bd19a507b.jpg",
     "static/media/metal.jpg": "/WeSafe/static/media/metal.7b99a134313d624aac3b.jpg",
@@ -17,7 +18,6 @@
     "static/media/photo_jerome.png": "/WeSafe/static/media/photo_jerome.e4e9abe41cc7b84ea4f3.png",
     "static/media/selection.jpg": "/WeSafe/static/media/selection.7bf49562842a7fadb59a.jpg",
     "static/media/nickel-full.jpeg": "/WeSafe/static/media/nickel-full.0d26b31d6e3e9f020bc2.jpeg",
-    "static/media/stockage.jpg": "/WeSafe/static/media/stockage.16ae9a9c3a757eaec2db.jpg",
     "static/media/offer_copper.jpg": "/WeSafe/static/media/offer_copper.f97953716c6acea6d6f6.jpg",
     "static/media/milberry.jpg": "/WeSafe/static/media/milberry.d856ebcbba8f0342d7b2.jpg",
     "static/media/sheet.jpg": "/WeSafe/static/media/sheet.5230645d39707ff240eb.jpg",
@@ -40,11 +40,11 @@
     "static/media/burger.svg": "/WeSafe/static/media/burger.00878a777adbe56929a2.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.396f7157a69a3b7c66df.svg",
     "main.7bfc046d.css.map": "/WeSafe/static/css/main.7bfc046d.css.map",
-    "main.68cb4475.js.map": "/WeSafe/static/js/main.68cb4475.js.map",
+    "main.8453217c.js.map": "/WeSafe/static/js/main.8453217c.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7bfc046d.css",
-    "static/js/main.68cb4475.js"
+    "static/js/main.8453217c.js"
   ]
 }
