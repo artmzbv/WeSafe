@@ -43,25 +43,20 @@ const data = [
   ]
 
   const methodology = [
-      {"name": "Net Zero Emissions by 2050 scenario",
-        "text": `The Net Zero Emissions by 2050 Scenario (NZE Scenario) is a normative scenario that shows a pathway for the global energy sector 
-to achieve net zero CO2 emissions by 2050, with advanced economies reaching net zero emissions in advance of others.\nThis scenario also meets 
-key energy-related Sustainable Development Goals (SDGs), in particular universal energy access by 2030 and major improvements in air quality.\nIt is consistent 
-with limiting the global temperature rise to 1.5 °C (with at least a 50% probability), in line with emissions reductions assessed in the Intergovernmental 
-Panel on Climate Change (IPCC)’s Sixth Assessment Report.`
+      {"name": "Le scénario Net Zéro Émission",
+        "text": `Le scénario Net Zéro Émission d’ici 2050 (scénario NZE) est un scénario normatif qui montre la voie à suivre pour le secteur énergétique mondial pour atteindre zéro émission nette de CO2 d’ici 2050, les économies avancées atteignant zéro émission nette avant les autres.
+\nCe scénario répond également aux principaux objectifs de développement durable (ODD) liés à l’énergie, en particulier l’accès universel à l’énergie d’ici 2030 et des améliorations majeures de la qualité de l’air.
+\nCela est cohérent avec la limitation de l’augmentation de la température mondiale à 1,5 °C (avec une probabilité d’au moins 50 %), conformément aux réductions d’émissions évaluées dans le sixième rapport d’évaluation du Groupe d’experts intergouvernemental sur l’évolution du climat (GIEC).`
       },
       {"name": "Announced pledges scenario",
-      "text": `The Announced Pledges Scenario (APS), introduced in 2021, illustrates the extent to which announced ambitions and targets can deliver the emissions reductions needed to achieve net zero emissions by 2050.
-              \nIt includes all recent major national announcements as of the end of August 2023, both 2030 targets and longer-term net zero or carbon neutrality pledges, 
-              regardless of whether these announcements have been anchored in legislation or in updated Nationally Determined Contributions.\n
-              In the APS, countries implement their national targets in full and on time. The outlook for exporters of fossil fuels and low-emissions fuels, such as hydrogen, is shaped by what full implementation of all targets means for global demand.\nThe APS also assumes that all country-level targets for access to electricity and clean cooking are achieved on time and in full`
+      "text": `Le scénario des engagements annoncés (APS), introduit en 2021, illustre dans quelle mesure les ambitions et les objectifs annoncés peuvent générer les réductions d'émissions nécessaires pour atteindre zéro émission nette d'ici 2050. Il comprend toutes les annonces nationales majeures récentes à fin août 2023. 
+\nÀ la fois, les objectifs pour 2030 et les engagements à plus long terme de zéro émission nette ou de neutralité carbone, que ces annonces aient été ancrées dans la législation ou dans des contributions déterminées au niveau national mises à jour. Dans l'APS, les pays mettent en œuvre leurs objectifs nationaux dans leur intégralité et dans les délais. Les perspectives des exportateurs de combustibles fossiles et de combustibles à faibles émissions, comme l'hydrogène, sont déterminées par ce que la mise en œuvre complète de tous les objectifs signifie pour la demande mondiale. 
+\nL’APS suppose également que tous les objectifs au niveau national en matière d'accès à l'électricité et de transformation propre sont réalisés à temps et dans leur intégralité.`
       },
       {"name": "Stated policies scenario",
-        "text": `The Stated Policies Scenario (STEPS) is designed to provide a sense of the prevailing direction of energy system progression, 
-                based on a detailed review of the current policy landscape.\nIt provides a more granular, sector-by-sector evaluation of the policies 
-                that have been put in place to reach stated goals and other energy-related objectives, taking account not only of existing policies and measures 
-                but also those that are under development.\nThe STEPS provides a more conservative benchmark for the future than the Announced Pledges Scenario (APS), 
-                by not taking for granted that governments will reach all announced goals. Similarly to the APS, it is not designed to achieve a particular outcome`
+        "text": `Le scénario de politiques déclarées (STEPS) est conçu pour donner une idée de la direction dominante de la progression du système énergétique, sur la base d'un examen détaillé du paysage politique actuel.
+\nL’AIE fournit une évaluation plus granulaire, secteur par secteur, des politiques qui ont été mises en place pour atteindre les buts déclarés et d'autres objectifs liés à l'énergie, en tenant compte non seulement des politiques et mesures existantes, mais également de celles en cours d'élaboration.
+\nLe STEPS fournit une référence plus conservatrice pour l'avenir que le scénario des engagements annoncés (APS), en ne prenant pas pour acquis que les gouvernements atteindront tous les objectifs annoncés. À l’instar de l’APS, il n’est pas conçu pour atteindre un résultat particulier.`
       },
   ]
 
@@ -382,17 +377,17 @@ export default function TransitionGraph() {
     <button id={"3"} className={`transition-graph__button ${option === "3" ? 'transition-graph__button_active' : 'transition-graph__button_inactive'}`} onClick={(e)=>{handleActiveOption(e)}}>Cobalt</button>
     </div>
     <ul className='transition-graph__legends'>
-        <li className='transition-graph__legend transition-graph__legend_n0'>{'Net Zero Emissions by 2050 scenario   '} 
+        <li className='transition-graph__legend transition-graph__legend_n0'>{'Scénario Net Zéro Émission   '} 
         <button id={"0"} className='transition-graph__legend-button transition-graph__legend-button_n0' onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>
         {'i'}
           </button>
           </li>
-        <li className='transition-graph__legend transition-graph__legend_ans'>{'Announced pledges scenario   '}
+        <li className='transition-graph__legend transition-graph__legend_ans'>{'Scénario des engagements annoncés   '}
         <button  id={"1"} className='transition-graph__legend-button transition-graph__legend-button_ans' onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>
           {'i'}
         </button>
         </li>
-        <li className='transition-graph__legend transition-graph__legend_spc'>{'Stated policies scenario   '}
+        <li className='transition-graph__legend transition-graph__legend_spc'>{'Scénario de politiques déclarées   '}
         <button id={"2"} className='transition-graph__legend-button transition-graph__legend-button_spc' onMouseOver={(e)=>setInfo(e.target.id)} onMouseLeave={()=>setInfo(null)}>
         {'i'}
           </button>

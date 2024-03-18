@@ -50,7 +50,7 @@ export default function MetalCard({card, handleOpenPopup}) {
         <ul className="types__list">
         <li className="types__point">
         <p className='types__point-name'>
-            Commande min
+            Commande min/Prix
         </p>
             {setRating(card.commande)}
         </li>
@@ -74,13 +74,13 @@ export default function MetalCard({card, handleOpenPopup}) {
         </li>
         <li className="types__point">
         <p className='types__point-name'>
-        Duree de detention
+        Durée de deténtion
         </p>
             {setRating(card.duree)}
         </li>
         <li className="types__point">
         <p className='types__point-name'>
-        Prix Régulé:
+        Prix Régulé
         </p>
         <p className='types__point-price'>{card.prix}</p>
         </li>

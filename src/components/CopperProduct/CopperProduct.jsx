@@ -9,7 +9,7 @@ import sheet from '../../images/copperpage/sheet.jpg'
 
 export default function CopperProduct() {
     const cards = [
-        {title:'Cathodes de cuivre\ngrade A', link: sheet, commande:1, stockage:2, liquidite:3, taille:2, duree:2, prix: 'Non', name: 'copper', 
+        {title:'Cathodes de cuivre\ngrade A', link: sheet, commande:2, stockage:1, liquidite:2, taille:2, duree:2, prix: 'Oui', name: 'copper', 
         description: `La cathode de cuivre est le premier produit pur issu du minerai. Après être restée plusieurs semaines dans une électrolyse de sulfate de cuivre, les cathodes sont retirées et sont utilisées comme anodes de cuivre en galvanoplastie`},
         {title:'Cuivre Milberry', link: milberry, commande:1, stockage:2, liquidite:3, taille:2, duree:2, prix: 'Oui', name: 'copper', 
         description: `Le cuivre Millberry est composé uniquement de cuivre issu recyclage par dénudage de câble électrique industriel. Il est de couleur rouge brillant. Dans cette qualité n'est toléré aucune adhésion et se compose à 99,9 % de cuivre.`},
