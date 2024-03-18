@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.305c7c76.css",
+    "main.css": "/WeSafe/static/css/main.0f40435d.css",
     "main.js": "/WeSafe/static/js/main.8f10cf47.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/grenaille.jpeg": "/WeSafe/static/media/grenaille.7376e74c936216a94a23.jpeg",
-    "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.5b084d7c7484f968dc15.jpg",
+    "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.0a61ea2353738ed88700.jpg",
     "static/media/europe.geojson": "/WeSafe/static/media/europe.4f6e639b3fc58107f55a.geojson",
     "static/media/stockage.jpeg": "/WeSafe/static/media/stockage.bbc3779e3e2393fee745.jpeg",
     "static/media/photo_jerome.png": "/WeSafe/static/media/photo_jerome.e4e9abe41cc7b84ea4f3.png",
@@ -38,12 +38,12 @@
     "static/media/ref.svg": "/WeSafe/static/media/ref.cee3cc92eb70847cda9f3b17c68a789d.svg",
     "static/media/burger.svg": "/WeSafe/static/media/burger.00878a777adbe56929a2.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.396f7157a69a3b7c66df.svg",
-    "main.305c7c76.css.map": "/WeSafe/static/css/main.305c7c76.css.map",
+    "main.0f40435d.css.map": "/WeSafe/static/css/main.0f40435d.css.map",
     "main.8f10cf47.js.map": "/WeSafe/static/js/main.8f10cf47.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.305c7c76.css",
+    "static/css/main.0f40435d.css",
     "static/js/main.8f10cf47.js"
   ]
 }
