@@ -36,6 +36,41 @@ export default function CopperProduct() {
             <MetalCard key={card.title} card={card}/>
             </>
         ))}
+        <div>
+        <ul className='copper__list'>
+        <li className='copper__bullit'>
+            Commande min/Prix :
+            1 = moins de 5 000 euros 
+            2 = de 5 à 10 000 euros
+            3 = plus de 10 000 euros 
+            </li>
+            <li className='copper__bullit'>
+            Cout du Stockage, assurance, maintenance et administration
+            1 = 1% HT annuel du montant 
+            2 = 1.25 % HT annuel du montant 
+            3 = 1.5 % HT annuel du montant 
+            </li>
+            <li className='copper__bullit'>
+            Liquidité prévisionnelle : 	1 = rapide 1 mois
+            2 = medium plus, 2 à 3 mois  
+            3 = medium moins, 4 à 6 mois  
+            </li>
+            <li className='copper__bullit'>
+            Taille de Marché Mondial : 	
+            1 = en milliers de tonnes par ans
+            2 = en millions de tonnes par ans
+            3 = en dizaine de millions de tonnes par ans 
+            </li>
+            <li className='copper__bullit'>
+            Durée de détention : 	1 = 0 à 5 ans
+            2 = 5 à 10 ans  
+            3 = + de 10 ans
+            Prix Régulé : 
+            OUI = London Metal Exchange
+            NON = Marche de gré à gré
+            </li>
+        </ul>
+        </div>
         {/* {popup ? (<MetalPopup handleClosePopup={handleClosePopup} />) : null} */}
         </div>
             <Warehouse/>

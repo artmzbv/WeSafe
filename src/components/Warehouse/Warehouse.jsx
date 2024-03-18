@@ -135,7 +135,9 @@ Nos conseillers sont à votre disposition pour vous expliquer les modalités de 
     </p>
         {/* <div className="warehouse__photo"></div> */}
         <div className="warehouse__map-container" ref={contRef}>
-        <div className="warehouse__map" ref={mapRef}></div>
+        <div className="warehouse__map" ref={mapRef}>
+        <div className="warehouse__text">{`Nos entrepôts en Europe\n- Avril 2024`}</div>
+        </div>
         </div>
     </section>
     </>

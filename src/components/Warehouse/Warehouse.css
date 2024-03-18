@@ -63,6 +63,17 @@
    text-justify: center;
  }
 
+ .warehouse__text{
+   position: absolute;
+   top: 40%;
+   left: 5%;
+   width: 30%;
+   font-size: 20px;
+   font-weight: bold;
+   color: #001F3D;
+   white-space: pre-wrap;
+ }
+
  @media screen and (max-width: 1000px) {
    .warehouse__map-container{
       width: 600px;

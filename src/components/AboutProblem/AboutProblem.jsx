@@ -8,7 +8,7 @@ export default function AboutProblem() {
     return(
         <>
         <section className='problem'>
-            <h1 className='problem__title problem__title_start'>{'"Ne pas mettre tous vos oeufs dans le même panier"'}</h1>
+            <h1 className='problem__title problem__title_start'>{'Épargnez autrement...'}</h1>
             {/* je */}
             <div className='problem__container'>
                 <div className='problem__card'>
