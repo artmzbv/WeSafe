@@ -36,7 +36,7 @@ export default function CopperProduct() {
             <MetalCard key={card.title} card={card}/>
             </>
         ))}
-        <div>
+        </div>
         <ul className='copper__list'>
         <li className='copper__bullit'>
             Commande min/Prix :
@@ -70,9 +70,7 @@ export default function CopperProduct() {
             NON = Marche de gré à gré
             </li>
         </ul>
-        </div>
         {/* {popup ? (<MetalPopup handleClosePopup={handleClosePopup} />) : null} */}
-        </div>
             <Warehouse/>
         </section>
         {/* {popup ? (<MetalPopup card={card} handleClosePopup={handleClosePopup} />) : null} */}

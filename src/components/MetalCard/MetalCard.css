@@ -41,9 +41,9 @@
 }
 
 .types__title{
-    margin-top: 25%; 
+    margin-top: 20%; 
     text-align: center;
-    margin-bottom: 30px; 
+    /* margin-bottom: 30px;  */
     white-space:pre-wrap;  
 }
 
@@ -52,7 +52,7 @@
     text-align: start;
     margin: 0 5%;
     padding: 0;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .types__point{
