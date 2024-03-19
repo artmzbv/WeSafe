@@ -41,6 +41,7 @@ export default function CopperProduct() {
             </>
         ))}
         </div>
+        <h4 className='copper__list-title'>Légende</h4>
         <ul className='copper__list copper__list_scale'>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-column-title'></p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-column-title'>1</p></li>
@@ -55,13 +56,13 @@ export default function CopperProduct() {
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>1.25 % HT annuel du montant</p></li> 
         <li className='copper__bullit'><p className='copper__bullit-text'>1.5 % HT annuel du montant</p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-row-title'>Liquidité prévisionnelle</p></li>	
-        <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>medium moins, 4 à 6 mois</p></li>
-        <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>medium plus, 2 à 3 mois</p></li>
+        <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>médium moins, 4 à 6 mois</p></li>
+        <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>médium plus, 2 à 3 mois</p></li>
         <li className='copper__bullit'><p className='copper__bullit-text'>rapide 1 mois</p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-row-title'>Taille de Marché Mondial</p></li>	
-        <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>en milliers de tonnes par ans</p></li>
-        <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>en millions de tonnes par ans</p></li>
-        <li className='copper__bullit'><p className='copper__bullit-text'>en dizaine de millions de tonnes par ans</p></li>
+        <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>en milliers de tonnes par an</p></li>
+        <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>en millions de tonnes par an</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>en dizaine de millions de tonnes par an</p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-row-title'>Durée de détention</p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>0 à 5 ans</p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>5 à 10 ans</p></li>
@@ -69,12 +70,12 @@ export default function CopperProduct() {
         </ul>
 
         <ul className='copper__list copper__list_price'>
-        <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-column-title'></p></li>
+        <li className='copper__bullit copper__bullit_border copper__bullit_dist'><p className='copper__bullit-column-title'></p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-column-title'>OUI</p></li>
         <li className='copper__bullit'><p className='copper__bullit-column-title'>NON</p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-row-title'>Prix Régulé</p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>London Metal Exchange</p></li>
-        <li className='copper__bullit '><p className='copper__bullit-text'>Marche de gré à gré</p></li>
+        <li className='copper__bullit '><p className='copper__bullit-text'>Marché de gré à gré</p></li>
         </ul>
         {/* <li className='copper__bullit'>
             Commande min/Prix :

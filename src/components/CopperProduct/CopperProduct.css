@@ -90,6 +90,12 @@
     border-radius: 40px;
 }
 
+.copper__list-title{
+    font-size: 24px;
+    color:#001F3D;
+    margin-bottom: 10px;
+}
+
 .copper__list_scale{
     grid-template-columns: 25% 25% 25% 25%;
 }

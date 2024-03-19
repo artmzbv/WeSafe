@@ -7,15 +7,13 @@ function App() {
                 <h1 className="notice__title">Mentions légales</h1>
         </div>
         <div className='notice__info'>
-        <h2 className='notice__subtitle'>En attente</h2>
-        {/* <p className='notice__text'>
-        {`Le site WeSafe est édité par la société WeSafe, société par actions simplifiée au capital de SOMME 
-        immatriculée au R.C.S de VILLE sous le numéro , dont le siège social est situé au ADRESSE 
-        et qui peut être contactée par email à l’adresse suivante : EMAIL
-        Directeur de publication : DIRECTEUR
-        L’hébergement du site est assuré par la société SOCIETE, société par actions simplifiée dont le siège social est situé ADRESSE_INSURANCE.`}
+        {/* <h2 className='notice__subtitle'></h2> */}
+        <p className='notice__text'>
+        {`Le site WeSafe est édité par la société financière Brighton, société par actions simplifiée unipersonnelle au capital de cent euros immatriculée au R.C.S de Le Mans, dont le siège social est situé au 404 impasse des Quatreuzières 72150 Saint-Vincent du Lorouër et qui peut être contactée par email à l’adresse suivante : contact@wesafe.store
+\nDirecteur de publication : Jérôme Thomasse
+\nL’hébergement du site est assuré par la société IONOS.`}
         </p>
-        <h2 className='notice__subtitle'>Absence de couverture des risques</h2>
+        {/* <h2 className='notice__subtitle'>Absence de couverture des risques</h2>
         <p className='notice__text'>
         {`‍Conformément au règlement (UE) 2020/1503 du Parlement européen et du Conseil, la société WeSafe a établi une procédure de gestion des conflits d’intérêts. 
         La société WeSafe n’a aucune participation dans une quelconque offre de financement participatif sur sa plateforme.
