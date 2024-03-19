@@ -57,7 +57,7 @@ export default function AboutProduct() {
             <h1 className='product__title'>{'Comment fonctionne votre plateforme digitale?'}</h1>
             <div className='product__container'>
                 <div className='product__card'>
-                    <h2 className='product__subtitle'>1.Selection</h2>
+                    <h2 className='product__subtitle'>1.Sélection</h2>
                     <div className='product__image-content'>
                     <img className='product__image' src={selection} alt='selection'></img>
                     <div className='product__more-description'>{'En savoir plus'}&#8593;</div>
@@ -100,7 +100,7 @@ export default function AboutProduct() {
                     <img className='product__image' src={revente} alt='stockage'></img>
                     <div className='product__more-description'>{'En savoir plus'} &#8593;</div>
                     <div className={`product__description  ${isIntersectingRev ? 'product__description_hover' : null}`} ref={revRef}>
-                    <p>A moyen ou long terme suivant vos objectifs, bénéficier de notre service de revente aupres des épargnants et des professionels</p>
+                    <p>À moyen ou long terme suivant vos objectifs, bénéficiez de notre service de revente auprès des épargnants et des professionnels</p>
                     </div>
                 </div>
             </div>

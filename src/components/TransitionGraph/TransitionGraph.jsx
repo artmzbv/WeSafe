@@ -43,17 +43,17 @@ const data = [
   ]
 
   const methodology = [
-      {"name": "Le scénario Net Zéro Émission",
+      {"name": "Scénario Net Zéro Émission",
         "text": `Le scénario Net Zéro Émission d’ici 2050 (scénario NZE) est un scénario normatif qui montre la voie à suivre pour le secteur énergétique mondial pour atteindre zéro émission nette de CO2 d’ici 2050, les économies avancées atteignant zéro émission nette avant les autres.
 \nCe scénario répond également aux principaux objectifs de développement durable (ODD) liés à l’énergie, en particulier l’accès universel à l’énergie d’ici 2030 et des améliorations majeures de la qualité de l’air.
 \nCela est cohérent avec la limitation de l’augmentation de la température mondiale à 1,5 °C (avec une probabilité d’au moins 50 %), conformément aux réductions d’émissions évaluées dans le sixième rapport d’évaluation du Groupe d’experts intergouvernemental sur l’évolution du climat (GIEC).`
       },
-      {"name": "Announced pledges scenario",
+      {"name": "Scénario des engagements annoncés",
       "text": `Le scénario des engagements annoncés (APS), introduit en 2021, illustre dans quelle mesure les ambitions et les objectifs annoncés peuvent générer les réductions d'émissions nécessaires pour atteindre zéro émission nette d'ici 2050. Il comprend toutes les annonces nationales majeures récentes à fin août 2023. 
 \nÀ la fois, les objectifs pour 2030 et les engagements à plus long terme de zéro émission nette ou de neutralité carbone, que ces annonces aient été ancrées dans la législation ou dans des contributions déterminées au niveau national mises à jour. Dans l'APS, les pays mettent en œuvre leurs objectifs nationaux dans leur intégralité et dans les délais. Les perspectives des exportateurs de combustibles fossiles et de combustibles à faibles émissions, comme l'hydrogène, sont déterminées par ce que la mise en œuvre complète de tous les objectifs signifie pour la demande mondiale. 
 \nL’APS suppose également que tous les objectifs au niveau national en matière d'accès à l'électricité et de transformation propre sont réalisés à temps et dans leur intégralité.`
       },
-      {"name": "Stated policies scenario",
+      {"name": "Scénario de politiques déclarées",
         "text": `Le scénario de politiques déclarées (STEPS) est conçu pour donner une idée de la direction dominante de la progression du système énergétique, sur la base d'un examen détaillé du paysage politique actuel.
 \nL’AIE fournit une évaluation plus granulaire, secteur par secteur, des politiques qui ont été mises en place pour atteindre les buts déclarés et d'autres objectifs liés à l'énergie, en tenant compte non seulement des politiques et mesures existantes, mais également de celles en cours d'élaboration.
 \nLe STEPS fournit une référence plus conservatrice pour l'avenir que le scénario des engagements annoncés (APS), en ne prenant pas pour acquis que les gouvernements atteindront tous les objectifs annoncés. À l’instar de l’APS, il n’est pas conçu pour atteindre un résultat particulier.`

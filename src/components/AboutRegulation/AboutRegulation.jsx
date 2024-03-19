@@ -75,19 +75,19 @@ export default function AboutRegulation() {
     return(
         <>
         <section className='regulation'>
-            <h1 className='regulation__title'>Epargnez en toute securite</h1>
+            <h1 className='regulation__title'>Épargnez en toute sécurité</h1>
                 {/* <h2 className='regulation__subtitle'>Nous travaillons selon ces documents</h2>  */}
                 <ul className='regulation__container'>
                     <li className='regulation__item'>
-                    <h3 className='regulation__item-title'>Metaux Critiques</h3>
+                    <h3 className='regulation__item-title'>Métaux Critiques</h3>
                     <div className='regulation__image-content'>
                         <img className='regulation__image' src={metal} alt='selection'></img> 
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
                         <div className={`regulation__description  ${isIntersectingMetals ? 'regulation__description_hover' : null}`}  ref={metRef}>
                             <p className='regulation__paragraph'>Tout notre catalogue répond aux normes UE et à la législation sur les Métaux </p>
                             <p className='regulation__paragraph'>Nos produits industriels standards sont enregistrés au LME </p>
-                            <p className='regulation__paragraph'>Nos produits issus de l économie circulaire ou de l industrie de transformation sont conformes 
-                                à la législation en vigueur garantie par nos fournisseurs de premiers plan</p>
+                            <p className='regulation__paragraph'>{`Nos produits issus de l'économie circulaire ou de l'industrie de transformation sont conformes 
+                                à la législation en vigueur garantie par nos fournisseurs de premier plan`}</p>
                         </div>
                     </div>
                     </li>
@@ -112,13 +112,13 @@ export default function AboutRegulation() {
                         <img className='regulation__image' src={leaders} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
                         <div className={`regulation__description  ${isIntersectingStock ? 'regulation__description_hover' : null}`} ref={stoRef}>
-                        <p className='regulation__paragraph'>Nous travaillons uniquement avec des Leader du secteur</p>
+                        <p className='regulation__paragraph'>Nous travaillons uniquement avec les Leaders du secteur</p>
                         </div>
                         </div>
                     </li>
 
                     <li className='regulation__item'>
-                        <h3 className='regulation__item-title'>Securite des vos paiements</h3>
+                        <h3 className='regulation__item-title'>Sécurité des vos Paiements</h3>
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={garanties} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
@@ -129,24 +129,24 @@ export default function AboutRegulation() {
                     </li>
                     
                     <li className='regulation__item'>
-                    <h3 className='regulation__item-title'>Analyse Marches des Metaux Critiques</h3>
+                    <h3 className='regulation__item-title'>Analyse Marchés des Métaux Critiques</h3>
                     <div className='regulation__image-content'>
                         <img className='regulation__image' src={analytics} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
                         <div className={`regulation__description  ${isIntersectingAnalyse ? 'regulation__description_hover' : null}`} ref={anaRef}>
-                        <p className='regulation__paragraph'>Nos analystes vous informe régulièrement des informations macro économiques du marché national, européens et internationaux des métaux.</p>
+                        <p className='regulation__paragraph'>Nos analystes vous transmettent régulièrement des informations macro-économiques du marché national, européen et international des métaux.</p>
                         </div>
                     </div>
                     </li>
 
                     <li className='regulation__item'>
-                        <h3 className='regulation__item-title'>Aministratif et Fiscalite</h3>
+                        <h3 className='regulation__item-title'>Administratif et Fiscalité</h3>
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={administration} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
                         <div className={`regulation__description  ${isIntersectingAdm ? 'regulation__description_hover' : null}`} ref={admRef}>
                         <p className='regulation__paragraph'>Pour toute question nous vous orienterons (si besoin) vers des partenaires agréés spécialisés 
-                            dans le formalisme et les déclarations liés à l' achat de Métaux Industriels</p>
+                            dans le formalisme et les déclarations liés à l'achat de métaux industriels</p>
                         </div>
                         </div>
                     </li>

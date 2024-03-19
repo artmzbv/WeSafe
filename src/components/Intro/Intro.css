@@ -35,6 +35,7 @@
     width: 80%;
     text-align: center;
     margin: 0 auto;
+    white-space: pre-wrap;
 }
 
 .intro__button{

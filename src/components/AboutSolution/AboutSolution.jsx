@@ -19,7 +19,7 @@ export default function AboutSolution() {
     return(
         <>
         <section className='solution'>
-            <h1 className='solution__title'>{'Transformer votre épargne en métaux industriels de la transition numérique et énergétique'}</h1>
+            <h1 className='solution__title'>{'Transformez votre épargne en métaux industriels de la transition numérique et énergétique'}</h1>
             <div className='solution__container'>
                 <ul className='solution__list'>
                     <li className='solution__item'>

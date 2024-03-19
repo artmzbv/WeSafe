@@ -12,7 +12,7 @@ export default function Intro() {
                 {/* <h1 className='intro__title'>Leader Europeen</h1>
                 <h1 className='intro__title'>d'Epargne</h1>
                 <h1 className='intro__title'>Metaux Critiques</h1> */}
-                <h2 className='intro__description'>Créer du patrimoine hors banques, hors système</h2>
+                <h2 className='intro__description'>{`Créer du patrimoine hors banques,\nhors système`}</h2>
                 <Link to="/contact-us">
                 <button className='intro__button'>Contactez-nous</button>
                 </Link>
