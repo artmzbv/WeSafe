@@ -40,7 +40,7 @@ export default function MetalCard({card, handleOpenPopup}) {
         } 
     }
 
-    console.log(typeof(card.commande))
+    // console.log(typeof(card.commande))
     return(
         <>
     {popup ? (<MetalPopup card={card} handleClosePopup={handleClosePopup} />) : null}

@@ -45,7 +45,7 @@ export default function ContactUs() {
                 // redirect: "follow"
             };
             const resultDisplay = (res) => {
-                console.log(res)
+                // console.log(res)
                 setClientMessage(JSON.parse(res))
             } 
 
