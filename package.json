@@ -1,6 +1,6 @@
 {
-  "homepage": "https://artmzbv.github.io/WeSafe",
   "name": "wesafe",
+  "homepage": "wesafe.store",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
