@@ -4,9 +4,9 @@
     justify-content: end;
     align-items: start;
     background-color: #001F3D;
-    height: 30vh;
+    height: 40vh;
     text-align: start;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
 }
 
 .insights__title{
@@ -24,7 +24,11 @@
     margin-left: 5vw;
     margin-bottom: 5vh;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 26px;
+}
+.insights__page{
+    height: 70vh;
+    background-color:#001F3D;
 }
 
 .insights__container{

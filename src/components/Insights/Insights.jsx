@@ -29,24 +29,26 @@ export default function Insights() {
         <section className="insights">
             <div className="insights__topic">
             <h1 className="insights__title">Nouvelles & Insights</h1>
-                <h2 className="insights__subtitle">Suivez  les dernières mises à jour sur le marché avec nous</h2>
+                {/* <h2 className="insights__subtitle">Suivez  les dernières mises à jour sur le marché avec nous</h2> */}
+                <h2 className="insights__subtitle">Page en cours de création</h2>
             </div>
-            <div className='insights__container'>
+            <div className="insights__page"></div>
+            {/* <div className='insights__container'>
             <div className='insights__buttons'>    
                 <button className={`insights__button ${isNews==='tout' ? 'insights__button_active' : 'insights_button_inactive'}`}  onClick={()=>setNews('tout')}>Tout</button>
                 <button className={`insights__button  ${isNews==='insights' ? 'insights__button_active' : 'insights_button_inactive'}`} onClick={()=>setNews('insights')}>Insights</button>
                 <button className={`insights__button  ${isNews==='nouvelles' ? 'insights__button_active' : 'insights_button_inactive'}`} onClick={()=>setNews('nouvelles')}>Nouvelles</button>
             </div>
-            <div className='insights__map'>
+            <div className='insights__map'> */}
             {/* В индексе мапа все равно сохраняется изначальный массив */}
-            {insights.filter(filterInsights).map((insight, index) => {
+            {/* {insights.filter(filterInsights).map((insight, index) => {
                 if (isMore > index) {
                 return <InsightsCard key={insight.title} insight={insight}/>
                 }
             })}
             </div>
             </div>
-            {addMoreButton()}
+            {addMoreButton()} */}
         </section>
         </>
     )
