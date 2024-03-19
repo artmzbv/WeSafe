@@ -41,8 +41,42 @@ export default function CopperProduct() {
             </>
         ))}
         </div>
-        <ul className='copper__list'>
-        <li className='copper__bullit'>
+        <ul className='copper__list copper__list_scale'>
+        <li className='copper__bullit'><p className='copper__bullit-column-title'>Note</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-column-title'>1</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-column-title'>2</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-column-title'>3</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-row-title'>Commande min/Prix</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>moins de 5 000 euros</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>de 5 à 10 000 euros</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>plus de 10 000 euros</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-row-title'>Coût du Stockage, assurance, maintenance et administration</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>1% HT annuel du montant</p></li> 
+        <li className='copper__bullit'><p className='copper__bullit-text'>1.25 % HT annuel du montant</p></li> 
+        <li className='copper__bullit'><p className='copper__bullit-text'>1.5 % HT annuel du montant</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-row-title'>Liquidité prévisionnelle</p></li>	
+        <li className='copper__bullit'><p className='copper__bullit-text'>medium moins, 4 à 6 mois</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>medium plus, 2 à 3 mois</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>rapide 1 mois</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-row-title'>Taille de Marché Mondial</p></li>	
+        <li className='copper__bullit'><p className='copper__bullit-text'>en milliers de tonnes par ans</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>en millions de tonnes par ans</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>en dizaine de millions de tonnes par ans</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-row-title'>Durée de détention</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>0 à 5 ans</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>5 à 10 ans</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>+ de 10 ans</p></li>
+        </ul>
+
+        <ul className='copper__list copper__list_price'>
+        <li className='copper__bullit'><p className='copper__bullit-column-title'></p></li>
+        <li className='copper__bullit'><p className='copper__bullit-column-title'>OUI</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-column-title'>NON</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-row-title'>Prix Régulé</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>London Metal Exchange</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>Marche de gré à gré</p></li>
+        </ul>
+        {/* <li className='copper__bullit'>
             Commande min/Prix :
             1 = moins de 5 000 euros 
             2 = de 5 à 10 000 euros
@@ -73,8 +107,7 @@ export default function CopperProduct() {
             Prix Régulé : 
             OUI = London Metal Exchange
             NON = Marche de gré à gré
-            </li>
-        </ul>
+            </li> */}
         {/* {popup ? (<MetalPopup handleClosePopup={handleClosePopup} />) : null} */}
             <Warehouse/>
         </section>

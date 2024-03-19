@@ -23,7 +23,7 @@
 }
 
 .types__image_hover{
-    filter: brightness(70%);
+    filter: brightness(60%);
 }
 
 
@@ -110,6 +110,7 @@
 .types__button:hover{
     background-color: white;
     color:#001F3D;
+    /* color: rgba(0, 0, 0, 1); */
 }
 
 @media screen and (max-width: 1350px) {
