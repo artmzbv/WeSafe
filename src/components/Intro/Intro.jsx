@@ -8,7 +8,7 @@ export default function Intro() {
         <>
         <section className='intro'>
             <div className='intro__text'>
-                <h1 className='intro__title'>Leader Européen d'Épargne en Matériaux Critiques</h1>  
+                <h1 className='intro__title'>Première Plateforme Européenne d'Épargne en Matériaux Critiques</h1>  
                 {/* <h1 className='intro__title'>Leader Europeen</h1>
                 <h1 className='intro__title'>d'Epargne</h1>
                 <h1 className='intro__title'>Metaux Critiques</h1> */}
