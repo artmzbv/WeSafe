@@ -79,7 +79,7 @@
 .copper__list{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50px 50px ;
+    /* grid-template-rows: 50px 50px ; */
     width: 80%;
     padding: 0;
     margin: 0 auto;
@@ -100,9 +100,25 @@
 
 .copper__bullit{
     font-size: 14px;
-    font-weight: bold;
-    height: 50px;
     border: #001F3D 1px solid;
+}
+
+.copper__bullit-column-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    min-height: 30px;
+    margin: 0 auto;
+}
+
+.copper__bullit-row-title{
+    min-height: 40px;
+    font-weight: bold;
+}
+
+.copper__bullit-text{
+    min-height: 50px;
 }
 
 .copper__intro-list-link{
@@ -151,6 +167,9 @@
     .copper__subtitle{
         margin: 12px 0 auto;  
     }
+    .copper__list{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -189,5 +208,25 @@
     }
     .copper__container::-webkit-scrollbar{
         width:0;
+    }
+
+    .copper__list{
+        margin-top: 40px;
+    }
+    .copper__bullit{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .copper__bullit{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .copper__bullit{
+        font-size: 8px;
     }
 }

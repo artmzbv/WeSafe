@@ -42,11 +42,11 @@ export default function CopperProduct() {
         ))}
         </div>
         <ul className='copper__list copper__list_scale'>
-        <li className='copper__bullit'><p className='copper__bullit-column-title'>Note</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-column-title'></p></li>
         <li className='copper__bullit'><p className='copper__bullit-column-title'>1</p></li>
         <li className='copper__bullit'><p className='copper__bullit-column-title'>2</p></li>
         <li className='copper__bullit'><p className='copper__bullit-column-title'>3</p></li>
-        <li className='copper__bullit'><p className='copper__bullit-row-title'>Commande min/Prix</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-row-title'>Commande min / Prix</p></li>
         <li className='copper__bullit'><p className='copper__bullit-text'>moins de 5 000 euros</p></li>
         <li className='copper__bullit'><p className='copper__bullit-text'>de 5 à 10 000 euros</p></li>
         <li className='copper__bullit'><p className='copper__bullit-text'>plus de 10 000 euros</p></li>
