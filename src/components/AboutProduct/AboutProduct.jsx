@@ -60,7 +60,7 @@ export default function AboutProduct() {
                     <h2 className='product__subtitle'>1.Sélection</h2>
                     <div className='product__image-content'>
                     <img className='product__image' src={selection} alt='selection'></img>
-                    <div className='product__more-description'>{'En savoir plus'}&#8593;</div>
+                    <div className='product__more-description'>{'En savoir plus'} &#8593;</div>
                     <div className={`product__description  ${isIntersectingSel ? 'product__description_hover' : null}`} ref={selRef}>
                     <p>Vous choisissez et sélectionnez seul ou avec un de nos consultants</p>
                     {/* //via WeSafe App */}

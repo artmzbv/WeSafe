@@ -161,6 +161,8 @@
 
     .popup__text {
       font-size: 14px;
+      white-space: pre-wrap;
+      text-align: start;
     }
   }
   

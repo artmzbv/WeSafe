@@ -28,7 +28,7 @@ export default function Offer() {
             <div className="offer__card">
                 <div className="offer__card-image"></div>
                 <h1 className="offer__card-title">D’offrir un placement de « bon père de famille »,</h1>
-                <p className="offer__card-description"> en transformant une partie de l’argent placé dans les banques exposée aux risques financiers, en matière première physique à fort potentiel</p>
+                <p className="offer__card-description"> en transformant une partie de l’argent placée dans les banques exposée aux risques financiers, en matière première physique à fort potentiel</p>
             </div>
             </div>
             </div>

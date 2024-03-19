@@ -56,7 +56,7 @@ export default function MetalCard({card, handleOpenPopup}) {
         </li>
         <li className="types__point">
         <p className='types__point-name'>
-            Cout du Stockage
+            Coût du Stockage
             </p>
             {setRating(card.stockage)}
         </li>
@@ -85,6 +85,7 @@ export default function MetalCard({card, handleOpenPopup}) {
         <p className='types__point-price'>{card.prix}</p>
         </li>
         </ul>
+        <button className='types__button' onClick={()=> handleOpenPopup()}>En savoir plus</button>
         </div>
             <img 
             className={`types__image  ${hover ? 'types__image_hover' : null}`}
