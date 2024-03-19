@@ -10,7 +10,7 @@ export default function AboutTeam() {
 
     const fetchPosts = () =>[
         axios
-        .get("https://wesafe.store/wp-json/wp/v2/posts?category=equipe")
+        .get("https://api.wesafe.store/wp-json/wp/v2/posts?category=equipe")
         .then((res) => {
             setTeam(res.data.sort((a, b) => a.id - b.id));
         })

@@ -32,8 +32,7 @@ export default function ContactUs() {
                 formdata.append("your-subject", "Formulaire de contact");
                 formdata.append("your-phone", data.phone);
                 formdata.append("your-message", data.message);
-                formdata.append("your-message", data.message);
-                formdata.append("_wpcf7_unit_tag", "8b9d7fa");
+                formdata.append("_wpcf7_unit_tag", "25fa5f6");
 
                 setData(defaultData)
                 const requestOptions = {
@@ -45,11 +44,11 @@ export default function ContactUs() {
                 // redirect: "follow"
             };
             const resultDisplay = (res) => {
-                // console.log(res)
+                console.log(res)
                 setClientMessage(JSON.parse(res))
             } 
 
-        fetch("https://wesafe.store/wp-json/contact-form-7/v1/contact-forms/37/feedback", requestOptions)
+        fetch("https://api.wesafe.store/wp-json/contact-form-7/v1/contact-forms/7/feedback", requestOptions)
                 .then((response) => response.text())
                 .then((result) => resultDisplay(result))
                 // .then((result) => console.log(result))
@@ -95,11 +94,11 @@ export default function ContactUs() {
             {/* <h2 className="contact__text">Si vous-avez des question, envoyez-nous un message par mail a contact@wesafe.store</h2> */}
             <form className="contact__form" onSubmit={(e) => handleSubmit(e)}>
                 <div className="contact__form-line">
-                <input type="text" name="your-name" id="name"  className="contact__input" placeholder="Prénom*" value={data.name} onChange={(e) => handleData(e)}></input>
-                <input type="text" name="your-surname" id="surname" className="contact__input" placeholder="Nom*" value={data.surname} onChange={(e) => handleData(e)}></input>
+                <input type="text" name="your-name" id="name"  className="contact__input" placeholder="Prénom*" value={data.name} onChange={(e) => handleData(e)} required></input>
+                <input type="text" name="your-surname" id="surname" className="contact__input" placeholder="Nom*" value={data.surname} onChange={(e) => handleData(e)} required></input>
                 </div>
                 <div className="contact__form-line">
-                <input type="email" name="your-surname" id="email" className="contact__input" placeholder="Adresse email*" value={data.email} onChange={(e) => handleData(e)}></input>
+                <input type="email" name="your-surname" id="email" className="contact__input" placeholder="Adresse email*" value={data.email} onChange={(e) => handleData(e)} required></input>
                 <input  type="text" name="your-surname" id="phone" className="contact__input" placeholder="Numéro de téléphone" value={data.phone} onChange={(e) => handleData(e)}></input>
                 </div>
                 <textarea id="message" name="your-message" className="contact__input-message" placeholder="Message" value={data.message} onChange={(e) => handleData(e)}></textarea>
