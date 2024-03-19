@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WeSafe/static/css/main.7b85e707.css",
-    "main.js": "/WeSafe/static/js/main.26cf873d.js",
+    "main.css": "/WeSafe/static/css/main.d0c849a2.css",
+    "main.js": "/WeSafe/static/js/main.956e1a27.js",
     "static/js/592.ed4ad512.chunk.js": "/WeSafe/static/js/592.ed4ad512.chunk.js",
     "static/media/europe.geojson": "/WeSafe/static/media/europe.4f6e639b3fc58107f55a.geojson",
     "static/media/copper_solution.jpg": "/WeSafe/static/media/copper_solution.82b522ce4ba08265bba1.jpg",
@@ -26,7 +26,7 @@
     "static/media/Montserrat-Medium.woff": "/WeSafe/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff",
     "static/media/photo_artem.jpg": "/WeSafe/static/media/photo_artem.49a721da3fe201334dd4.jpg",
     "static/media/safebox.jpeg": "/WeSafe/static/media/safebox.9c60a3dd6ec37ea2a5b4.jpeg",
-    "static/media/logo_new.jpg": "/WeSafe/static/media/logo_new.8cb328d12ac8eda5898b.jpg",
+    "static/media/logo_new.jpg": "/WeSafe/static/media/logo_new.aff8f91e4ee24826af57.jpg",
     "static/media/commande.jpg": "/WeSafe/static/media/commande.5bccb51ee98765cf87c1.jpg",
     "static/media/nickel.jpg": "/WeSafe/static/media/nickel.5ab42c49180dedaff65a.jpg",
     "static/media/copper.jpg": "/WeSafe/static/media/copper.3aee5a1eceb17e9550ba.jpg",
@@ -38,12 +38,12 @@
     "static/media/ref.svg": "/WeSafe/static/media/ref.cee3cc92eb70847cda9f3b17c68a789d.svg",
     "static/media/burger.svg": "/WeSafe/static/media/burger.00878a777adbe56929a2.svg",
     "static/media/close-button.svg": "/WeSafe/static/media/close-button.396f7157a69a3b7c66df.svg",
-    "main.7b85e707.css.map": "/WeSafe/static/css/main.7b85e707.css.map",
-    "main.26cf873d.js.map": "/WeSafe/static/js/main.26cf873d.js.map",
+    "main.d0c849a2.css.map": "/WeSafe/static/css/main.d0c849a2.css.map",
+    "main.956e1a27.js.map": "/WeSafe/static/js/main.956e1a27.js.map",
     "592.ed4ad512.chunk.js.map": "/WeSafe/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b85e707.css",
-    "static/js/main.26cf873d.js"
+    "static/css/main.d0c849a2.css",
+    "static/js/main.956e1a27.js"
   ]
 }
