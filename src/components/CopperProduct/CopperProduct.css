@@ -86,7 +86,8 @@
     list-style-type: none;
     text-align: center;
     color: #001F3D;
-    border: #001F3D 1px solid;
+    border: #001F3D 3px solid;
+    border-radius: 40px;
 }
 
 .copper__list_scale{
@@ -101,7 +102,10 @@
 
 .copper__bullit{
     font-size: 14px;
-    border: #001F3D 1px solid;
+}
+
+.copper__bullit_border{
+    border-right: #001F3D 2px solid;
 }
 
 .copper__bullit-column-title{
