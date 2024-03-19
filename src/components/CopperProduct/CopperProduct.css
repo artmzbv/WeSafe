@@ -88,6 +88,7 @@
     color: #001F3D;
     border: #001F3D 1px solid;
 }
+
 .copper__list_scale{
     grid-template-columns: 25% 25% 25% 25%;
 }
@@ -216,11 +217,18 @@
     .copper__bullit{
         font-size: 12px;
     }
+    
+    .copper__list_price{
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 410px) {
     .copper__bullit{
         font-size: 10px;
+    }
+    .copper__list_price{
+        margin-top: 10px;
     }
 }
 
