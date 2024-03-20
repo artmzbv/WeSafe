@@ -77,6 +77,7 @@
     justify-content: space-between;
 }
 
+
 .copper__list{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -125,19 +126,30 @@
 }
 
 .copper__bullit-row-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 40px;
     font-weight: bold;
 }
 
 .copper__bullit-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 50px;
 }
 
 .copper__intro-list-link{
     color:#001F3D;
 }
+
 .copper__intro-list-link:hover{
     color: #646060;
+}
+
+.copper__bullit-text-price{
+    min-height: 25px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -150,7 +162,7 @@
 
     .copper__container {
         /* height: 100%; */
-        padding: 5% 0%;
+        /* padding: 5% 0%; */
         margin: 0 5%;
     }
 
@@ -237,8 +249,13 @@
 
 @media screen and (max-width: 410px) {
     .copper__bullit{
+        font-size: 12px;
+    }
+
+    .copper__bullit-row-title{
         font-size: 10px;
     }
+    
     .copper__list_price{
         margin-top: 10px;
     }

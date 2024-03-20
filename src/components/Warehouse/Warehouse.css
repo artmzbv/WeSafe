@@ -5,16 +5,16 @@
     justify-content: flex-start;
     align-items: center;
     /* height: 60vh; */
-    margin-top: 20px;
+    margin-top: 40px;
     /* width: 90%; */
 }
 
 .warehouse__title{
-    margin-top: 30px;
     text-align: center;
     color: #001F3D;
     width: 80%;
     margin: 0 auto;
+    font-size: 24px;
  }
  
  .warehouse__description{
