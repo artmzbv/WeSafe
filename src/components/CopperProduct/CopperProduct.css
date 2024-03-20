@@ -12,21 +12,22 @@
 .copper__title{
     color: white;
     width: 60%;
-    margin: 0 0 0 5vw;
-    padding: 5vh 0 0;
-    line-height: 30px;
-    font-size: 24px;
-}
-
-.copper__subtitle{
-    color: white;
-    width: 60%;
     margin-left: 5vw;
     /* margin-bottom: 5vh; */
     line-height: 40px;
-    margin-top: 20px;
+    margin-bottom: 50px;
     font-size: 38px;
 }
+
+/* .copper__subtitle{
+    color: white;
+    width: 60%;
+    margin-left: 5vw; */
+    /* margin-bottom: 5vh; */
+    /* line-height: 40px;
+    margin-top: 20px;
+    font-size: 38px;
+} */
 
 .copper__intro{
    margin-top: 20px;
@@ -143,7 +144,8 @@
     .copper__title{
         /* width: 80%; */
         width: 90%;
-        margin: 0 auto 4vh;
+        margin-bottom: 60px;
+        /* margin: 0 auto 4vh; */
     }
 
     .copper__container {

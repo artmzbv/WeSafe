@@ -22,8 +22,8 @@ export default function CopperProduct() {
         <>
         <section className="copper">
         <div className="copper__topic">
-                <h1 className="copper__title"></h1>
-                <h2 className="copper__subtitle">LE CUIVRE</h2>
+                <h1 className="copper__title">LE CUIVRE</h1>
+                {/* <h2 className="copper__subtitle">LE CUIVRE</h2> */}
         </div>
         <h3 className='copper__intro'>{`WeSafe vous propose actuellement 3 produits issus du minerai de cuivre`}</h3>
         <ul> 
