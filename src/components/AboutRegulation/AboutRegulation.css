@@ -203,3 +203,27 @@
         align-items: flex-start;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .regulation__image-content{
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .regulation__image-content{
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .regulation__image-content{
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .regulation__image-content{
+        height: 270px;
+    }
+}
