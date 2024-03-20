@@ -9,7 +9,7 @@ export default function AboutInsights() {
     return(
         <>
         <section className='market'>
-            <h1 className='market__title'>Nos Produits</h1>
+            <h1 className='market__title'>Notre Catalogue</h1>
             <div className='market__container'>
             {products.map((product) =>
             <AboutInsightsCard key={product.title} product={product}/>
