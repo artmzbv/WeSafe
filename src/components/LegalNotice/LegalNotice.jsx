@@ -9,7 +9,7 @@ function App() {
         <div className='notice__info'>
         {/* <h2 className='notice__subtitle'></h2> */}
         <p className='notice__text'>
-        {`Le site WeSafe est édité par la société financière Brighton, société par actions simplifiée unipersonnelle au capital de cent euros immatriculée au R.C.S de Le Mans, dont le siège social est situé au 404 impasse des Quatreuzières 72150 Saint-Vincent du Lorouër et qui peut être contactée par email à l’adresse suivante : contact@wesafe.store
+        {`Le site WeSafe est édité par la société financière Brighton, société par actions simplifiée unipersonnelle au capital de cent euros immatriculée au 987 708 898 R.C.S. Le Mans, dont le siège social est situé au 404 impasse des Quatreuzières 72150 Saint-Vincent du Lorouër et qui peut être contactée par email à l’adresse suivante : contact@wesafe.store
 \nDirecteur de publication : Jérôme Thomasse
 \nL’hébergement du site est assuré par la société IONOS.`}
         </p>
