@@ -21,7 +21,7 @@ function App() {
       <Header/>
       <Routes>
       <Route exact path="/" element={<Main/>} />
-      <Route exact path="/offer" element={<Offer/>} />
+      {/* <Route exact path="/offer" element={<Offer/>} /> */}
       <Route exact path="/copper" element={<CopperProduct/>} />
       <Route exact path="/cobalt" element={<CobaltProduct/>} />
       <Route exact path="/nickel" element={<NickelProduct/>} /> {/* Возмножно тут тоже можно через metals/copper  - можно потом сделать при желании*/}

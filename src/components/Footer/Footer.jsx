@@ -6,9 +6,9 @@ export default function Footer() {
         <>
         <footer className='footer'>
         <div className='footer__info'>
-        <Link className='footer__link footer__link_title' to="./offer">
+        {/* <Link className='footer__link footer__link_title' to="./offer">
             Notre Offre
-        </Link>
+        </Link> */}
             <ul className='footer__list'>
             <li className='footer__outline'>Metaux</li>
             <li className="footer__list-item">
