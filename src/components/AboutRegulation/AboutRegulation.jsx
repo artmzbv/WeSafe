@@ -79,7 +79,7 @@ export default function AboutRegulation() {
                 {/* <h2 className='regulation__subtitle'>Nous travaillons selon ces documents</h2>  */}
                 <ul className='regulation__container'>
                     <li className='regulation__item'>
-                    <h3 className='regulation__item-title'>Métaux Critiques</h3>
+                    <h2 className='regulation__item-title'>Métaux Critiques</h2>
                     <div className='regulation__image-content'>
                         <img className='regulation__image' src={metal} alt='selection'></img> 
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
@@ -93,7 +93,7 @@ export default function AboutRegulation() {
                     </li>
 
                     <li className='regulation__item'>
-                        <h3 className='regulation__item-title'>Transparence des Prix</h3>
+                        <h2 className='regulation__item-title'>Transparence des Prix</h2>
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={transparency} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
@@ -107,7 +107,7 @@ export default function AboutRegulation() {
                     </li>
 
                     <li className='regulation__item'>
-                    <h3 className='regulation__item-title'>Stockage et Logistique</h3>
+                    <h2 className='regulation__item-title'>Stockage et Logistique</h2>
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={leaders} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
@@ -118,7 +118,7 @@ export default function AboutRegulation() {
                     </li>
 
                     <li className='regulation__item'>
-                        <h3 className='regulation__item-title'>Sécurité des vos Paiements</h3>
+                        <h2 className='regulation__item-title'>Sécurité des vos Paiements</h2>
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={garanties} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
@@ -129,7 +129,7 @@ export default function AboutRegulation() {
                     </li>
                     
                     <li className='regulation__item'>
-                    <h3 className='regulation__item-title'>Analyse Marchés des Métaux Critiques</h3>
+                    <h2 className='regulation__item-title'>Analyse Marchés des Métaux Critiques</h2>
                     <div className='regulation__image-content'>
                         <img className='regulation__image' src={analytics} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>
@@ -140,7 +140,7 @@ export default function AboutRegulation() {
                     </li>
 
                     <li className='regulation__item'>
-                        <h3 className='regulation__item-title'>Administratif et Fiscalité</h3>
+                        <h2 className='regulation__item-title'>Administratif et Fiscalité</h2>
                         <div className='regulation__image-content'>
                         <img className='regulation__image' src={administration} alt='selection'></img>
                         <div className='regulation__more-description'>{'En savoir plus'} &#8593;</div>

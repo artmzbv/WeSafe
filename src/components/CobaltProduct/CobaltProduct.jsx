@@ -4,6 +4,7 @@ import MetalCard from '../MetalCard/MetalCard'
 import copperA from '../../images/offer_copper.jpg'
 import copperB from '../../images/offer_copper.jpg'
 import cobalt from '../../images/aboutmetals/cobalt.jpg'
+import {Helmet} from 'react-helmet-async'
 
 export default function CobaltProduct() {
 
@@ -15,6 +16,10 @@ export default function CobaltProduct() {
 
     return(
         <>
+        <Helmet>
+            <title>Cobalt</title>
+            <meta name="description" content="L'achat de Cobalt sera disponible à partir de l'automne 2024."></meta>
+        </Helmet>
         <section className="cobalt">
         <div className="cobalt__topic">
                 <h1 className="cobalt__title">{`L'achat de Cobalt sera disponible\nà partir de l'automne 2024`}</h1>

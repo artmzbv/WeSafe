@@ -4,6 +4,7 @@ import MetalCard from '../MetalCard/MetalCard'
 import copperA from '../../images/offer_copper.jpg'
 import copperB from '../../images/offer_copper.jpg'
 import nickelFull from '../../images/aboutmetals/nickel-full.jpeg'
+import {Helmet} from 'react-helmet-async'
 
 export default function NickelProduct() {
 
@@ -15,6 +16,10 @@ export default function NickelProduct() {
     
     return(
         <>
+        <Helmet>
+            <title>Nickel</title>
+            <meta name="description" content="L'achat de Nickel sera disponible à partir de l'été 2024"></meta>
+        </Helmet>
         <section className="nickel">
         <div className="nickel__topic">
                 <h1 className="nickel__title">{`L'achat de Nickel sera disponible\nà partir de l'été 2024`}</h1>

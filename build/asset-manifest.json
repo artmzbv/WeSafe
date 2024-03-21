@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a8d6dcfa.css",
-    "main.js": "/static/js/main.a7245090.js",
+    "main.js": "/static/js/main.f7e415fe.js",
     "static/js/592.ed4ad512.chunk.js": "/static/js/592.ed4ad512.chunk.js",
     "static/media/europe.geojson": "/static/media/europe.4f6e639b3fc58107f55a.geojson",
     "static/media/copper_solution.jpg": "/static/media/copper_solution.82b522ce4ba08265bba1.jpg",
@@ -34,16 +34,16 @@
     "static/media/circle3.svg": "/static/media/circle3.7e8635cbc50c0c6264817d76edd962b0.svg",
     "static/media/circle4.svg": "/static/media/circle4.7e002c632461e142ad7a4a29e0e9e800.svg",
     "static/media/circle1.svg": "/static/media/circle1.8771a3ce295d3b857756e25b337300fa.svg",
-    "static/media/ref.svg": "/static/media/ref.cee3cc92eb70847cda9f3b17c68a789d.svg",
     "index.html": "/index.html",
+    "static/media/ref.svg": "/static/media/ref.cee3cc92eb70847cda9f3b17c68a789d.svg",
     "static/media/burger.svg": "/static/media/burger.00878a777adbe56929a2.svg",
     "static/media/close-button.svg": "/static/media/close-button.396f7157a69a3b7c66df.svg",
     "main.a8d6dcfa.css.map": "/static/css/main.a8d6dcfa.css.map",
-    "main.a7245090.js.map": "/static/js/main.a7245090.js.map",
+    "main.f7e415fe.js.map": "/static/js/main.f7e415fe.js.map",
     "592.ed4ad512.chunk.js.map": "/static/js/592.ed4ad512.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8d6dcfa.css",
-    "static/js/main.a7245090.js"
+    "static/js/main.f7e415fe.js"
   ]
 }

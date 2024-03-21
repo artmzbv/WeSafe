@@ -2,6 +2,7 @@ import {React, useState} from "react";
 import './Insights.css';
 import InsightsCard from '../InsightsCard/InsightsCard';
 import {insights} from '../../utils/utils'
+import {Helmet} from 'react-helmet-async'
 
 export default function Insights() {
     const [isMore, setMore] = useState(3);
@@ -26,6 +27,10 @@ export default function Insights() {
 
     return(
         <>
+        <Helmet>
+            <title>Marché</title>
+            <meta name="description" content="Voyez nos nouvelles et insights sur les marchés des métaux critiques. Page en cours de création"></meta>
+        </Helmet>
         <section className="insights">
             <div className="insights__topic">
             <h1 className="insights__title">Nouvelles & Insights</h1>

@@ -1,7 +1,14 @@
 import './LegalNotice.css';
+import {Helmet} from 'react-helmet-async'
 
-function App() {
+
+function LegalNotice() {
     return (
+      <>
+      <Helmet>
+      <title>Cuivre</title>
+      <meta name="description" content="Le site WeSafe est édité par la société financière Brighton, société immatriculée au R.C.S. du Mans. Le siège social est situé au 404 impasse des Quatreuzières 72150 Saint-Vincent du Lorouër. Contact - contact@wesafe.store"></meta>
+    </Helmet>
       <section className="notice">
         <div className="notice__topic">
                 <h1 className="notice__title">Mentions légales</h1>
@@ -27,7 +34,8 @@ function App() {
         </p> */}
         </div>
       </section>
+      </>
   );
 }
 
-export default App;
+export default LegalNotice;

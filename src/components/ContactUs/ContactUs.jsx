@@ -1,5 +1,6 @@
 import {React, useState, useRef, useEffect}  from "react";
 import "./ContactUs.css"
+import {Helmet} from 'react-helmet-async'
 // import axios from "axios";
 
 export default function ContactUs() {
@@ -86,6 +87,10 @@ export default function ContactUs() {
  
     return(
         <>
+        <Helmet>
+            <title>Contactez-nous</title>
+            <meta name="description" content="Contactez-nous pour plus d'information ici ou sur contact@wesafe.store"></meta>
+        </Helmet>
         <section className="contact">
         <div className="contact__topic">
             <h1 className="contact__title">Contactez-nous pour plus d'information</h1>

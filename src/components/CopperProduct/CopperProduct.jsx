@@ -7,6 +7,7 @@ import MetalPopup from '../MetalPopup/MetalPopup'
 import milberry from '../../images/copperpage/milberry.jpg'
 import grenaille from '../../images/copperpage/grenaille.jpg'  
 import sheet from '../../images/copperpage/sheet.jpg'
+import {Helmet} from 'react-helmet-async'
 
 export default function CopperProduct() {
     const cards = [
@@ -20,6 +21,10 @@ export default function CopperProduct() {
 
     return(
         <>
+        <Helmet>
+            <title>Cuivre</title>
+            <meta name="description" content="WeSafe vous propose actuellement 3 produits issus du minerai de cuivre: Cathodes de cuivre grade A, Cuivre Milberry, Grenaille de cuivre."></meta>
+        </Helmet>
         <section className="copper">
         <div className="copper__topic">
                 <h1 className="copper__title">LE CUIVRE</h1>
