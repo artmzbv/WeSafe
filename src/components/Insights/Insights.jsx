@@ -30,6 +30,7 @@ export default function Insights() {
         <Helmet>
             <title>Marché</title>
             <meta name="description" content="Voyez nos nouvelles et insights sur les marchés des métaux critiques. Page en cours de création"></meta>
+            <link rel="canonical" href="/insights"></link>
         </Helmet>
         <section className="insights">
             <div className="insights__topic">

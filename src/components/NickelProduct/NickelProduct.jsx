@@ -19,6 +19,7 @@ export default function NickelProduct() {
         <Helmet>
             <title>Nickel</title>
             <meta name="description" content="L'achat de Nickel sera disponible à partir de l'été 2024"></meta>
+            <link rel="canonical" href="/nickel"></link>
         </Helmet>
         <section className="nickel">
         <div className="nickel__topic">

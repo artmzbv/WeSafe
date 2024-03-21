@@ -24,6 +24,7 @@ export default function CopperProduct() {
         <Helmet>
             <title>Cuivre</title>
             <meta name="description" content="WeSafe vous propose actuellement 3 produits issus du minerai de cuivre: Cathodes de cuivre grade A, Cuivre Milberry, Grenaille de cuivre."></meta>
+            <link rel="canonical" href="/copper"></link>
         </Helmet>
         <section className="copper">
         <div className="copper__topic">

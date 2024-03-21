@@ -8,6 +8,7 @@ function LegalNotice() {
       <Helmet>
       <title>Cuivre</title>
       <meta name="description" content="Le site WeSafe est édité par la société financière Brighton, société immatriculée au R.C.S. du Mans. Le siège social est situé au 404 impasse des Quatreuzières 72150 Saint-Vincent du Lorouër. Contact - contact@wesafe.store"></meta>
+      <link rel="canonical" href="/legal-notice"></link>
     </Helmet>
       <section className="notice">
         <div className="notice__topic">

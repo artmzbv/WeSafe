@@ -19,6 +19,7 @@ export default function CobaltProduct() {
         <Helmet>
             <title>Cobalt</title>
             <meta name="description" content="L'achat de Cobalt sera disponible à partir de l'automne 2024."></meta>
+            <link rel="canonical" href="/cobalt"></link>
         </Helmet>
         <section className="cobalt">
         <div className="cobalt__topic">

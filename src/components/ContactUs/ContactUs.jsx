@@ -90,6 +90,7 @@ export default function ContactUs() {
         <Helmet>
             <title>Contactez-nous</title>
             <meta name="description" content="Contactez-nous pour plus d'information ici ou sur contact@wesafe.store"></meta>
+            <link rel="canonical" href="/contact-us"></link>
         </Helmet>
         <section className="contact">
         <div className="contact__topic">
