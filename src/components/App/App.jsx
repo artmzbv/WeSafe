@@ -13,9 +13,15 @@ import ContactUs from "../ContactUs/ContactUs"
 import Insights from "../Insights/Insights"
 import Article from "../Article/Article"
 import PageNotFound from "../PageNotFound/PageNotFound";
-import LegalNotice from "../LegalNotice/LegalNotice"
+import LegalNotice from "../LegalNotice/LegalNotice";
+import { usePageTracking } from "../../utils/tracking";
+// import VisibilitySensor from "react-visibility-sensor"
+
 
 function App() {
+  
+  usePageTracking()
+
   return (
     <div className="App App__opacity">
       <Header/>
