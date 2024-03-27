@@ -6,7 +6,7 @@ export default function AboutQuestions() {
         <>
         <section className='questions'>
             <h1 className='questions__title'>Vous avez des questions?</h1>
-            <h2 className='questions__subtitle'>Contactez-nous sur +33 (0)1 83 64 66 18</h2>
+            <h2 className='questions__subtitle'>Contactez-nous: +33 (0)1 83 64 66 18</h2>
             <h2 className='questions__subtitle'>ou&nbsp;
             <Link className="questions__link" to="/contact-us">
             ici

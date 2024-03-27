@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} api.wesafe.store
+
+RewriteRule (.*) https://wesafe.store/ [R=301,L]
