@@ -89,7 +89,7 @@ export default function ContactUs() {
         <>
         <Helmet>
             <title>Contactez-nous</title>
-            <meta name="description" content="Contactez-nous pour plus d'information ici ou sur contact@wesafe.store"></meta>
+            <meta name="description" content="Contactez-nous pour plus d'information ici ou sur +33 (0)1 83 64 66 18"></meta>
             <link rel="canonical" href="/contact-us"></link>
         </Helmet>
         <section className="contact">
