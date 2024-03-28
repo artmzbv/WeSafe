@@ -129,7 +129,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 40px;
+    min-height: 30px;
     font-weight: bold;
 }
 
@@ -137,7 +137,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 50px;
+    min-height: 30px;
 }
 
 .copper__intro-list-link{
@@ -149,7 +149,10 @@
 }
 
 .copper__bullit-text-price{
-    min-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 30px;
 }
 
 @media screen and (max-width: 1024px) {

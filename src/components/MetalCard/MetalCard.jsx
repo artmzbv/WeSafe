@@ -72,12 +72,12 @@ export default function MetalCard({card, handleOpenPopup}) {
         </p>
             {setRating(card.taille)}
         </li>
-        <li className="types__point">
+        {/* <li className="types__point">
         <p className='types__point-name'>
         Durée de deténtion
         </p>
             {setRating(card.duree)}
-        </li>
+        </li> */}
         <li className="types__point">
         <p className='types__point-name'>
         Prix Régulé

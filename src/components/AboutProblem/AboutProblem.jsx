@@ -34,7 +34,7 @@ export default function AboutProblem() {
                 <div className='problem__card'>
                 <img className='problem__icon' src={circle4} alt='opportunities'/>
                     <p className='problem__description'>
-                    {`Bénéficiez de la "Ruée" sur les matières prémières en vous protégeant de l'inflation`} 
+                    {`Achetez des matières premières dont la demande va croître`} 
                     </p>
                 </div>
             </div>

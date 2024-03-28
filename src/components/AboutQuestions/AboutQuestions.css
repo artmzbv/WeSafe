@@ -57,22 +57,22 @@
     margin: auto auto;
     text-align: center;
     letter-spacing: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .questions__paragraph{
     color: #001F3D;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    /* font-weight: bold; */
     /* font-weight: normal; */
     white-space: pre-wrap;
     width: 90%;
     margin: 10px auto;
-    text-align: center;
+    text-align: start;
 }
 @media screen and (max-width: 1050px) {
     .questions__paragraph{
-        width: 100%;
+        width: 80%;
 }
 }
 @media screen and (max-width: 768px) {
@@ -108,7 +108,7 @@
     }    
 
     .questions__paragraph{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 

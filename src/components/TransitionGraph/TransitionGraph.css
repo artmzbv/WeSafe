@@ -136,11 +136,11 @@
 
 .transition-graph__source{
     width: 700px;
-    text-align: start;
+    text-align: center;
     color: white;
     font-size: 12px;
     font-style: italic;
-    padding-left: 50px;
+    /* padding-left: 40px; */
 }
 
 .transition-graph__grid{

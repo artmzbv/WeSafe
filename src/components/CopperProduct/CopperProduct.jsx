@@ -11,11 +11,11 @@ import {Helmet} from 'react-helmet-async'
 
 export default function CopperProduct() {
     const cards = [
-        {title:'Cathodes de cuivre\ngrade A', link: sheet, commande:2, stockage:1, liquidite:1, taille:3, duree:2, prix: 'Oui', name: 'copper', 
+        {title:'Cathodes de cuivre\ngrade A', link: sheet, commande:2, stockage:1, liquidite:1, taille:3, prix: 'Oui', name: 'copper', 
         description: `La cathode de cuivre est le premier produit pur issu du minerai. Après être restée plusieurs semaines dans une électrolyse de sulfate de cuivre, les cathodes sont retirées et sont utilisées comme anodes de cuivre en galvanoplastie`},
-        {title:'Cuivre Milberry', link: milberry, commande:1, stockage:3, liquidite:2, taille:2, duree:1, prix: 'Non', name: 'copper', 
+        {title:'Cuivre Milberry', link: milberry, commande:1, stockage:3, liquidite:2, taille:2, prix: 'Non', name: 'copper', 
         description: `Le cuivre Millberry est composé uniquement de cuivre issu du recyclage par dénudage de câbles électriques.\nIl est de couleur rouge brillant. Dans cette qualité n'est toléré aucune adhésion et se compose à 99,9 % de cuivre.`},
-        {title:'Grenaille de cuivre', link: grenaille, commande:1, stockage:2, liquidite:3, taille:2, duree:1, prix: 'Non', name: 'copper', 
+        {title:'Grenaille de cuivre', link: grenaille, commande:1, stockage:2, liquidite:3, taille:2, prix: 'Non', name: 'copper', 
         description: `Issue du recyclage de câbles la grenaille est utilisée pour différentes applications, principalement dans les fontes de cuivre pour obtenir des lingots, du câble ou autres produits dérivés. Leur pureté en cuivre varie entre 98% et 99,5%.`},
     ]
 
@@ -69,10 +69,10 @@ export default function CopperProduct() {
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>en milliers de tonnes par an</p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>en millions de tonnes par an</p></li>
         <li className='copper__bullit'><p className='copper__bullit-text'>en dizaine de millions de tonnes par an</p></li>
-        <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-row-title'>Durée de détention</p></li>
+        {/* <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-row-title'>Durée de détention</p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>0 à 5 ans</p></li>
         <li className='copper__bullit copper__bullit_border'><p className='copper__bullit-text'>5 à 10 ans</p></li>
-        <li className='copper__bullit'><p className='copper__bullit-text'>+ de 10 ans</p></li>
+        <li className='copper__bullit'><p className='copper__bullit-text'>+ de 10 ans</p></li> */}
         </ul>
 
         <ul className='copper__list copper__list_price'>
