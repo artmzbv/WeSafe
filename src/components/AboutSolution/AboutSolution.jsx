@@ -26,10 +26,10 @@ export default function AboutSolution() {
                         Épargne alternative
                     </li>
                     <li className='solution__item'>
-                        Participation à l'amélioration des filières
+                        {`Participation à l'amélioration\ndes filières`}
                     </li>
                     <li className='solution__item'>
-                        Création d'un stock pour les industriels de France
+                        {`Création d'un stock pour\nles industriels de France`}
                     </li>
                     <li className='solution__item'>
                         Transparence

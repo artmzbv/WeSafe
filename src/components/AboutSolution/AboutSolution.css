@@ -44,13 +44,16 @@
     color: white;
     text-align: start;
     line-height: 40px;
+    margin: 10px 0;
+    width: 100%;
     border-left: white solid 20px;
     padding-left: 2vw;
+    white-space: pre-wrap;
     /* text-decoration: none; */
 }
 
 .solution__graph{
-    width: 40vw;
+    width: 35vw;
     height: 25vw;
     color: white;
     box-shadow:#001F3D;
@@ -64,6 +67,28 @@
 
 .solution__graph_hover{
     -webkit-transform: scale(1);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .solution__item{
+    font-size: 20px;
+    }
+    .solution__graph{
+        width: 35vw;
+        height: 30vw;
+}
+}
+
+@media screen and (max-width: 1000px) {
+    .solution__item{
+        font-size: 20px;
+        width: 90%;
+        }
+    .solution__graph{
+        width: 30vw;
+        height: 350px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -89,16 +114,17 @@
         border-left: white solid 10px; 
     }
     .solution__item{
-        margin-top: 50px;
+        margin-top: 20px;
+        width: 100%;
     }
     .solution__graph{
         align-self: flex-end;
-        width: 40vw;
-        height: 30vw;
+        width: 30vw;
+        height: 250px;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     /* .solution{
         height: 90vh;
     } */
@@ -129,8 +155,10 @@
     }
 
     .solution__item{
-        font-size: 16px;   
-        margin-top: 8px;  
+        font-size: 18px;   
+        margin-top: 8px;
+        width:95%;
+        white-space:unset;  
     }
     
     .solution__graph{
